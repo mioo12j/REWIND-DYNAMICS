@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-label="Rewind Dynamics">
+  <defs>
+    <linearGradient id="fv-metal" x1="24" y1="18" x2="84" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#AEBCD2"/>
+    </linearGradient>
+    <linearGradient id="fv-bg" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0E1219"/>
+      <stop offset="1" stop-color="#070A0F"/>
+    </linearGradient>
+    <linearGradient id="fv-streak" x1="8" y1="0" x2="40" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2F7BFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#7FB4FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="1.5" width="97" height="97" rx="22" fill="url(#fv-bg)" stroke="#2F7BFF" stroke-opacity="0.35" stroke-width="1.5"/>
+  <rect x="8" y="48.4" width="34" height="3.2" fill="url(#fv-streak)"/>
+  <path d="M26 50 L44 38 L44 46 L36 50 L44 54 L44 62 Z" fill="url(#fv-metal)"/>
+  <g fill="url(#fv-metal)">
+    <rect x="46" y="30" width="12" height="42"/>
+    <path fill-rule="evenodd" d="M58 30 H76 L85 39 V47 L76 55 H58 Z M62 38 H73 L78 43 V45 L73 49 H62 Z"/>
+    <path d="M58 50 H70 L88 72 H76 Z"/>
+  </g>
+</svg>

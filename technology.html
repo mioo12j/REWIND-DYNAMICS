@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technology — Rewind Dynamics</title>
+<meta name="description" content="Inside the Rewind Dynamics autonomy architecture: the sense-reason-act loop, simulation-first development, the fleet learning flywheel and defense-grade security.">
+<meta name="theme-color" content="#06080C">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="curtain" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="Rewind Dynamics — home">
+      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
+      <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="about.html">Company</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="technology.html" aria-current="page">Technology</a>
+      <a href="careers.html">Careers</a>
+      <a href="newsroom.html">Newsroom</a>
+    </nav>
+    <div class="nav__cta">
+      <span class="nav__status"><span class="dot"></span> Systems Online</span>
+      <a class="btn btn--sm" href="contact.html" data-magnetic><span class="btn__txt">Contact</span></a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <a href="index.html"><span>01</span> Home</a>
+  <a href="about.html"><span>02</span> Company</a>
+  <a href="capabilities.html"><span>03</span> Capabilities</a>
+  <a href="technology.html"><span>04</span> Technology</a>
+  <a href="careers.html"><span>05</span> Careers</a>
+  <a href="newsroom.html"><span>06</span> Newsroom</a>
+  <a href="contact.html"><span>07</span> Contact</a>
+</div>
+
+<main class="page-wrap">
+
+  <section class="phero">
+    <div class="phero__bg" aria-hidden="true"></div>
+    <div class="phero__grid" aria-hidden="true"></div>
+    <div class="container phero__in">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Technology</span></nav>
+      <p class="eyebrow" data-enter="1">How It Works</p>
+      <h1 class="display" data-enter="2" style="font-size:clamp(2.6rem,7vw,5.4rem)">The autonomy<br>architecture.</h1>
+      <p class="lead" data-enter="3">A closed loop that senses the world, reasons about it and acts on it — entirely
+        onboard, continuously improving, and hardened for the environments where it has to work.</p>
+    </div>
+  </section>
+
+  <!-- THE LOOP -->
+  <section class="section" id="loop">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <p class="eyebrow reveal">The Core Loop</p>
+          <h2 class="h1 reveal" data-d="1">Sense · Reason · Act.</h2>
+          <p class="lead reveal" data-d="2" style="margin-top:16px">Every autonomous decision passes through the
+            same disciplined loop, thousands of times a second — no round trips, no waiting on the network.</p>
+        </div>
+        <span class="shead__index reveal" data-d="3">§ 01 / LOOP</span>
+      </div>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
+        <div class="card reveal" data-d="1"><span class="card__idx">STEP 01</span><h3 style="margin-top:16px">Sense</h3><p>Multi-modal sensors stream a live view of the environment into the perception layer.</p></div>
+        <div class="card reveal" data-d="2"><span class="card__idx">STEP 02</span><h3 style="margin-top:16px">Fuse</h3><p>Signals are fused into one uncertainty-aware world model the system can trust.</p></div>
+        <div class="card reveal" data-d="3"><span class="card__idx">STEP 03</span><h3 style="margin-top:16px">Reason</h3><p>The autonomy core plans and re-plans against mission goals and rules of engagement.</p></div>
+        <div class="card reveal" data-d="4"><span class="card__idx">STEP 04</span><h3 style="margin-top:16px">Act</h3><p>Control executes the plan on the platform — safely, deterministically, in real time.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE STACK -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="split">
+        <div class="split__body">
+          <p class="eyebrow reveal">Architecture</p>
+          <h2 class="h2 reveal" data-d="1">A layered, modular stack.</h2>
+          <p class="lead reveal" data-d="2" style="margin:18px 0 20px">Each layer is independently testable and
+            replaceable. That modularity is what lets one autonomy stack move across platforms — and lets us
+            improve any layer without rebuilding the whole.</p>
+          <p class="reveal" data-d="3">Open interfaces mean the stack integrates with existing platforms,
+            payloads and command-and-control rather than demanding a rip-and-replace.</p>
+        </div>
+        <div class="split__media reveal-x">
+          <div class="panel panel--pad">
+            <span class="panel__label">RD-STACK</span><span class="panel__corner">LAYERS</span>
+            <div class="specs" style="margin-top:26px">
+              <div class="spec"><span class="spec__k">05 · Mission</span><span class="spec__v">Goals, tasking, rules of engagement</span></div>
+              <div class="spec"><span class="spec__k">04 · Autonomy</span><span class="spec__v">Planning, behavior, decision-making</span></div>
+              <div class="spec"><span class="spec__k">03 · Perception</span><span class="spec__v">Fusion, detection, tracking, world model</span></div>
+              <div class="spec"><span class="spec__k">02 · Platform</span><span class="spec__v">Guidance, navigation, control</span></div>
+              <div class="spec"><span class="spec__k">01 · Compute</span><span class="spec__v">Secure edge runtime &amp; hardware abstraction</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider container" aria-hidden="true"></div>
+
+  <!-- SIMULATION FIRST -->
+  <section class="section">
+    <div class="container">
+      <div class="split split--rev">
+        <div class="split__body">
+          <p class="eyebrow reveal">Development</p>
+          <h2 class="h2 reveal" data-d="1">Simulation-first.<br>Field-proven.</h2>
+          <p class="lead reveal" data-d="2" style="margin:18px 0 20px">We fly millions of virtual miles before a
+            body leaves the bench. High-fidelity simulation lets us stress autonomy against edge cases, failures
+            and adversaries that would be impossible — or dangerous — to stage in the real world.</p>
+          <ul class="klist">
+            <li class="reveal"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Massive-scale simulation</b>Adversarial scenarios, sensor degradation and rare events, replayed at scale.</div></li>
+            <li class="reveal" data-d="1"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Hardware-in-the-loop</b>Real compute and sensors validated against simulated worlds before field trials.</div></li>
+            <li class="reveal" data-d="2"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Then the real world</b>We field in the conditions that matter and let the data decide.</div></li>
+          </ul>
+        </div>
+        <div class="split__media reveal-x">
+          <div class="panel radar" style="padding:26px">
+            <span class="panel__label">SIM//REPLAY</span><span class="panel__corner">RD-SIM</span>
+            <svg viewBox="0 0 400 360" role="img" aria-label="Simulation waveform">
+              <g stroke="rgba(255,255,255,.08)" stroke-width="1">
+                <line x1="20" y1="60" x2="380" y2="60"/><line x1="20" y1="120" x2="380" y2="120"/>
+                <line x1="20" y1="180" x2="380" y2="180"/><line x1="20" y1="240" x2="380" y2="240"/>
+                <line x1="20" y1="300" x2="380" y2="300"/>
+              </g>
+              <polyline points="20,220 60,140 100,180 140,90 180,200 220,70 260,150 300,110 340,190 380,120" fill="none" stroke="#2F7BFF" stroke-width="2" opacity=".8"/>
+              <polyline points="20,250 60,230 100,255 140,210 180,245 220,215 260,250 300,225 340,248 380,230" fill="none" stroke="rgba(127,180,255,.6)" stroke-width="1.5"/>
+              <circle class="rd-blip rd-blip--pulse" cx="220" cy="70" r="4"/>
+              <circle class="rd-blip rd-blip--pulse" cx="140" cy="90" r="3.4" style="animation-delay:.8s"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REWIND FLYWHEEL -->
+  <section class="section--tight" id="flywheel">
+    <div class="container">
+      <div class="cta reveal" style="text-align:left">
+        <div class="cta__grid" aria-hidden="true"></div>
+        <div style="max-width:64ch">
+          <p class="eyebrow">The Flywheel</p>
+          <h2 class="h1" style="margin:16px 0 18px">Rewind. Learn. Deploy.<br>Repeat.</h2>
+          <p class="lead">Our name is our method. Every mission is captured and replayed. We <span class="accent">rewind</span>
+            reality, mine it for insight, and roll improvements across the entire fleet. The more our systems
+            operate, the sharper every system becomes — a compounding advantage the threat can't buy.</p>
+          <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-top:30px">
+            <div class="spec" style="border:0;padding:0"><div><div class="stat__num" style="font-size:2rem">01</div><div class="mono" style="font-size:.72rem;letter-spacing:.14em;color:var(--muted);margin-top:6px;text-transform:uppercase">Capture</div></div></div>
+            <div class="spec" style="border:0;padding:0"><div><div class="stat__num" style="font-size:2rem">02</div><div class="mono" style="font-size:.72rem;letter-spacing:.14em;color:var(--muted);margin-top:6px;text-transform:uppercase">Replay</div></div></div>
+            <div class="spec" style="border:0;padding:0"><div><div class="stat__num" style="font-size:2rem">03</div><div class="mono" style="font-size:.72rem;letter-spacing:.14em;color:var(--muted);margin-top:6px;text-transform:uppercase">Learn</div></div></div>
+            <div class="spec" style="border:0;padding:0"><div><div class="stat__num" style="font-size:2rem">04</div><div class="mono" style="font-size:.72rem;letter-spacing:.14em;color:var(--muted);margin-top:6px;text-transform:uppercase">Deploy</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITY -->
+  <section class="section">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <p class="eyebrow reveal">Trust &amp; Security</p>
+          <h2 class="h1 reveal" data-d="1">Built to be trusted.</h2>
+          <p class="lead reveal" data-d="2" style="margin-top:16px">Autonomy is only useful if it's dependable.
+            Security, safety and accountability are designed in from the first commit — not bolted on.</p>
+        </div>
+        <span class="shead__index reveal" data-d="3">§ 02 / SECURITY</span>
+      </div>
+      <div class="grid values">
+        <div class="value reveal" data-d="1"><span class="value__n">S1</span><h3>Secure Supply Chain</h3><p>Signed, verified software and a hardened build pipeline from source to platform.</p></div>
+        <div class="value reveal" data-d="2"><span class="value__n">S2</span><h3>Safety Bounded</h3><p>Autonomy constrained by explicit safety envelopes and rules of engagement.</p></div>
+        <div class="value reveal" data-d="3"><span class="value__n">S3</span><h3>Fully Auditable</h3><p>Every decision is logged and replayable — accountability by construction.</p></div>
+        <div class="value reveal" data-d="4"><span class="value__n">S4</span><h3>Human On The Loop</h3><p>Operators retain oversight and control, with the ability to intervene at any time.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta__grid" aria-hidden="true"></div>
+        <p class="eyebrow eyebrow--center" style="justify-content:center">Go Deeper</p>
+        <h2 class="h1">Want the technical detail?</h2>
+        <p class="lead" style="max-width:50ch;margin:0 auto">We share more with partners and programs under the right terms. Reach out.</p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="contact.html" data-magnetic><span class="btn__txt">Start a Conversation</span>
+            <svg class="arw" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="capabilities.html" data-magnetic><span class="btn__txt">Capabilities</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="Rewind Dynamics — home">
+          <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
+          <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
+        </a>
+        <p>Autonomous systems for the decisive edge. We build machines that sense, reason and act —
+          extending human judgement into the places it can't safely go.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="X" title="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-6.6L5.5 22H2.4l7.5-8.6L2 2h6.6l4.5 6L18.9 2Zm-1.1 18h1.7L7.3 3.8H5.4L17.8 20Z"/></svg></a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 22 10.6 22 14v7h-4v-6.2c0-1.5-.03-3.4-2.08-3.4-2.08 0-2.4 1.62-2.4 3.3V21H9V9Z"/></svg></a>
+          <a href="#" aria-label="GitHub" title="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.59.69.48A10 10 0 0 0 12 2Z"/></svg></a>
+          <a href="#" aria-label="YouTube" title="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.3-.42-4.88a2.55 2.55 0 0 0-1.8-1.8C19.2 5 12 5 12 5s-7.2 0-8.78.42a2.55 2.55 0 0 0-1.8 1.8C1 8.7 1 12 1 12s0 3.3.42 4.88c.23.86.9 1.53 1.8 1.76C4.8 19 12 19 12 19s7.2 0 8.78-.42a2.55 2.55 0 0 0 1.8-1.8C23 15.3 23 12 23 12ZM9.75 15.5v-7l6 3.5-6 3.5Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col"><h4>Company</h4><a href="about.html">About</a><a href="capabilities.html">Capabilities</a><a href="technology.html">Technology</a><a href="about.html#leadership">Leadership</a></div>
+      <div class="footer__col"><h4>Careers</h4><a href="careers.html">Open Roles</a><a href="careers.html#culture">Culture</a><a href="careers.html#benefits">Benefits</a><a href="careers.html#apply">Apply</a></div>
+      <div class="footer__col"><h4>Connect</h4><a href="contact.html">Contact</a><a href="newsroom.html">Newsroom</a><a href="mailto:info@rewinddynamics.com">info@rewinddynamics.com</a><a href="privacy.html">Privacy</a></div>
+    </div>
+  </div>
+  <div class="footer__watermark" aria-hidden="true">REWIND</div>
+  <div class="container">
+    <div class="footer__bar">
+      <span>© <span data-year>2026</span> Rewind Dynamics. All rights reserved.</span>
+      <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><span>Autonomy · Perception · Resilience</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/form.js"></script>
+</body>
+</html>
