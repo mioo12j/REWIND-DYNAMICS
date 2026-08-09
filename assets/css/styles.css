@@ -118,7 +118,10 @@ p{ color:var(--ink-soft); }
 }
 .noise{ position:fixed; inset:0; z-index:1; pointer-events:none; opacity:.035; mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.vignette{ position:fixed; inset:0; z-index:1; pointer-events:none;
+  background:radial-gradient(130% 90% at 50% 24%, transparent 52%, rgba(0,0,0,.28) 78%, rgba(0,0,0,.6) 100%); }
 .page-wrap{ position:relative; z-index:2; }
+.footer__loc{ margin-top:20px; font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted-2); }
 
 /* ============================================================
    PRELOADER
@@ -132,6 +135,7 @@ p{ color:var(--ink-soft); }
 .pl-mark{ width:78px; margin:0 auto 22px; animation:plfloat 2.4s var(--ease) infinite; }
 .pl-name{ font-family:var(--font-display); font-weight:700; letter-spacing:.42em; text-transform:uppercase;
   font-size:.9rem; color:var(--ink); padding-left:.42em; }
+.pl-sub{ margin-top:8px; font-family:var(--font-mono); font-size:.62rem; letter-spacing:.28em; text-transform:uppercase; color:var(--muted-2); }
 .pl-bar{ height:2px; width:100%; margin-top:16px; background:var(--line); overflow:hidden; }
 .pl-bar span{ display:block; height:100%; width:0; background:linear-gradient(90deg,var(--accent),var(--accent-bright)); box-shadow:0 0 14px var(--accent-glow); }
 .pl-pct{ margin-top:10px; font-family:var(--font-mono); font-size:.7rem; letter-spacing:.24em; color:var(--muted); }

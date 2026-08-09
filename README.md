@@ -1,8 +1,13 @@
 # Rewind Dynamics — Website
 
-A fast, dark, highly-animated marketing website for **Rewind Dynamics**, a defense
-company building autonomous systems. Built as a dependency-free static site — pure
-HTML, CSS and vanilla JavaScript. No build step, no framework, deploys anywhere.
+A fast, dark, animated marketing website for **Rewind Dynamics** — an India-based
+defence technology company (established 2024, New Delhi) developing autonomous
+systems: unmanned aerial, humanoid and tactical platforms.
+
+Built as a dependency-free static site — pure HTML, CSS and vanilla JavaScript.
+No build step, no framework, deploys anywhere. The tone is deliberately factual:
+the site explains what the company is working on **without** claiming finished
+products or performance figures.
 
 ---
 
@@ -10,94 +15,82 @@ HTML, CSS and vanilla JavaScript. No build step, no framework, deploys anywhere.
 
 | Page | File | Purpose |
 |------|------|---------|
-| Home | `index.html` | Hero, mission, capability overview, stats, flywheel, newsroom teaser |
-| Company | `about.html` | Story, mission & vision, values, roadmap, leadership |
-| Capabilities | `capabilities.html` | The four capability domains + multi-domain + FAQ |
-| Technology | `technology.html` | Autonomy architecture, sim-first dev, the "rewind" flywheel, security |
+| Home | `index.html` | Intro, what we're building, capability areas, approach |
+| Company | `about.html` | Story, mission & vision, values, timeline, team |
+| Systems | `systems.html` | The systems in development: UAV, humanoid, tactical |
+| Capabilities | `capabilities.html` | Areas of work: autonomy, perception, edge AI, systems engineering |
+| Technology | `technology.html` | Plain-language tech overview + external references |
 | Careers | `careers.html` | Culture, benefits, open roles, **application form** |
-| Contact | `contact.html` | **Contact form**, direct channels, HQ grid |
-| Newsroom | `newsroom.html` | Featured post, article grid, newsletter signup |
+| Contact | `contact.html` | **Contact form**, direct emails, New Delhi location |
+| Newsroom | `newsroom.html` | Company note + curated external reading, newsletter |
 | Privacy & Terms | `privacy.html` | Legal template (have counsel review) |
-| 404 | `404.html` | "Signal lost" error page |
+| 404 | `404.html` | Error page |
+
+Every navigation item is its own page, and outbound "Learn more / Reference"
+links open reputable external sources (Wikipedia, arXiv, IEEE, DRDO) in a new tab.
 
 ---
 
-## Forms → your email
+## Email addresses
 
-All forms (contact, careers application, newsletter) send submissions to your inbox.
+The site uses several addresses so enquiries reach the right place. Set up these
+mailboxes (or forwards) on your domain:
 
-### Set it up (about 2 minutes)
+| Address | Used for |
+|---------|----------|
+| `info@rewinddynamics.com` | General enquiries, contact form, newsletter |
+| `careers@rewinddynamics.com` | Careers / applications (careers form) |
+| `partnerships@rewinddynamics.com` | Suppliers, programs, collaborators |
+| `press@rewinddynamics.com` | Media enquiries |
 
-1. Go to **https://web3forms.com**
-2. Enter **info@rewinddynamics.com** and click to get a **free Access Key** (it's emailed to you).
-3. Open **`assets/js/form.js`** and paste the key:
+You can point them all at one inbox with forwarding to start.
 
-   ```js
-   var ACCESS_KEY = "paste-your-web3forms-key-here";
-   ```
+### Form delivery (about 2 minutes)
 
-4. Deploy. Every submission now lands in **info@rewinddynamics.com**.
+Forms send submissions to your inbox via **Web3Forms** (free, no backend):
 
-> **Before setup / no key configured:** forms automatically fall back to opening the
-> visitor's own email client addressed to `info@rewinddynamics.com`, so the site is
-> fully functional out of the box — just less seamless than the hosted relay.
+1. Go to **https://web3forms.com**, enter `info@rewinddynamics.com`, get a free **Access Key**.
+2. Paste it into **`assets/js/form.js`** → `var ACCESS_KEY = "…"`.
+3. Deploy.
 
-Want submissions to also reach another address (e.g. a personal inbox)? Add a mail
-rule/forward on `info@rewinddynamics.com`, or create a second Web3Forms key. The
-destination address is controlled entirely on the Web3Forms side — no code change needed.
+> **Before a key is set,** forms fall back to opening the visitor's email client,
+> addressed to the right inbox (contact → `info@`, careers → `careers@`), so the
+> site works out of the box. Each form's destination is set with a `data-email`
+> attribute; for fully separate routing you can create one Web3Forms key per inbox.
 
 ---
 
 ## Deploy
 
-It's a static site — pick whichever is easiest:
+Static site — pick whichever is easiest:
 
 - **Netlify / Vercel / Cloudflare Pages:** drag-and-drop this folder, or connect the repo.
   `netlify.toml` is included (publish dir `.`, custom 404, security headers).
-- **GitHub Pages:** enable Pages on the branch; the site is served from the root.
+- **GitHub Pages:** enable Pages on the branch; served from the root.
 - **Any web host:** upload the files. `index.html` is the entry point.
 
-No compile step. No `node_modules`. Nothing to install.
+No compile step. No `node_modules`.
 
 ---
 
 ## Brand & design
 
-- **Logo:** recreated as crisp SVG (`assets/img/logo-mark.svg`) in the spirit of the
-  supplied mark — metallic "R" monogram, motion chevron and electric-blue speed streak —
-  tuned for dark backgrounds. `assets/img/favicon.svg` is the browser-tab icon.
-- **Type:** *Chakra Petch* (sharp technical display), *Space Grotesk* (body),
-  *JetBrains Mono* (labels/data) — loaded from Google Fonts.
+- **Logo:** recreated as crisp SVG (`assets/img/logo-mark.svg`) — metallic "R"
+  monogram, motion chevron and electric-blue streak — tuned for dark backgrounds.
+  `assets/img/favicon.svg` is the tab icon.
+- **Type:** *Chakra Petch* (display), *Space Grotesk* (body), *JetBrains Mono* (labels).
 - **Palette:** near-black `#06080C` with an electric-blue accent `#2F7BFF`.
 - **Motion:** preloader + curtain wipe, scroll reveals, hero node-network canvas,
-  count-up stats, text-scramble, radar/schematic SVGs, marquee, magnetic buttons.
-  All motion respects `prefers-reduced-motion`.
+  radar/schematic SVGs, marquee, magnetic buttons — all respect `prefers-reduced-motion`.
 
 ### Customising
 
 - **Colours / spacing / fonts:** CSS variables at the top of `assets/css/styles.css` (`:root`).
 - **Copy:** edit the HTML directly — content is plain and clearly sectioned.
-- **Contact email:** it's `info@rewinddynamics.com` throughout; update the `mailto:`
-  links and `CONTACT_EMAIL` in `assets/js/form.js` if it ever changes.
-- **Social links:** placeholder `#` hrefs in every footer — point them at your profiles.
+- **Social links:** the footer points to `linkedin.com/company/rewind-dynamics`,
+  `x.com/rewinddynamics`, `youtube.com/@rewinddynamics` — create/confirm those handles
+  (or edit them) so the icons land on your real profiles.
 
 ---
 
-## Structure
-
-```
-.
-├── index.html · about.html · capabilities.html · technology.html
-├── careers.html · contact.html · newsroom.html · privacy.html · 404.html
-├── assets/
-│   ├── css/styles.css      # design system + components + animations
-│   ├── js/app.js           # nav, reveals, canvas, counters, accordion…
-│   ├── js/form.js          # form validation + email delivery
-│   └── img/                # logo-mark.svg, favicon.svg
-├── robots.txt · sitemap.xml · netlify.toml
-└── README.md
-```
-
----
-
-*Autonomy for the decisive edge.*
+*An India-based defence technology company. New Delhi.*

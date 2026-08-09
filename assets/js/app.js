@@ -19,11 +19,11 @@
       p += Math.random() * 16 + 6;
       if (p >= 100) { p = 100; clearInterval(t); setTimeout(finish, 260); }
       if (bar) bar.style.width = p + "%";
-      if (pct) pct.textContent = "INITIALIZING · " + Math.floor(p).toString().padStart(3, "0") + "%";
+      if (pct) pct.textContent = "LOADING · " + Math.floor(p).toString().padStart(3, "0") + "%";
     }, 130);
     function finish() {
       if (bar) bar.style.width = "100%";
-      if (pct) pct.textContent = "SYSTEMS ONLINE · 100%";
+      if (pct) pct.textContent = "READY";
       pl.classList.add("done");
       document.body.style.overflow = "";
       liftCurtain();

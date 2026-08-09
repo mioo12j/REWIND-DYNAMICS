@@ -51,6 +51,10 @@
     return ok;
   }
 
+  function formEmail(form) {
+    return form.getAttribute("data-email") || CONTACT_EMAIL;
+  }
+
   function mailtoFallback(form, data) {
     var subject = encodeURIComponent((form.getAttribute("data-subject") || "Website enquiry") + " — Rewind Dynamics");
     var lines = [];
@@ -59,7 +63,7 @@
       lines.push(k.replace(/_/g, " ").toUpperCase() + ":\n" + data[k] + "\n");
     });
     var body = encodeURIComponent(lines.join("\n"));
-    window.location.href = "mailto:" + CONTACT_EMAIL + "?subject=" + subject + "&body=" + body;
+    window.location.href = "mailto:" + formEmail(form) + "?subject=" + subject + "&body=" + body;
   }
 
   forms.forEach(function (form) {
@@ -114,12 +118,12 @@
             form.reset();
             setStatus(status, "ok", "Transmission received. Our team will be in contact.");
           } else {
-            setStatus(status, "err", json.message || "Something went wrong. Please email " + CONTACT_EMAIL + ".");
+            setStatus(status, "err", json.message || "Something went wrong. Please email " + formEmail(form) + ".");
           }
         })
         .catch(function () {
           if (btn) btn.classList.remove("loading");
-          setStatus(status, "err", "Network error. Please email " + CONTACT_EMAIL + " directly.");
+          setStatus(status, "err", "Network error. Please email " + formEmail(form) + " directly.");
         });
     });
   });
