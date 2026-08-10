@@ -15,9 +15,13 @@ step, no framework, deploys anywhere.
 ## Pages
 
 Home · Company · Systems · Capabilities · Technology · **Research** · **Investors** ·
-Careers · Newsroom · Contact · Responsible Autonomy · FAQ · Press · Privacy · 404,
-plus **10 newsroom articles** (`news-*.html`) dated 2020–2026. Every nav item is its
-own page.
+Careers · Newsroom · Contact · Responsible Autonomy · FAQ · Press · **Partners** ·
+**Glossary** · Privacy · 404, plus three deep system pages (**Unmanned Aerial**,
+**Humanoid**, **Tactical Miniature**) and **10 newsroom articles** (`news-*.html`)
+dated 2020–2026.
+
+`systems.html` acts as a hub linking to the three system pages — a hub-and-spoke
+structure that gives each platform family its own keyword-targeted page.
 
 ---
 

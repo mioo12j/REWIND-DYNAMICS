@@ -20,6 +20,11 @@
 - [Capabilities](https://rewinddynamics.com/capabilities.html): autonomy, perception, edge AI, systems engineering.
 - [Technology](https://rewinddynamics.com/technology.html): the sense–decide–act loop, layered architecture, and how we work.
 - [Research](https://rewinddynamics.com/research.html): ideas we're working on — two-tier mother–child nano-drone autonomy, autonomous surveillance/ISR, swarming, GPS-denied navigation (concept-level, defence-focused).
+- [Unmanned Aerial Systems](https://rewinddynamics.com/uav.html): autonomous UAVs for ISR and force protection; GPS-denied navigation, onboard perception, degraded-link autonomy.
+- [Humanoid Systems](https://rewinddynamics.com/humanoid.html): human-form robotic platforms; locomotion, balance, whole-body control — long-horizon research programme.
+- [Tactical Miniature Systems](https://rewinddynamics.com/tactical.html): man-portable autonomy under strict size, weight and power (SWaP) limits.
+- [Partners & Programmes](https://rewinddynamics.com/partners.html): how to engage — defence programmes and evaluators, primes and integrators, suppliers, research institutions (partnerships@rewinddynamics.com).
+- [Glossary](https://rewinddynamics.com/glossary.html): plain-English definitions of defence-autonomy terms (autonomy, UAV/UAS, ISR, sense–decide–act, edge AI, sensor fusion, SLAM, GPS-denied navigation, swarm, SWaP, human-in-the-loop).
 - [Investors](https://rewinddynamics.com/investors.html): the opportunity and how to invest (investors@rewinddynamics.com).
 - [Careers](https://rewinddynamics.com/careers.html): open engineering roles (careers@rewinddynamics.com).
 - [Newsroom](https://rewinddynamics.com/newsroom.html): milestones and perspectives, 2020–2026.

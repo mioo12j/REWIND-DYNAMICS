@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Defence Autonomy Glossary — UAV, ISR, Swarming &amp; Edge AI Terms Explained</title>
+<meta name="description" content="A plain-English glossary of defence autonomy terminology from Rewind Dynamics: autonomy, UAV/UAS, ISR, sense–decide–act, edge AI, sensor fusion, SLAM, GPS-denied navigation, swarming, SWaP, human-in-the-loop and more — defined clearly, without jargon.">
+<meta name="theme-color" content="#06080C">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<!-- seo:rd -->
+<link rel="canonical" href="https://rewinddynamics.com/glossary.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Rewind Dynamics">
+<meta name="geo.region" content="IN-DL"><meta name="geo.placename" content="New Delhi">
+<meta property="og:site_name" content="Rewind Dynamics">
+<meta property="og:locale" content="en_IN">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Defence Autonomy Glossary — UAV, ISR, Swarming &amp; Edge AI Terms Explained">
+<meta property="og:description" content="A plain-English glossary of defence autonomy terminology from Rewind Dynamics: autonomy, UAV/UAS, ISR, sense–decide–act, edge AI, sensor fusion, SLAM, GPS-denied navigation, swarming, SWaP, human-in-the-loop and more — defined clearly, without jargon.">
+<meta property="og:url" content="https://rewinddynamics.com/glossary.html">
+<meta property="og:image" content="https://rewinddynamics.com/assets/img/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rewind Dynamics — autonomous systems for defence">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Defence Autonomy Glossary — UAV, ISR, Swarming &amp; Edge AI Terms Explained">
+<meta name="twitter:description" content="A plain-English glossary of defence autonomy terminology from Rewind Dynamics: autonomy, UAV/UAS, ISR, sense–decide–act, edge AI, sensor fusion, SLAM, GPS-denied navigation, swarming, SWaP, human-in-the-loop and more — defined clearly, without jargon.">
+<meta name="twitter:image" content="https://rewinddynamics.com/assets/img/og.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Rewind Dynamics", "legalName": "Rewind Dynamics", "url": "https://rewinddynamics.com/", "logo": "https://rewinddynamics.com/assets/img/logo-mark.svg", "image": "https://rewinddynamics.com/assets/img/og.png", "foundingDate": "2020-01-26", "description": "Rewind Dynamics is a global defence-technology company, headquartered in New Delhi, developing autonomous systems \u2014 unmanned aerial, humanoid and tactical platforms \u2014 for defence and military applications.", "email": "info@rewinddynamics.com", "slogan": "Autonomous systems for defence.", "foundingLocation": {"@type": "Place", "name": "New Delhi, India"}, "address": {"@type": "PostalAddress", "addressLocality": "New Delhi", "addressRegion": "Delhi", "addressCountry": "IN"}, "areaServed": {"@type": "Place", "name": "Worldwide"}, "knowsAbout": ["Autonomous systems", "Unmanned aerial vehicles", "Humanoid robotics", "Tactical systems", "Defence technology", "Edge AI", "Perception", "Autonomy"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rewinddynamics.com/"}, {"@type": "ListItem", "position": 2, "name": "Glossary", "item": "https://rewinddynamics.com/glossary.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTermSet", "name": "Defence Autonomy Glossary", "url": "https://rewinddynamics.com/glossary.html", "description": "Plain-English definitions of the terms used in defence autonomy, unmanned systems and robotics.", "publisher": {"@type": "Organization", "name": "Rewind Dynamics", "url": "https://rewinddynamics.com/"}, "hasDefinedTerm": [{"@type": "DefinedTerm", "name": "Autonomy", "description": "The ability of a machine to carry out a task without a person directing each step. Autonomy is a spectrum, not a switch: a system may plan its own route while still asking a human before doing anything consequential.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Autonomous system", "description": "A platform that can sense its surroundings, decide what to do and act on that decision. At Rewind Dynamics this covers unmanned aerial, humanoid and tactical miniature platforms.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "UAV / UAS", "description": "Unmanned aerial vehicle, or unmanned aerial system. UAV usually means the aircraft itself; UAS means the whole system — aircraft, ground control, communications and operators.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "ISR", "description": "Intelligence, surveillance and reconnaissance. The work of gathering information about an area or situation so that commanders can make informed decisions.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Surveillance", "description": "Watching an area persistently over time to understand what is normal and notice what changes.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Reconnaissance", "description": "Going to look at a specific place to answer a specific question, usually once and quickly.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Force protection", "description": "Measures that keep personnel, equipment and sites safe — including early warning of an approaching threat.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Sense–decide–act", "description": "The core loop every autonomous system runs, many times a second: take in the world, choose an action, carry it out, and repeat. Making that loop fast, reliable and safe is the central engineering problem.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Perception", "description": "Turning raw camera and sensor data into a usable understanding of the environment — what is there, where it is, and whether it matters.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Sensor fusion", "description": "Combining several different sensors into a single picture that is more reliable than any one sensor could be alone.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Edge AI", "description": "Running artificial intelligence on the platform itself rather than in a remote data centre, so the system stays effective without a constant communications link.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "GPS-denied navigation", "description": "Knowing your position and finding your way when satellite navigation is jammed, spoofed or simply unavailable — typically by using vision and onboard sensors instead.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "GNSS", "description": "Global navigation satellite system: the general term for satellite positioning networks, of which GPS is one.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "SLAM", "description": "Simultaneous localisation and mapping. Building a map of an unknown space while also working out where you are within it.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Swarm", "description": "A group of autonomous systems that coordinate as one team — sharing what they see, dividing the task, and remaining useful even if some are lost.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Mother–child architecture", "description": "A two-tier design in which a larger carrier platform transports and coordinates a group of much smaller platforms, which do the close-in work. One of our active research directions.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Nano-drone", "description": "A very small unmanned aircraft, typically light enough to be carried in quantity and cheap enough to be treated as expendable.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "SWaP", "description": "Size, weight and power — the three constraints that dominate the design of any small autonomous system. Every capability added costs something in at least one of them.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Man-portable", "description": "Small and light enough to be carried and deployed by one person alongside their existing equipment.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Dismounted", "description": "Operating on foot, away from a vehicle. Dismounted teams have the tightest constraints on what they can carry.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Tactical edge", "description": "The forward, close-range environment where information is scarce, links are unreliable and decisions are made under pressure.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Degraded link", "description": "A communications connection that has become slow, intermittent or unusable. Well-designed autonomy continues behaving sensibly when this happens.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Human-in-the-loop", "description": "An arrangement where the system cannot take a significant action until a person approves it.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Human-on-the-loop", "description": "An arrangement where the system acts on its own but a person supervises continuously and can intervene or stop it at any time.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Human in command", "description": "Our own framing, and our operating principle: machines carry out tasks, but people set the rules, define the limits and remain responsible for the outcome.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Autonomy stack", "description": "The layered software architecture that produces autonomous behaviour — from low-level control, through perception and planning, up to mission and oversight.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Guidance, navigation and control", "description": "The three related jobs of deciding where to go, knowing where you are, and making the platform actually do it.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Simulation-first", "description": "Developing and proving behaviour in software before committing it to hardware, because software tests are faster, safer and repeatable.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "After-action assessment", "description": "Reviewing a recorded run honestly to establish what went right, what went wrong and why — the discipline our name refers to.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Payload", "description": "Whatever a platform carries to do its job — usually sensors. Payload always competes with endurance for the same limited energy.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Endurance", "description": "How long a platform can operate before it must return, recharge or refuel.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}, {"@type": "DefinedTerm", "name": "Teleoperation", "description": "Direct remote control of a machine by a person. Distinct from autonomy, where the machine decides for itself within set limits.", "inDefinedTermSet": "https://rewinddynamics.com/glossary.html"}]}</script>
+</head>
+<body>
+<div class="curtain" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="Rewind Dynamics — home">
+      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
+      <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="about.html">Company</a>
+      <a href="systems.html">Systems</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="technology.html">Technology</a>
+      <a href="research.html">Research</a>
+      <a href="investors.html">Investors</a>
+      <a href="careers.html">Careers</a>
+      <a href="newsroom.html">Newsroom</a>
+    </nav>
+    <div class="nav__cta">
+      <a class="btn btn--sm" href="contact.html" data-magnetic><span class="btn__txt">Contact</span></a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <a href="index.html"><span>01</span> Home</a>
+  <a href="about.html"><span>02</span> Company</a>
+  <a href="systems.html"><span>03</span> Systems</a>
+  <a href="capabilities.html"><span>04</span> Capabilities</a>
+  <a href="technology.html"><span>05</span> Technology</a>
+  <a href="research.html"><span>06</span> Research</a>
+  <a href="investors.html"><span>07</span> Investors</a>
+  <a href="careers.html"><span>08</span> Careers</a>
+  <a href="newsroom.html"><span>09</span> Newsroom</a>
+  <a href="contact.html"><span>10</span> Contact</a>
+</div>
+
+<main class="page-wrap">
+
+  <section class="phero">
+    <div class="wm wm--phero" aria-hidden="true"><img src="assets/img/watermark.svg" alt=""></div>
+    <div class="phero__bg" aria-hidden="true"></div>
+    <div class="phero__grid" aria-hidden="true"></div>
+    <div class="container phero__in">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Glossary</span></nav>
+      <p class="eyebrow" data-enter="1">Reference &nbsp;·&nbsp; Glossary</p>
+      <h1 class="display" data-enter="2" style="font-size:clamp(2.3rem,6vw,4.8rem)">Defence autonomy,<br>in plain English.</h1>
+      <p class="lead" data-enter="3">Autonomy has accumulated a lot of jargon, and much of it obscures more than it
+        explains. This is our working glossary — the terms we use across this site, defined the way we would
+        explain them to someone in the room. No marketing, no acronym soup.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <p class="eyebrow reveal">The Vocabulary</p>
+          <h2 class="h1 reveal" data-d="1">The terms<br>that matter.</h2>
+          <p class="lead reveal" data-d="2" style="margin-top:16px">Grouped by how they are actually used rather
+            than alphabetically — starting with the ideas everything else depends on.</p>
+        </div>
+        <span class="shead__index reveal" data-d="3">§ 01 / GLOSSARY</span>
+      </div>
+      <div class="grid cards"><article class="card reveal" data-d="1" id="autonomy"><h3 style="margin-top:0">Autonomy</h3><p>The ability of a machine to carry out a task without a person directing each step. Autonomy is a spectrum, not a switch: a system may plan its own route while still asking a human before doing anything consequential.</p></article><article class="card reveal" data-d="2" id="autonomous"><h3 style="margin-top:0">Autonomous system</h3><p>A platform that can sense its surroundings, decide what to do and act on that decision. At Rewind Dynamics this covers unmanned aerial, humanoid and tactical miniature platforms.</p></article><article class="card reveal" data-d="3" id="uav"><h3 style="margin-top:0">UAV / UAS</h3><p>Unmanned aerial vehicle, or unmanned aerial system. UAV usually means the aircraft itself; UAS means the whole system — aircraft, ground control, communications and operators.</p></article><article class="card reveal" data-d="4" id="isr"><h3 style="margin-top:0">ISR</h3><p>Intelligence, surveillance and reconnaissance. The work of gathering information about an area or situation so that commanders can make informed decisions.</p></article><article class="card reveal" data-d="1" id="surveillance"><h3 style="margin-top:0">Surveillance</h3><p>Watching an area persistently over time to understand what is normal and notice what changes.</p></article><article class="card reveal" data-d="2" id="reconnaissance"><h3 style="margin-top:0">Reconnaissance</h3><p>Going to look at a specific place to answer a specific question, usually once and quickly.</p></article><article class="card reveal" data-d="3" id="force"><h3 style="margin-top:0">Force protection</h3><p>Measures that keep personnel, equipment and sites safe — including early warning of an approaching threat.</p></article><article class="card reveal" data-d="4" id="sense-decide-act"><h3 style="margin-top:0">Sense–decide–act</h3><p>The core loop every autonomous system runs, many times a second: take in the world, choose an action, carry it out, and repeat. Making that loop fast, reliable and safe is the central engineering problem.</p></article><article class="card reveal" data-d="1" id="perception"><h3 style="margin-top:0">Perception</h3><p>Turning raw camera and sensor data into a usable understanding of the environment — what is there, where it is, and whether it matters.</p></article><article class="card reveal" data-d="2" id="sensor"><h3 style="margin-top:0">Sensor fusion</h3><p>Combining several different sensors into a single picture that is more reliable than any one sensor could be alone.</p></article><article class="card reveal" data-d="3" id="edge"><h3 style="margin-top:0">Edge AI</h3><p>Running artificial intelligence on the platform itself rather than in a remote data centre, so the system stays effective without a constant communications link.</p></article><article class="card reveal" data-d="4" id="gps-denied"><h3 style="margin-top:0">GPS-denied navigation</h3><p>Knowing your position and finding your way when satellite navigation is jammed, spoofed or simply unavailable — typically by using vision and onboard sensors instead.</p></article><article class="card reveal" data-d="1" id="gnss"><h3 style="margin-top:0">GNSS</h3><p>Global navigation satellite system: the general term for satellite positioning networks, of which GPS is one.</p></article><article class="card reveal" data-d="2" id="slam"><h3 style="margin-top:0">SLAM</h3><p>Simultaneous localisation and mapping. Building a map of an unknown space while also working out where you are within it.</p></article><article class="card reveal" data-d="3" id="swarm"><h3 style="margin-top:0">Swarm</h3><p>A group of autonomous systems that coordinate as one team — sharing what they see, dividing the task, and remaining useful even if some are lost.</p></article><article class="card reveal" data-d="4" id="mother-child"><h3 style="margin-top:0">Mother–child architecture</h3><p>A two-tier design in which a larger carrier platform transports and coordinates a group of much smaller platforms, which do the close-in work. One of our active research directions.</p></article><article class="card reveal" data-d="1" id="nano-drone"><h3 style="margin-top:0">Nano-drone</h3><p>A very small unmanned aircraft, typically light enough to be carried in quantity and cheap enough to be treated as expendable.</p></article><article class="card reveal" data-d="2" id="swap"><h3 style="margin-top:0">SWaP</h3><p>Size, weight and power — the three constraints that dominate the design of any small autonomous system. Every capability added costs something in at least one of them.</p></article><article class="card reveal" data-d="3" id="man-portable"><h3 style="margin-top:0">Man-portable</h3><p>Small and light enough to be carried and deployed by one person alongside their existing equipment.</p></article><article class="card reveal" data-d="4" id="dismounted"><h3 style="margin-top:0">Dismounted</h3><p>Operating on foot, away from a vehicle. Dismounted teams have the tightest constraints on what they can carry.</p></article><article class="card reveal" data-d="1" id="tactical"><h3 style="margin-top:0">Tactical edge</h3><p>The forward, close-range environment where information is scarce, links are unreliable and decisions are made under pressure.</p></article><article class="card reveal" data-d="2" id="degraded"><h3 style="margin-top:0">Degraded link</h3><p>A communications connection that has become slow, intermittent or unusable. Well-designed autonomy continues behaving sensibly when this happens.</p></article><article class="card reveal" data-d="3" id="human-in-the-loop"><h3 style="margin-top:0">Human-in-the-loop</h3><p>An arrangement where the system cannot take a significant action until a person approves it.</p></article><article class="card reveal" data-d="4" id="human-on-the-loop"><h3 style="margin-top:0">Human-on-the-loop</h3><p>An arrangement where the system acts on its own but a person supervises continuously and can intervene or stop it at any time.</p></article><article class="card reveal" data-d="1" id="human"><h3 style="margin-top:0">Human in command</h3><p>Our own framing, and our operating principle: machines carry out tasks, but people set the rules, define the limits and remain responsible for the outcome.</p></article><article class="card reveal" data-d="2" id="autonomy"><h3 style="margin-top:0">Autonomy stack</h3><p>The layered software architecture that produces autonomous behaviour — from low-level control, through perception and planning, up to mission and oversight.</p></article><article class="card reveal" data-d="3" id="guidance,"><h3 style="margin-top:0">Guidance, navigation and control</h3><p>The three related jobs of deciding where to go, knowing where you are, and making the platform actually do it.</p></article><article class="card reveal" data-d="4" id="simulation-first"><h3 style="margin-top:0">Simulation-first</h3><p>Developing and proving behaviour in software before committing it to hardware, because software tests are faster, safer and repeatable.</p></article><article class="card reveal" data-d="1" id="after-action"><h3 style="margin-top:0">After-action assessment</h3><p>Reviewing a recorded run honestly to establish what went right, what went wrong and why — the discipline our name refers to.</p></article><article class="card reveal" data-d="2" id="payload"><h3 style="margin-top:0">Payload</h3><p>Whatever a platform carries to do its job — usually sensors. Payload always competes with endurance for the same limited energy.</p></article><article class="card reveal" data-d="3" id="endurance"><h3 style="margin-top:0">Endurance</h3><p>How long a platform can operate before it must return, recharge or refuel.</p></article><article class="card reveal" data-d="4" id="teleoperation"><h3 style="margin-top:0">Teleoperation</h3><p>Direct remote control of a machine by a person. Distinct from autonomy, where the machine decides for itself within set limits.</p></article></div>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="container">
+      <p class="muted reveal" style="font-size:.92rem;max-width:78ch">These are working definitions written for
+        clarity, not formal doctrine — usage varies between organisations and countries. If you think one of them
+        is wrong or could be clearer, <a href="contact.html" style="color:var(--accent-2)">tell us</a> and we'll fix it.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="wm wm--cta" aria-hidden="true"><img src="assets/img/watermark.svg" alt=""></div>
+        <div class="cta__grid" aria-hidden="true"></div>
+        <p class="eyebrow eyebrow--center" style="justify-content:center">See It Applied</p>
+        <h2 class="h1">From definitions<br>to systems.</h2>
+        <p class="lead" style="max-width:54ch;margin:0 auto">These ideas are what we actually build with. See how they come together in our technology and the systems we're developing.</p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="technology.html" data-magnetic><span class="btn__txt">Our Technology</span><svg class="arw" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="systems.html" data-magnetic><span class="btn__txt">Our Systems</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="Rewind Dynamics — home">
+          <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
+          <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
+        </a>
+        <p>A global defence-technology company, headquartered in New Delhi, developing autonomous systems — unmanned aerial, humanoid and tactical platforms — for defence and military applications.</p>
+        <div class="footer__social">
+          <a href="mailto:info@rewinddynamics.com" aria-label="Email" title="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7.5l8 5.5 8-5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        </div>
+        <p class="footer__loc mono">New Delhi, India</p>
+      </div>
+      <div class="footer__col"><h4>Company</h4><a href="about.html">About</a><a href="systems.html">Systems</a><a href="capabilities.html">Capabilities</a><a href="technology.html">Technology</a><a href="research.html">Research</a><a href="responsibility.html">Responsible Autonomy</a><a href="investors.html">Investors</a></div>
+      <div class="footer__col"><h4>Systems</h4><a href="uav.html">Unmanned Aerial</a><a href="humanoid.html">Humanoid</a><a href="tactical.html">Tactical Miniature</a><a href="glossary.html">Autonomy Glossary</a></div>
+      <div class="footer__col"><h4>Connect</h4><a href="contact.html">Contact</a><a href="partners.html">Partners</a><a href="careers.html">Careers</a><a href="newsroom.html">Newsroom</a><a href="press.html">Press</a><a href="faq.html">FAQ</a><a href="privacy.html">Privacy</a></div>
+    </div>
+  </div>
+  <div class="footer__watermark" aria-hidden="true">REWIND</div>
+  <div class="container">
+    <div class="footer__bar">
+      <span>© 2020–<span data-year>2026</span> Rewind Dynamics. All rights reserved.</span>
+      <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><span>New Delhi, India</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/form.js"></script>
+</body>
+</html>
