@@ -180,7 +180,7 @@ p{ color:var(--ink-soft); }
   position:relative; font-family:var(--font-mono); font-size:.76rem; letter-spacing:.08em; text-transform:uppercase;
   color:var(--ink-soft); padding:10px 11px; transition:color .3s var(--ease); white-space:nowrap;
 }
-@media (max-width:1040px){ .nav__links{ display:none; } .burger{ display:block; } }
+@media (max-width:1160px){ .nav__links{ display:none; } .burger{ display:block; } }
 .nav__links a::after{ content:""; position:absolute; left:14px; right:14px; bottom:4px; height:1px; background:var(--accent);
   transform:scaleX(0); transform-origin:left; transition:transform .35s var(--ease-snap); box-shadow:0 0 8px var(--accent-glow); }
 .nav__links a:hover, .nav__links a[aria-current="page"]{ color:#fff; }

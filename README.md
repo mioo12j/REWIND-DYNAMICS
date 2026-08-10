@@ -1,21 +1,23 @@
 # Rewind Dynamics — Website
 
-A fast, dark, animated marketing website for **Rewind Dynamics** — an Indian
-defence-technology company (established **26 January 2020**, New Delhi) developing
-indigenous autonomous systems: unmanned aerial (UAV), humanoid and tactical
-miniature platforms. Everything is currently under **active research &
-development**; the first real-world mission test is planned for **December 2026**.
+A fast, dark, animated marketing website for **Rewind Dynamics** — a global
+defence-technology company (established **26 January 2020**, headquartered in New
+Delhi) developing autonomous systems: unmanned aerial (UAV), humanoid and tactical
+miniature platforms for defence and military users worldwide. Everything is
+currently under **active research & development**; the first real-world mission
+test is planned for **December 2026**.
 
 Dependency-free static site — pure HTML, CSS and vanilla JavaScript. No build
 step, no framework, deploys anywhere.
 
 ---
 
-## Pages (21)
+## Pages
 
-Home · Company · Systems · Capabilities · Technology · **Investors** · Careers ·
-Newsroom · Contact · Privacy · 404, plus **10 newsroom articles** (`news-*.html`)
-dated 2020–2026. Every nav item is its own page.
+Home · Company · Systems · Capabilities · Technology · **Research** · **Investors** ·
+Careers · Newsroom · Contact · Responsible Autonomy · FAQ · Press · Privacy · 404,
+plus **10 newsroom articles** (`news-*.html`) dated 2020–2026. Every nav item is its
+own page.
 
 ---
 
@@ -85,11 +87,9 @@ Static site — pick whichever is easiest:
 - **CSS variables** live at the top of `assets/css/styles.css`.
 
 ### To finish setting up
-- Create the **LinkedIn** and **X** company profiles (footer links already point
-  to `linkedin.com/company/rewind-dynamics` and `x.com/rewinddynamics`).
 - Set up the `@rewinddynamics.com` mailboxes (or forwards).
 - Activate FormSubmit (submit one form, click the confirmation email).
 
 ---
 
-*Indigenous autonomous systems for defence. New Delhi, India — since 2020.*
+*Autonomous systems for defence. Headquartered in New Delhi — since 2020.*
