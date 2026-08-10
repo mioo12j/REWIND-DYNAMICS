@@ -1,0 +1,12 @@
+{
+  "name": "Rewind Dynamics",
+  "short_name": "Rewind",
+  "description": "Global defence-technology company developing autonomous systems for defence and military applications.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06080C",
+  "theme_color": "#06080C",
+  "icons": [
+    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

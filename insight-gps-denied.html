@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navigating Without the Sky — The GPS-Denied Problem</title>
+<meta name="description" content="Satellite positioning is the first capability an adversary removes, and spoofing is more dangerous than jamming because the system does not know it is wrong. Rewind Dynamics on visual odometry, relocalisation, inertial dead reckoning, and why honest uncertainty matters more than accuracy.">
+<meta name="theme-color" content="#06080C">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<!-- seo:rd -->
+<link rel="canonical" href="https://rewinddynamics.com/insight-gps-denied.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Rewind Dynamics">
+<meta name="geo.region" content="IN-DL"><meta name="geo.placename" content="New Delhi">
+<meta property="og:site_name" content="Rewind Dynamics">
+<meta property="og:locale" content="en_IN">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-03-11">
+<meta property="article:modified_time" content="2026-08-10">
+<meta property="article:section" content="Perspective">
+<meta property="og:title" content="Navigating Without the Sky — The GPS-Denied Problem">
+<meta property="og:description" content="Satellite positioning is the first capability an adversary removes, and spoofing is more dangerous than jamming because the system does not know it is wrong. Rewind Dynamics on visual odometry, relocalisation, inertial dead reckoning, and why honest uncertainty matters more than accuracy.">
+<meta property="og:url" content="https://rewinddynamics.com/insight-gps-denied.html">
+<meta property="og:image" content="https://rewinddynamics.com/assets/img/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rewind Dynamics — autonomous systems for defence">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Navigating Without the Sky — The GPS-Denied Problem">
+<meta name="twitter:description" content="Satellite positioning is the first capability an adversary removes, and spoofing is more dangerous than jamming because the system does not know it is wrong. Rewind Dynamics on visual odometry, relocalisation, inertial dead reckoning, and why honest uncertainty matters more than accuracy.">
+<meta name="twitter:image" content="https://rewinddynamics.com/assets/img/og.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://rewinddynamics.com/#organization", "name": "Rewind Dynamics", "legalName": "Rewind Dynamics", "url": "https://rewinddynamics.com/", "logo": {"@type": "ImageObject", "url": "https://rewinddynamics.com/assets/img/logo-mark.svg"}, "image": "https://rewinddynamics.com/assets/img/og.png", "foundingDate": "2020-01-26", "description": "Rewind Dynamics is a global defence-technology company, headquartered in New Delhi, developing autonomous systems \u2014 unmanned aerial, humanoid and tactical platforms \u2014 for defence and military applications.", "email": "info@rewinddynamics.com", "slogan": "Autonomous systems for defence.", "foundingLocation": {"@type": "Place", "name": "New Delhi, India"}, "address": {"@type": "PostalAddress", "addressLocality": "New Delhi", "addressRegion": "Delhi", "addressCountry": "IN"}, "areaServed": {"@type": "Place", "name": "Worldwide"}, "knowsAbout": ["Autonomous systems", "Unmanned aerial vehicles", "Humanoid robotics", "Tactical systems", "Defence technology", "Edge AI", "Perception", "Autonomy", "Drone swarms", "ISR", "GPS-denied navigation"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rewinddynamics.com/"}, {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://rewinddynamics.com/insights.html"}, {"@type": "ListItem", "position": 3, "name": "Navigating without the sky", "item": "https://rewinddynamics.com/insight-gps-denied.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Navigating without the sky", "description": "Satellite positioning is the first capability an adversary removes, and spoofing is more dangerous than jamming because the system does not know it is wrong. Rewind Dynamics on visual odometry, relocalisation, inertial dead reckoning, and why honest uncertainty matters more than accuracy.", "datePublished": "2026-03-11", "dateModified": "2026-08-10", "image": ["https://rewinddynamics.com/assets/img/og.png"], "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rewinddynamics.com/insight-gps-denied.html"}, "url": "https://rewinddynamics.com/insight-gps-denied.html", "inLanguage": "en", "articleSection": "Perspective", "author": {"@type": "Organization", "name": "Rewind Dynamics", "url": "https://rewinddynamics.com/"}, "publisher": {"@id": "https://rewinddynamics.com/#organization"}, "isPartOf": {"@type": "WebSite", "name": "Rewind Dynamics", "url": "https://rewinddynamics.com/"}, "keywords": "GPS-denied navigation, GNSS jamming, spoofing, SLAM, visual odometry"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="curtain" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="Rewind Dynamics — home">
+      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
+      <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="about.html">Company</a>
+      <a href="systems.html">Systems</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="applications.html">Applications</a>
+      <a href="technology.html">Technology</a>
+      <a href="research.html">Research</a>
+      <a href="investors.html">Investors</a>
+      <a href="careers.html">Careers</a>
+      <a href="newsroom.html" aria-current="page">Newsroom</a>
+    </nav>
+    <div class="nav__cta">
+      <a class="btn btn--sm" href="contact.html" data-magnetic><span class="btn__txt">Contact</span></a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <a href="index.html"><span>01</span> Home</a>
+  <a href="about.html"><span>02</span> Company</a>
+  <a href="systems.html"><span>03</span> Systems</a>
+  <a href="capabilities.html"><span>04</span> Capabilities</a>
+  <a href="applications.html"><span>05</span> Applications</a>
+  <a href="technology.html"><span>06</span> Technology</a>
+  <a href="research.html"><span>07</span> Research</a>
+  <a href="investors.html"><span>08</span> Investors</a>
+  <a href="careers.html"><span>09</span> Careers</a>
+  <a href="newsroom.html"><span>10</span> Newsroom</a>
+  <a href="contact.html"><span>11</span> Contact</a>
+</div>
+
+<main class="page-wrap" id="main">
+  <section class="phero" style="padding-bottom:0">
+    <div class="wm wm--phero" aria-hidden="true"><img src="assets/img/watermark.svg" alt=""></div>
+    <div class="phero__bg" aria-hidden="true"></div>
+    <div class="phero__grid" aria-hidden="true"></div>
+    <div class="container phero__in">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="insights.html">Insights</a><span class="sep">/</span><span>Feature</span></nav>
+      <div class="article article__head" data-enter="2" style="margin-bottom:0">
+        <div class="article__meta"><span class="cat">Perspective</span><span>11 March 2026</span><span>New Delhi</span></div>
+        <h1 class="article__title">Navigating without the sky</h1>
+        <p class="article__lead">Satellite navigation is weak, jammable and spoofable. For an autonomous defence system, assuming it will be there is a design flaw — so we treat its absence as the normal case.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:clamp(40px,6vw,72px)">
+    <div class="container">
+      <div class="article">
+        <div class="article__cover reveal"><div class="sch"></div><img src="assets/img/logo-mark.svg" alt=""></div>
+        <div class="prose reveal">
+          <p>Satellite navigation is so reliable in daily life that it has become invisible. It is also, from a defence perspective, remarkably fragile — and it is usually the first thing an adversary removes.</p>
+          <p>The physics explain why. A satellite positioning signal is transmitted from roughly twenty thousand kilometres away by a modest transmitter. By the time it arrives it is extraordinarily weak — below the background noise. Overwhelming it locally takes very little power.</p>
+          <h2>Jamming is the lesser problem</h2>
+          <p>Jamming denies the signal, and a well-designed system notices immediately: the fix is gone, and it can fall back to other methods. Unpleasant, but honest.</p>
+          <p>Spoofing is worse. A spoofer transmits a plausible but false signal, and the receiver reports a confident, precise, wrong position. The system does not know anything is amiss. Every decision downstream is then made on a false premise, and the more the platform trusts its navigation, the further astray it goes.</p>
+          <blockquote>A system that knows it is lost is manageable. A system confidently reporting the wrong position is dangerous.</blockquote>
+          <h2>What replaces it</h2>
+          <p>There is no single substitute. What works is combining several independent methods with different failure modes, so that the loss of any one degrades the estimate rather than destroying it.</p>
+          <ul>
+            <li><strong>Visual odometry.</strong> Estimating motion by tracking how the scene shifts across the camera between frames. Accurate over short intervals, and dependent on there being something to look at.</li>
+            <li><strong>Mapping and relocalisation.</strong> Building a map of the surroundings while determining position within it, and recognising places seen before to correct accumulated error.</li>
+            <li><strong>Inertial dead reckoning.</strong> Carrying the estimate forward using motion sensors. Excellent briefly, drifting steadily, and entirely independent of the outside world.</li>
+            <li><strong>Fused estimation.</strong> Weighting each source by how much it can currently be trusted — and, critically, tracking how confident the combined estimate deserves to be.</li>
+          </ul>
+          <h2>Managing error, not eliminating it</h2>
+          <p>Navigation without external reference is fundamentally about error management. Every dead-reckoned estimate drifts; the question is how quickly, and how often you can correct it against something recognisable. This is why featureless environments are so difficult — open water, desert, snow, darkness and smoke all deprive vision of the landmarks it needs.</p>
+          <p>Repetitive environments create the opposite failure. A corridor that looks identical to four other corridors invites confident relocalisation to the wrong one, which produces the same dangerous condition as spoofing: precision without accuracy.</p>
+          <h2>The feature that matters most</h2>
+          <p>If we had to name a single property that distinguishes a serious navigation stack from a demonstration, it would not be accuracy. It would be <em>knowing how accurate it currently is</em>.</p>
+          <p>A system that reports 'my position estimate has degraded and I no longer trust it' has given the operator something actionable. A system that keeps reporting a confident figure as its error grows has given them a trap. We design for the former, and we treat honest uncertainty as a first-class output rather than an afterthought.</p>
+          <h2>Why we treat denial as normal</h2>
+          <p>A great many autonomous systems are built assuming satellite navigation is available, with a degraded fallback bolted on afterwards. We invert that: the system is designed to work without it, and treats a satellite fix as a useful corrective when it happens to be available and trustworthy.</p>
+          <p>This is more expensive to build. It is also the only version that survives contact with an environment where someone is actively trying to make your system lost.</p>
+        </div>
+        <div class="article__foot">
+          <span class="article__sign">&mdash; Rewind Dynamics &middot; Perspective</span>
+          <a class="link-arrow" href="insights.html">Back to Insights
+            <svg width="18" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section--tight">
+    <div class="container">
+      <div class="shead"><div class="shead__l"><p class="eyebrow reveal">Explore Further</p>
+        <h2 class="h2 reveal" data-d="1">Related reading.</h2></div></div>
+      <div class="grid cards"><a class="card reveal" data-d="1" href="navigation.html"><span class="card__idx">01</span><h3 style="margin-top:14px">Navigation capability</h3><p>Our full approach to positioning in denied conditions.</p></a><a class="card reveal" data-d="2" href="perception.html"><span class="card__idx">02</span><h3 style="margin-top:14px">Perception</h3><p>The vision stack that GPS-denied navigation depends on.</p></a><a class="card reveal" data-d="3" href="glossary.html"><span class="card__idx">03</span><h3 style="margin-top:14px">Glossary</h3><p>GNSS, SLAM and dead reckoning, defined plainly.</p></a>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="wm wm--cta" aria-hidden="true"><img src="assets/img/watermark.svg" alt=""></div>
+        <div class="cta__grid" aria-hidden="true"></div>
+        <p class="eyebrow eyebrow--center" style="justify-content:center">Continue</p>
+        <h2 class="h1">More perspectives<br>on autonomy.</h2>
+        <p class="lead" style="max-width:54ch;margin:0 auto">We publish our positions openly, including the parts we haven't solved.</p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="insights.html" data-magnetic><span class="btn__txt">All Insights</span><svg class="arw" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="research.html" data-magnetic><span class="btn__txt">Our Research</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="Rewind Dynamics — home">
+          <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
+          <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
+        </a>
+        <p>A global defence-technology company, headquartered in New Delhi, developing autonomous systems — unmanned aerial, humanoid and tactical platforms — for defence and military applications.</p>
+        <div class="footer__social">
+          <a href="mailto:info@rewinddynamics.com" aria-label="Email" title="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7.5l8 5.5 8-5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        </div>
+        <p class="footer__loc mono">New Delhi, India</p>
+      </div>
+      <div class="footer__col"><h4>Systems</h4><a href="systems.html">All Systems</a><a href="uav.html">Unmanned Aerial</a><a href="humanoid.html">Humanoid</a><a href="tactical.html">Tactical Miniature</a><a href="swarming.html">Swarm Autonomy</a></div>
+      <div class="footer__col"><h4>Capabilities</h4><a href="capabilities.html">Overview</a><a href="autonomy.html">Autonomy</a><a href="perception.html">Perception</a><a href="edge-ai.html">Edge AI</a><a href="navigation.html">Navigation</a><a href="systems-engineering.html">Systems Engineering</a></div>
+      <div class="footer__col"><h4>Applications</h4><a href="applications.html">Overview</a><a href="isr.html">ISR</a><a href="force-protection.html">Force Protection</a><a href="counter-uas.html">Counter-UAS</a></div>
+      <div class="footer__col"><h4>Company</h4><a href="about.html">About</a><a href="timeline.html">Timeline</a><a href="technology.html">Technology</a><a href="research.html">Research</a><a href="responsibility.html">Responsible Autonomy</a><a href="security-compliance.html">Security &amp; Compliance</a><a href="investors.html">Investors</a></div>
+      <div class="footer__col"><h4>Connect</h4><a href="contact.html">Contact</a><a href="partners.html">Partners</a><a href="careers.html">Careers</a><a href="newsroom.html">Newsroom</a><a href="insights.html">Insights</a><a href="glossary.html">Glossary</a><a href="press.html">Press</a><a href="faq.html">FAQ</a><a href="privacy.html">Privacy</a></div>
+    </div>
+  </div>
+  <div class="footer__watermark" aria-hidden="true">REWIND</div>
+  <div class="container">
+    <div class="footer__bar">
+      <span>© 2020–<span data-year>2026</span> Rewind Dynamics. All rights reserved.</span>
+      <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><span>New Delhi, India</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/form.js"></script>
+</body>
+</html>

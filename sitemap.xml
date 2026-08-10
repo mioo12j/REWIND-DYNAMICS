@@ -7,31 +7,54 @@
     <image:image><image:loc>https://rewinddynamics.com/assets/img/og.png</image:loc>
       <image:title>Rewind Dynamics — autonomous systems for defence</image:title></image:image>
   </url>
-  <url><loc>https://rewinddynamics.com/systems.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rewinddynamics.com/uav.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rewinddynamics.com/applications.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rewinddynamics.com/capabilities.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rewinddynamics.com/counter-uas.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rewinddynamics.com/force-protection.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://rewinddynamics.com/humanoid.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rewinddynamics.com/tactical.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rewinddynamics.com/partners.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rewinddynamics.com/glossary.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://rewinddynamics.com/investors.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rewinddynamics.com/isr.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rewinddynamics.com/systems.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rewinddynamics.com/tactical.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rewinddynamics.com/uav.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://rewinddynamics.com/about.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rewinddynamics.com/capabilities.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rewinddynamics.com/technology.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rewinddynamics.com/research.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rewinddynamics.com/careers.html</loc><lastmod>2026-08-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/autonomy.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/careers.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://rewinddynamics.com/contact.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rewinddynamics.com/newsroom.html</loc><lastmod>2026-08-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rewinddynamics.com/responsibility.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rewinddynamics.com/faq.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rewinddynamics.com/press.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rewinddynamics.com/news-first-mission.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rewinddynamics.com/news-tactical-edge.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://rewinddynamics.com/news-humanoid-program.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://rewinddynamics.com/news-facility.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://rewinddynamics.com/news-human-in-command.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://rewinddynamics.com/news-uav-development.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://rewinddynamics.com/news-edge-ai.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/edge-ai.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/insights.html</loc><lastmod>2026-08-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/navigation.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/newsroom.html</loc><lastmod>2026-08-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/perception.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/research.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/simulation.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/swarming.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/systems-engineering.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/technology.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/faq.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rewinddynamics.com/glossary.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rewinddynamics.com/partners.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rewinddynamics.com/press.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rewinddynamics.com/quality.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rewinddynamics.com/responsibility.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rewinddynamics.com/security-compliance.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rewinddynamics.com/suppliers.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rewinddynamics.com/timeline.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rewinddynamics.com/insight-attention-isr.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rewinddynamics.com/insight-autonomy-decade.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rewinddynamics.com/insight-counter-uas-economics.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rewinddynamics.com/insight-edge-intelligence.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rewinddynamics.com/insight-gps-denied.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rewinddynamics.com/insight-human-command.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rewinddynamics.com/insight-mass-reimagined.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://rewinddynamics.com/news-building-team.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://rewinddynamics.com/news-indigenous-autonomy.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-edge-ai.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-facility.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-first-mission.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://rewinddynamics.com/news-founding.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-human-in-command.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-humanoid-program.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-indigenous-autonomy.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-tactical-edge.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-uav-development.html</loc><lastmod>2026-08-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
 </urlset>

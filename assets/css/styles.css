@@ -180,7 +180,7 @@ p{ color:var(--ink-soft); }
   position:relative; font-family:var(--font-mono); font-size:.76rem; letter-spacing:.08em; text-transform:uppercase;
   color:var(--ink-soft); padding:10px 11px; transition:color .3s var(--ease); white-space:nowrap;
 }
-@media (max-width:1160px){ .nav__links{ display:none; } .burger{ display:block; } }
+@media (max-width:1280px){ .nav__links{ display:none; } .burger{ display:block; } }
 .nav__links a::after{ content:""; position:absolute; left:14px; right:14px; bottom:4px; height:1px; background:var(--accent);
   transform:scaleX(0); transform-origin:left; transition:transform .35s var(--ease-snap); box-shadow:0 0 8px var(--accent-glow); }
 .nav__links a:hover, .nav__links a[aria-current="page"]{ color:#fff; }
@@ -669,7 +669,7 @@ p{ color:var(--ink-soft); }
 .feature-band{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
 .feature-band > div{ padding:32px 28px; border-right:1px solid var(--line); background:var(--bg-1); }
 .feature-band > div:last-child{ border-right:0; }
-.feature-band h3{ font-size:1.2rem; margin:14px 0 10px; }
+.feature-band h2, .feature-band h3{ font-size:1.2rem; margin:14px 0 10px; text-transform:none; letter-spacing:-.005em; }
 .feature-band p{ color:var(--muted); font-size:.95rem; }
 .feature-band .k{ font-family:var(--font-mono); font-size:.72rem; letter-spacing:.16em; color:var(--accent-2); text-transform:uppercase; }
 @media (max-width:720px){ .feature-band > div{ border-right:0; border-bottom:1px solid var(--line); } .feature-band > div:last-child{ border-bottom:0; } }
@@ -701,3 +701,9 @@ p{ color:var(--ink-soft); }
   .cta__actions .btn,.hero__actions .btn{ flex:1; }
   .drawer a{ font-size:1.6rem; }
 }
+
+/* Skip link — keyboard users jump straight to content */
+.skip-link{ position:absolute; left:-9999px; top:0; z-index:200; background:var(--accent); color:#fff;
+  padding:12px 20px; font-family:var(--font-mono); font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; }
+.skip-link:focus{ left:12px; top:12px; }
+.nav__links a{ padding:10px 9px; }

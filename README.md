@@ -12,16 +12,37 @@ step, no framework, deploys anywhere.
 
 ---
 
-## Pages
+## Pages (53)
 
-Home · Company · Systems · Capabilities · Technology · **Research** · **Investors** ·
-Careers · Newsroom · Contact · Responsible Autonomy · FAQ · Press · **Partners** ·
-**Glossary** · Privacy · 404, plus three deep system pages (**Unmanned Aerial**,
-**Humanoid**, **Tactical Miniature**) and **10 newsroom articles** (`news-*.html`)
-dated 2020–2026.
+The site is organised as **hubs and spokes** so each topic has its own
+keyword-targeted page and a clear path from the hub above it.
 
-`systems.html` acts as a hub linking to the three system pages — a hub-and-spoke
-structure that gives each platform family its own keyword-targeted page.
+| Hub | Spokes |
+|---|---|
+| `systems.html` | Unmanned Aerial · Humanoid · Tactical Miniature |
+| `capabilities.html` | Autonomy · Perception · Edge AI · Navigation · Systems Engineering |
+| `applications.html` | ISR · Force Protection · Counter-UAS |
+| `technology.html` | Simulation & Test |
+| `research.html` | Swarm Autonomy |
+| `newsroom.html` | 10 news articles |
+| `insights.html` | 7 long-form feature articles |
+
+Company & trust: About · Timeline · Responsible Autonomy · Security &
+Compliance · Quality & Assurance · Suppliers · Partners · Investors ·
+Careers · Contact · FAQ · Press · Glossary · Privacy · 404.
+
+---
+
+## Tooling
+
+- `python3 tools/audit.py` — full site audit: titles, descriptions, canonicals,
+  Open Graph, JSON-LD validity, one-H1 rule, heading order, broken links and
+  anchors, missing assets, sitemap coverage, nav consistency, **orphan pages**
+  and thin content. Exits non-zero on any error.
+- `python3 tools/gen_sitemap.py` — regenerates `sitemap.xml` from the indexable
+  pages on disk, so it can never drift out of sync.
+- `tools/build_pages.py` — page and article generator (shared head, nav,
+  footer and section components).
 
 ---
 
