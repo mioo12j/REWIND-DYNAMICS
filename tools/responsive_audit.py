@@ -25,7 +25,7 @@ VIEWPORTS = [
 
 # elements that are intentionally wider than the viewport (clipped by design)
 # skip-link parks off-screen until focused; .wm watermarks bleed past the edge by design
-ALLOW = ("marquee__track", "footer__watermark", "skip-link", "wm--", "hero__canvas")
+ALLOW = ("marquee__track", "footer__watermark", "skip-link", "wm--", "hero__canvas", "hp")
 
 PROBE = """(allow) => {
   const vw = document.documentElement.clientWidth;

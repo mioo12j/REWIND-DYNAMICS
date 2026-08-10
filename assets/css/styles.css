@@ -88,7 +88,7 @@ h1,h2,h3,h4{ font-family:var(--font-display); font-weight:600; line-height:1.02;
 .h1{ font-size:clamp(1.65rem,5.2vw,4rem); text-transform:uppercase; letter-spacing:-.015em; }
 .h2{ font-size:clamp(1.45rem,3.8vw,3rem); text-transform:uppercase; letter-spacing:-.01em; }
 /* long compound words must never push the page wider than the screen */
-h1,h2,h3,h4,.display,.h1,.h2,.h3{ overflow-wrap:break-word; word-break:break-word; }
+h1,h2,h3,h4,.display,.h1,.h2,.h3{ overflow-wrap:break-word; }
 .h3{ font-size:clamp(1.3rem,2vw,1.65rem); }
 .lead{ font-size:clamp(1.05rem,1.5vw,1.32rem); color:var(--ink-soft); line-height:1.55; font-weight:400; }
 .muted{ color:var(--muted); }
@@ -600,7 +600,7 @@ p{ color:var(--ink-soft); }
 .specs{ border-top:1px solid var(--line); }
 .spec{ display:grid; grid-template-columns:180px 1fr; gap:24px; padding:20px 4px; border-bottom:1px solid var(--line); align-items:baseline; }
 .spec__k{ font-family:var(--font-mono); font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); }
-.spec__v{ color:var(--ink-soft); }
+.spec__v{ color:var(--ink-soft); overflow-wrap:anywhere; }
 @media (max-width:640px){ .spec{ grid-template-columns:1fr; gap:6px; } }
 
 @media (prefers-reduced-motion: reduce){
@@ -717,3 +717,27 @@ p{ color:var(--ink-soft); }
   padding:12px 20px; font-family:var(--font-mono); font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; }
 .skip-link:focus{ left:12px; top:12px; }
 .nav__links a{ padding:10px 9px; }
+
+
+/* ============================================================
+   RESPONSIVE HARDENING
+   Long unbreakable tokens (email addresses, URLs) must never
+   widen a container and force the page to scroll sideways.
+   `anywhere` — not `break-word` — because only `anywhere`
+   reduces the element's min-content width.
+   ============================================================ */
+p, li, .lead, blockquote, .card p, .value p, .klist li div,
+.spec__v, .info__v, .btn__txt, .newsrow__t, dd, td{
+  overflow-wrap:anywhere;
+}
+
+/* Buttons carrying long labels (e.g. an email address) wrap and grow
+   instead of overflowing, and go full-width on small phones. */
+@media (max-width:560px){
+  .btn{ height:auto; min-height:var(--bh); padding:14px 20px; line-height:1.35; text-align:center; }
+  .hero__actions, .cta__actions{ flex-direction:column; align-items:stretch; }
+  .hero__actions .btn, .cta__actions .btn{ width:100%; }
+}
+
+/* Spec rows: stack earlier so a 180px label column never squeezes the value. */
+@media (max-width:640px){ .spec{ padding:16px 2px; } }
