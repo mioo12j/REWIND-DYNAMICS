@@ -1,12 +1,3 @@
-# OS / editor
+__pycache__/
+*.pyc
 .DS_Store
-Thumbs.db
-*.swp
-
-# Node (not used, but just in case)
-node_modules/
-npm-debug.log*
-
-# Local previews / scratch
-_preview.html
-*.local.html
