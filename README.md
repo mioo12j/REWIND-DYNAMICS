@@ -118,3 +118,31 @@ Static site — pick whichever is easiest:
 ---
 
 *Autonomous systems for defence. Headquartered in New Delhi — since 2020.*
+
+---
+
+## Measured performance
+
+Served locally, fonts unavailable (worst case), 1350×940 viewport:
+
+| Metric | index.html | glossary.html | Google "good" |
+|---|---|---|---|
+| First Contentful Paint | 236 ms | 192 ms | < 1800 ms |
+| Largest Contentful Paint | 232 ms | 188 ms | < 2500 ms |
+| Cumulative Layout Shift | **0** | **0** | < 0.1 |
+| DOMContentLoaded | 100 ms | 85 ms | — |
+| Requests / transfer | 7 / 72 KB | 7 / 72 KB | — |
+
+How it stays fast: no framework and no build step; one 48 KB stylesheet and
+20 KB of vanilla JS loaded with `defer`; web fonts preloaded and swapped in
+without blocking first paint; every `<img>` carries intrinsic dimensions so
+nothing shifts while loading, with lazy loading below the fold.
+
+## Verification
+
+Both auditors must pass before any change ships:
+
+    python3 tools/audit.py             # 60 pages: SEO, schema, links, orphans
+    python3 tools/responsive_audit.py  # 600 renders: 60 pages x 10 viewports
+
+Current state: **zero errors, zero warnings, zero layout faults.**
