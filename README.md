@@ -1,62 +1,64 @@
 # Rewind Dynamics — Website
 
-A fast, dark, animated marketing website for **Rewind Dynamics** — an India-based
-defence technology company (established 2024, New Delhi) developing autonomous
-systems: unmanned aerial, humanoid and tactical platforms.
+A fast, dark, animated marketing website for **Rewind Dynamics** — an Indian
+defence-technology company (established **26 January 2020**, New Delhi) developing
+indigenous autonomous systems: unmanned aerial (UAV), humanoid and tactical
+miniature platforms. Everything is currently under **active research &
+development**; the first real-world mission test is planned for **December 2026**.
 
-Built as a dependency-free static site — pure HTML, CSS and vanilla JavaScript.
-No build step, no framework, deploys anywhere. The tone is deliberately factual:
-the site explains what the company is working on **without** claiming finished
-products or performance figures.
-
----
-
-## Pages
-
-| Page | File | Purpose |
-|------|------|---------|
-| Home | `index.html` | Intro, what we're building, capability areas, approach |
-| Company | `about.html` | Story, mission & vision, values, timeline, team |
-| Systems | `systems.html` | The systems in development: UAV, humanoid, tactical |
-| Capabilities | `capabilities.html` | Areas of work: autonomy, perception, edge AI, systems engineering |
-| Technology | `technology.html` | Plain-language tech overview + external references |
-| Careers | `careers.html` | Culture, benefits, open roles, **application form** |
-| Contact | `contact.html` | **Contact form**, direct emails, New Delhi location |
-| Newsroom | `newsroom.html` | Company note + curated external reading, newsletter |
-| Privacy & Terms | `privacy.html` | Legal template (have counsel review) |
-| 404 | `404.html` | Error page |
-
-Every navigation item is its own page, and outbound "Learn more / Reference"
-links open reputable external sources (Wikipedia, arXiv, IEEE, DRDO) in a new tab.
+Dependency-free static site — pure HTML, CSS and vanilla JavaScript. No build
+step, no framework, deploys anywhere.
 
 ---
 
-## Email addresses
+## Pages (21)
 
-The site uses several addresses so enquiries reach the right place. Set up these
-mailboxes (or forwards) on your domain:
+Home · Company · Systems · Capabilities · Technology · **Investors** · Careers ·
+Newsroom · Contact · Privacy · 404, plus **10 newsroom articles** (`news-*.html`)
+dated 2020–2026. Every nav item is its own page.
 
-| Address | Used for |
-|---------|----------|
-| `info@rewinddynamics.com` | General enquiries, contact form, newsletter |
-| `careers@rewinddynamics.com` | Careers / applications (careers form) |
-| `partnerships@rewinddynamics.com` | Suppliers, programs, collaborators |
-| `press@rewinddynamics.com` | Media enquiries |
+---
 
-You can point them all at one inbox with forwarding to start.
+## Forms → your inbox (FormSubmit)
 
-### Form delivery (about 2 minutes)
+All forms (contact, careers, investor, newsletter) are delivered by email using
+**FormSubmit** (https://formsubmit.co) — free, no signup, no API key.
 
-Forms send submissions to your inbox via **Web3Forms** (free, no backend):
+**Destination:** `sid@siddhantkumar.in` (set as `TARGET_EMAIL` in `assets/js/form.js`).
 
-1. Go to **https://web3forms.com**, enter `info@rewinddynamics.com`, get a free **Access Key**.
-2. Paste it into **`assets/js/form.js`** → `var ACCESS_KEY = "…"`.
-3. Deploy.
+**One-time activation:** after deploying, submit any form once. FormSubmit emails
+`sid@siddhantkumar.in` a confirmation link — click it once, and every submission
+from then on lands in that inbox.
 
-> **Before a key is set,** forms fall back to opening the visitor's email client,
-> addressed to the right inbox (contact → `info@`, careers → `careers@`), so the
-> site works out of the box. Each form's destination is set with a `data-email`
-> attribute; for fully separate routing you can create one Web3Forms key per inbox.
+- To change the destination, edit `TARGET_EMAIL` in `assets/js/form.js`.
+- Optional privacy: once activated, FormSubmit gives you a random alias
+  (`formsubmit.co/xxxx`) that hides the address — paste it into `ENDPOINT_BASE`.
+- If the relay is ever unreachable, forms fall back to opening the visitor's
+  email client addressed to the same inbox.
+
+The public **display** emails on the site (info@, careers@, partnerships@, press@,
+investors@ `@rewinddynamics.com`) are just contact addresses to set up on your
+domain — form *delivery* goes to `sid@siddhantkumar.in`.
+
+---
+
+## SEO (built in)
+
+- **Per-page** `<title>` + meta description, **canonical** URLs, and
+  `robots` directives (`index, follow, max-image-preview:large`).
+- **Open Graph** + **Twitter** card tags on every page, with a rendered
+  **1200×630 share image** at `assets/img/og.png`.
+- **JSON-LD structured data**: `Organization` (site-wide), `WebSite` (home),
+  and `NewsArticle` (each newsroom article, with real publish dates).
+- **`sitemap.xml`** — all pages with `lastmod` + priorities (image sitemap on home).
+- **`robots.txt`** — allows Google/Bing/DuckDuckGo and AI crawlers
+  (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, …); points to the sitemap.
+- **`llms.txt`** — a concise, LLM-readable summary of the company and pages.
+
+After deploying to the real domain, submit the site to **Google Search Console**
+and **Bing Webmaster Tools** and paste in the sitemap URL for fastest indexing.
+If you host on a different domain than `rewinddynamics.com`, update the absolute
+URLs in the `<head>` SEO block, `sitemap.xml`, `robots.txt` and `llms.txt`.
 
 ---
 
@@ -64,33 +66,30 @@ Forms send submissions to your inbox via **Web3Forms** (free, no backend):
 
 Static site — pick whichever is easiest:
 
-- **Netlify / Vercel / Cloudflare Pages:** drag-and-drop this folder, or connect the repo.
-  `netlify.toml` is included (publish dir `.`, custom 404, security headers).
+- **Netlify / Vercel / Cloudflare Pages:** drag-and-drop the folder, or connect the repo.
+  `netlify.toml` is included (custom 404 + security headers).
 - **GitHub Pages:** enable Pages on the branch; served from the root.
 - **Any web host:** upload the files. `index.html` is the entry point.
-
-No compile step. No `node_modules`.
 
 ---
 
 ## Brand & design
 
-- **Logo:** recreated as crisp SVG (`assets/img/logo-mark.svg`) — metallic "R"
-  monogram, motion chevron and electric-blue streak — tuned for dark backgrounds.
-  `assets/img/favicon.svg` is the tab icon.
-- **Type:** *Chakra Petch* (display), *Space Grotesk* (body), *JetBrains Mono* (labels).
-- **Palette:** near-black `#06080C` with an electric-blue accent `#2F7BFF`.
-- **Motion:** preloader + curtain wipe, scroll reveals, hero node-network canvas,
-  radar/schematic SVGs, marquee, magnetic buttons — all respect `prefers-reduced-motion`.
+- **Logo:** crisp SVG (`assets/img/logo-mark.svg`) — metallic "R" monogram with a
+  motion chevron and electric-blue streak. `favicon.svg` is the tab icon;
+  `og.png` is the social share card.
+- **Type:** Chakra Petch (display), Space Grotesk (body), JetBrains Mono (labels).
+- **Palette:** near-black `#06080C` + electric-blue `#2F7BFF`.
+- **Motion:** preloader + curtain wipe, scroll reveals, hero canvas mesh, an
+  orbital brand emblem, radar/schematic SVGs — all respect `prefers-reduced-motion`.
+- **CSS variables** live at the top of `assets/css/styles.css`.
 
-### Customising
-
-- **Colours / spacing / fonts:** CSS variables at the top of `assets/css/styles.css` (`:root`).
-- **Copy:** edit the HTML directly — content is plain and clearly sectioned.
-- **Social links:** the footer points to `linkedin.com/company/rewind-dynamics`,
-  `x.com/rewinddynamics`, `youtube.com/@rewinddynamics` — create/confirm those handles
-  (or edit them) so the icons land on your real profiles.
+### To finish setting up
+- Create the **LinkedIn** and **X** company profiles (footer links already point
+  to `linkedin.com/company/rewind-dynamics` and `x.com/rewinddynamics`).
+- Set up the `@rewinddynamics.com` mailboxes (or forwards).
+- Activate FormSubmit (submit one form, click the confirmation email).
 
 ---
 
-*An India-based defence technology company. New Delhi.*
+*Indigenous autonomous systems for defence. New Delhi, India — since 2020.*

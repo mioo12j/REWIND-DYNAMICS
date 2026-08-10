@@ -1,0 +1,43 @@
+# Rewind Dynamics
+
+> Rewind Dynamics is an Indian defence-technology company headquartered in New Delhi, established on 26 January 2020. We design and develop indigenous autonomous systems — unmanned aerial (UAV), humanoid, and tactical miniature platforms — for defence and homeland-security applications. All systems are currently under active research and development; our first real-world mission test is planned for December 2026. We are actively raising investment.
+
+## About
+
+- Founded: 26 January 2020, New Delhi, India
+- Focus: defence applications (primary), autonomous systems and robotics
+- Systems (in R&D): unmanned aerial systems, humanoid systems, tactical miniature systems
+- Core capabilities: autonomy, perception, edge AI, systems engineering
+- Approach: simulation-first development, honest after-action assessment, human always in command
+- Status: pre-revenue R&D; nothing fielded or tested yet; first mission test planned December 2026
+- Positioning: indigenous ("Made in India"), aligned with national self-reliance in defence
+
+## Key pages
+
+- [Home](https://rewinddynamics.com/): overview of the company and what we build.
+- [Company / About](https://rewinddynamics.com/about.html): story, mission, values, and 2020–present journey.
+- [Systems](https://rewinddynamics.com/systems.html): the three families we develop — UAV, humanoid, tactical miniature.
+- [Capabilities](https://rewinddynamics.com/capabilities.html): autonomy, perception, edge AI, systems engineering.
+- [Technology](https://rewinddynamics.com/technology.html): the sense–decide–act loop, layered architecture, and how we work.
+- [Investors](https://rewinddynamics.com/investors.html): the opportunity and how to invest (investors@rewinddynamics.com).
+- [Careers](https://rewinddynamics.com/careers.html): open engineering roles (careers@rewinddynamics.com).
+- [Newsroom](https://rewinddynamics.com/newsroom.html): milestones and perspectives, 2020–2026.
+- [Contact](https://rewinddynamics.com/contact.html): New Delhi, India — info@rewinddynamics.com.
+
+## Newsroom (selected)
+
+- [Preparing for our first mission test this December](https://rewinddynamics.com/news-first-mission.html) — Aug 2026
+- [Why the tactical edge belongs to autonomy](https://rewinddynamics.com/news-tactical-edge.html) — Jun 2026
+- [Opening our humanoid research programme](https://rewinddynamics.com/news-humanoid-program.html) — Apr 2025
+- [Autonomy, with a human always in command](https://rewinddynamics.com/news-human-in-command.html) — Nov 2022
+- [The case for indigenous autonomy in Indian defence](https://rewinddynamics.com/news-indigenous-autonomy.html) — Aug 2020
+- [Rewind Dynamics is founded in New Delhi](https://rewinddynamics.com/news-founding.html) — Jan 2020
+
+## Contact
+
+- General: info@rewinddynamics.com
+- Investors: investors@rewinddynamics.com
+- Careers: careers@rewinddynamics.com
+- Partnerships: partnerships@rewinddynamics.com
+- Press: press@rewinddynamics.com
+- Location: New Delhi, India

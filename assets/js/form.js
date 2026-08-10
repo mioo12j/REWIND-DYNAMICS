@@ -1,28 +1,31 @@
 /* ============================================================
    REWIND DYNAMICS — Form handling
-   Sends submissions to your inbox.
+   Delivers every submission to your inbox using FormSubmit
+   (https://formsubmit.co) — a free relay that needs no API key
+   and no signup.
 
-   HOW EMAIL DELIVERY WORKS
+   WHERE SUBMISSIONS GO
    ------------------------------------------------------------
-   Forms POST to Web3Forms (https://web3forms.com) — a free,
-   no-backend relay that emails every submission to your address.
+   All forms (contact, careers, newsletter, investor) are emailed
+   to TARGET_EMAIL below.
 
-   SETUP (2 minutes):
-     1. Go to https://web3forms.com
-     2. Enter  info@rewinddynamics.com  and get a free Access Key
-     3. Paste that key into ACCESS_KEY below
-     4. Deploy. Every submission now lands in that inbox.
+   FIRST-TIME ACTIVATION (one click, one time):
+     1. Deploy the site.
+     2. Submit any form once.
+     3. FormSubmit emails TARGET_EMAIL a confirmation link — click it.
+     4. From then on, every submission arrives in that inbox.
 
-   Until a real key is set, the form gracefully falls back to
-   opening the visitor's email client addressed to CONTACT_EMAIL,
-   so the site is fully functional out of the box.
+   To change where mail goes, edit TARGET_EMAIL.
+   (Optional: once activated, FormSubmit gives you a random alias
+   like formsubmit.co/xxxxxxxx that hides the address — paste that
+   hash into ENDPOINT_BASE if you'd rather not expose the email.)
    ============================================================ */
 (function () {
   "use strict";
 
-  var ACCESS_KEY   = "YOUR_WEB3FORMS_ACCESS_KEY"; // <-- paste your Web3Forms key here
-  var CONTACT_EMAIL = "info@rewinddynamics.com";
-  var ENDPOINT      = "https://api.web3forms.com/submit";
+  var TARGET_EMAIL   = "sid@siddhantkumar.in";
+  var ENDPOINT_BASE  = "https://formsubmit.co/ajax/"; // + TARGET_EMAIL (or a hash)
+  var ENDPOINT       = ENDPOINT_BASE + TARGET_EMAIL;
 
   var forms = document.querySelectorAll("form[data-rd-form]");
   if (!forms.length) return;
@@ -51,23 +54,18 @@
     return ok;
   }
 
-  function formEmail(form) {
-    return form.getAttribute("data-email") || CONTACT_EMAIL;
-  }
-
   function mailtoFallback(form, data) {
-    var subject = encodeURIComponent((form.getAttribute("data-subject") || "Website enquiry") + " — Rewind Dynamics");
+    var subject = encodeURIComponent(data._subject || "Website enquiry");
     var lines = [];
     Object.keys(data).forEach(function (k) {
-      if (["access_key", "botcheck", "subject", "from_name"].indexOf(k) > -1) return;
+      if (k.charAt(0) === "_" || ["botcheck"].indexOf(k) > -1) return;
       lines.push(k.replace(/_/g, " ").toUpperCase() + ":\n" + data[k] + "\n");
     });
     var body = encodeURIComponent(lines.join("\n"));
-    window.location.href = "mailto:" + formEmail(form) + "?subject=" + subject + "&body=" + body;
+    window.location.href = "mailto:" + TARGET_EMAIL + "?subject=" + subject + "&body=" + body;
   }
 
   forms.forEach(function (form) {
-    // clear invalid state as the user types
     form.querySelectorAll("input, textarea, select").forEach(function (el) {
       el.addEventListener("input", function () {
         var f = el.closest(".field") || el.closest(".consent");
@@ -91,39 +89,37 @@
 
       var fd = new FormData(form);
       var data = {};
-      fd.forEach(function (v, k) { data[k] = v; });
-      data.access_key = ACCESS_KEY;
-      data.subject = (form.getAttribute("data-subject") || "New enquiry") + " — Rewind Dynamics";
-      data.from_name = "Rewind Dynamics Website";
+      fd.forEach(function (v, k) { if (k !== "botcheck") data[k] = v; });
 
-      // No real key configured -> use mailto so the form still works.
-      if (!ACCESS_KEY || ACCESS_KEY === "YOUR_WEB3FORMS_ACCESS_KEY") {
-        setStatus(status, "ok", "Opening your email client to send this securely…");
-        mailtoFallback(form, data);
-        return;
-      }
+      // FormSubmit control fields
+      data._subject  = (form.getAttribute("data-subject") || "New enquiry") + " — Rewind Dynamics website";
+      data._template = "table";
+      data._captcha  = "false";
+      data._honey    = "";
 
-      if (btn) { btn.classList.add("loading"); }
-      setStatus(status, "ok", "Transmitting…");
+      if (btn) btn.classList.add("loading");
+      setStatus(status, "ok", "Sending…");
 
       fetch(ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(data)
       })
-        .then(function (r) { return r.json(); })
+        .then(function (r) { return r.json().catch(function () { return {}; }); })
         .then(function (json) {
           if (btn) btn.classList.remove("loading");
-          if (json.success) {
+          var ok = json && (json.success === true || json.success === "true");
+          if (ok) {
             form.reset();
-            setStatus(status, "ok", "Transmission received. Our team will be in contact.");
+            setStatus(status, "ok", "Message received. Thank you — we'll be in touch.");
           } else {
-            setStatus(status, "err", json.message || "Something went wrong. Please email " + formEmail(form) + ".");
+            setStatus(status, "err", (json && json.message) || "Couldn't send just now. Please email " + TARGET_EMAIL + ".");
           }
         })
         .catch(function () {
           if (btn) btn.classList.remove("loading");
-          setStatus(status, "err", "Network error. Please email " + formEmail(form) + " directly.");
+          setStatus(status, "err", "Network error. Opening your email app instead…");
+          mailtoFallback(form, data);
         });
     });
   });
