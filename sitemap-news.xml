@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://rewinddynamics.com/news-building-team.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2021-03-22</news:publication_date>
+      <news:title>Building the founding engineering team</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/news-edge-ai.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2021-09-30</news:publication_date>
+      <news:title>Edge AI: why the intelligence has to live on the platform</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/news-facility.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2024-02-14</news:publication_date>
+      <news:title>Expanding our engineering facility in New Delhi</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/news-first-mission.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-08-05</news:publication_date>
+      <news:title>Preparing for our first mission test this December</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/news-founding.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2020-01-26</news:publication_date>
+      <news:title>Rewind Dynamics is founded in New Delhi</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/news-human-in-command.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2022-11-24</news:publication_date>
+      <news:title>Autonomy, with a human always in command</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/news-humanoid-program.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2025-04-09</news:publication_date>
+      <news:title>Opening our humanoid research programme</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/news-indigenous-autonomy.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2020-08-18</news:publication_date>
+      <news:title>The case for trustworthy autonomy in defence</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/news-tactical-edge.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-06-18</news:publication_date>
+      <news:title>Why the tactical edge belongs to autonomy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/news-uav-development.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2022-05-16</news:publication_date>
+      <news:title>Commencing development of our first unmanned aerial system</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/insight-attention-isr.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2025-06-24</news:publication_date>
+      <news:title>The attention problem</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/insight-autonomy-decade.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-07-14</news:publication_date>
+      <news:title>The autonomy decade</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/insight-counter-uas-economics.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2025-09-09</news:publication_date>
+      <news:title>The cost curve problem</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/insight-edge-intelligence.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-01-27</news:publication_date>
+      <news:title>The case for thinking at the edge</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/insight-gps-denied.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>Navigating without the sky</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/insight-human-command.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2025-11-18</news:publication_date>
+      <news:title>Command, not control</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://rewinddynamics.com/insight-mass-reimagined.html</loc>
+    <news:news>
+      <news:publication><news:name>Rewind Dynamics</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-05-21</news:publication_date>
+      <news:title>Mass, reimagined</news:title>
+    </news:news>
+  </url>
+</urlset>
