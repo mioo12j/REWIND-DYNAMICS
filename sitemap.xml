@@ -6,6 +6,13 @@
   <url><loc>https://rewinddynamics.com/capabilities.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://rewinddynamics.com/technology.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://rewinddynamics.com/careers.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rewinddynamics.com/newsroom.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rewinddynamics.com/newsroom.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://rewinddynamics.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rewinddynamics.com/news-tactical-edge.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-humanoid-program.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-uav-development.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-edge-ai.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-building-team.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-indigenous-autonomy.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rewinddynamics.com/news-founding.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
 </urlset>

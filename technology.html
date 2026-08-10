@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Technology — Rewind Dynamics</title>
-<meta name="description" content="A plain-language overview of the technologies behind autonomous systems — autonomy, perception, sensor fusion, edge AI and control — with links to further reading.">
+<meta name="description" content="How Rewind Dynamics builds autonomous systems: the sense–decide–act loop, a layered autonomy architecture, simulation-first development, and human oversight by design.">
 <meta name="theme-color" content="#06080C">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,10 +57,10 @@
     <div class="container phero__in">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Technology</span></nav>
       <p class="eyebrow" data-enter="1">How It Works</p>
-      <h1 class="display" data-enter="2" style="font-size:clamp(2.6rem,7vw,5.4rem)">The technology,<br>in plain terms.</h1>
-      <p class="lead" data-enter="3">A short, honest overview of what makes a machine "autonomous" — the pieces
-        involved and how they fit together. Where useful, we've linked out to trusted references and research
-        so you can read further.</p>
+      <h1 class="display" data-enter="2" style="font-size:clamp(2.6rem,7vw,5.4rem)">Our autonomy<br>architecture.</h1>
+      <p class="lead" data-enter="3">A clear look at how our systems are built to think and act — the loop they run,
+        the layers that make them work, and the discipline behind them. We keep the specifics for our partners;
+        the approach we're glad to share.</p>
     </div>
   </section>
 
@@ -69,91 +69,98 @@
     <div class="container">
       <div class="shead">
         <div class="shead__l">
-          <p class="eyebrow reveal">The Basic Idea</p>
+          <p class="eyebrow reveal">The Core Loop</p>
           <h2 class="h1 reveal" data-d="1">Sense · Decide · Act.</h2>
-          <p class="lead reveal" data-d="2" style="margin-top:16px">At its simplest, an autonomous system repeats one
-            loop: take in information about the world, decide what to do, and do it — then repeat, many times a
-            second.</p>
+          <p class="lead reveal" data-d="2" style="margin-top:16px">Every one of our systems runs the same loop, many
+            times a second: take in the world, decide what to do, and act — then do it again. Getting that loop
+            fast, reliable and safe is the heart of the work.</p>
         </div>
-        <span class="shead__index reveal" data-d="3">§ 01 / OVERVIEW</span>
+        <span class="shead__index reveal" data-d="3">§ 01 / LOOP</span>
       </div>
       <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
-        <div class="card reveal" data-d="1"><span class="card__idx">STEP 01</span><h3 style="margin-top:16px">Sense</h3><p>Cameras and sensors gather information about the surroundings.</p></div>
-        <div class="card reveal" data-d="2"><span class="card__idx">STEP 02</span><h3 style="margin-top:16px">Understand</h3><p>That raw data is turned into a usable picture of what's there.</p></div>
-        <div class="card reveal" data-d="3"><span class="card__idx">STEP 03</span><h3 style="margin-top:16px">Decide</h3><p>The system chooses an action based on its goal and the situation.</p></div>
-        <div class="card reveal" data-d="4"><span class="card__idx">STEP 04</span><h3 style="margin-top:16px">Act</h3><p>It moves or responds — then starts the loop again.</p></div>
+        <div class="card reveal" data-d="1"><span class="card__idx">01</span><h3 style="margin-top:16px">Sense</h3><p>Cameras and sensors gather information about the surroundings.</p></div>
+        <div class="card reveal" data-d="2"><span class="card__idx">02</span><h3 style="margin-top:16px">Understand</h3><p>That data is fused into a dependable picture the system can act on.</p></div>
+        <div class="card reveal" data-d="3"><span class="card__idx">03</span><h3 style="margin-top:16px">Decide</h3><p>The autonomy core chooses an action from the mission and the situation.</p></div>
+        <div class="card reveal" data-d="4"><span class="card__idx">04</span><h3 style="margin-top:16px">Act</h3><p>The platform moves or responds — safely, in real time — and the loop repeats.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- KEY TECHNOLOGY AREAS (external references) -->
-  <section class="section--tight" id="areas">
+  <!-- ARCHITECTURE -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="split">
+        <div class="split__body">
+          <p class="eyebrow reveal">Architecture</p>
+          <h2 class="h2 reveal" data-d="1">A layered, modular stack.</h2>
+          <p class="lead reveal" data-d="2" style="margin:18px 0 20px">We build the autonomy as clean, separable
+            layers. Each can be tested and improved on its own — and because the layers are shared, an
+            improvement made for one platform can benefit the others.</p>
+          <p class="reveal" data-d="3">Modularity also means our systems are built to integrate, not to lock
+            anyone in — designed to fit alongside existing platforms and command arrangements.</p>
+        </div>
+        <div class="split__media reveal-x">
+          <div class="panel panel--pad">
+            <span class="panel__label">The Stack</span><span class="panel__corner">Layers</span>
+            <div class="specs" style="margin-top:26px">
+              <div class="spec"><span class="spec__k">05 · Mission</span><span class="spec__v">Goals, tasking and oversight</span></div>
+              <div class="spec"><span class="spec__k">04 · Autonomy</span><span class="spec__v">Planning, decisions, behaviour</span></div>
+              <div class="spec"><span class="spec__k">03 · Perception</span><span class="spec__v">Sensing, fusion, understanding</span></div>
+              <div class="spec"><span class="spec__k">02 · Platform</span><span class="spec__v">Guidance, navigation, control</span></div>
+              <div class="spec"><span class="spec__k">01 · Compute</span><span class="spec__v">Secure on-board hardware &amp; runtime</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILDING BLOCKS (our own content, no external links) -->
+  <section class="section">
     <div class="container">
       <div class="shead">
         <div class="shead__l">
           <p class="eyebrow reveal">The Building Blocks</p>
-          <h2 class="h1 reveal" data-d="1">The technologies involved.</h2>
-          <p class="lead reveal" data-d="2" style="margin-top:16px">These are the well-established fields our work
-            draws on. Each card links to a trusted, general explanation — a good place to start reading.</p>
+          <h2 class="h1 reveal" data-d="1">What goes into<br>the autonomy.</h2>
+          <p class="lead reveal" data-d="2" style="margin-top:16px">In plain terms, these are the parts that work
+            together to make a platform autonomous. We engineer each of them, and how they fit.</p>
         </div>
-        <span class="shead__index reveal" data-d="3">§ 02 / REFERENCES</span>
+        <span class="shead__index reveal" data-d="3">§ 02 / BLOCKS</span>
       </div>
       <div class="grid cards">
-        <a class="card reveal" data-d="1" href="https://en.wikipedia.org/wiki/Autonomous_robot" target="_blank" rel="noopener">
-          <span class="card__idx">Reference ↗</span><h3 style="margin-top:14px">Autonomy</h3>
-          <p>How machines act on their own — planning and carrying out tasks without direct human control.</p></a>
-        <a class="card reveal" data-d="2" href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank" rel="noopener">
-          <span class="card__idx">Reference ↗</span><h3 style="margin-top:14px">Computer Vision</h3>
-          <p>Teaching computers to interpret images and video — detecting and recognising what's in a scene.</p></a>
-        <a class="card reveal" data-d="3" href="https://en.wikipedia.org/wiki/Sensor_fusion" target="_blank" rel="noopener">
-          <span class="card__idx">Reference ↗</span><h3 style="margin-top:14px">Sensor Fusion</h3>
-          <p>Combining several sensors into one, more reliable picture than any single sensor gives alone.</p></a>
-        <a class="card reveal" data-d="4" href="https://en.wikipedia.org/wiki/Motion_planning" target="_blank" rel="noopener">
-          <span class="card__idx">Reference ↗</span><h3 style="margin-top:14px">Motion Planning</h3>
-          <p>Working out a safe, sensible path from where a system is to where it needs to be.</p></a>
-        <a class="card reveal" data-d="1" href="https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping" target="_blank" rel="noopener">
-          <span class="card__idx">Reference ↗</span><h3 style="margin-top:14px">Localisation &amp; Mapping</h3>
-          <p>How a system figures out where it is and builds a map as it goes (often called SLAM).</p></a>
-        <a class="card reveal" data-d="2" href="https://en.wikipedia.org/wiki/Edge_computing" target="_blank" rel="noopener">
-          <span class="card__idx">Reference ↗</span><h3 style="margin-top:14px">Edge Computing</h3>
-          <p>Doing the computing on the device itself, close to where the data is, instead of in the cloud.</p></a>
-        <a class="card reveal" data-d="3" href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" rel="noopener">
-          <span class="card__idx">Reference ↗</span><h3 style="margin-top:14px">Machine Learning</h3>
-          <p>Methods that let systems improve from data and examples rather than being hand-programmed.</p></a>
-        <a class="card reveal" data-d="4" href="https://en.wikipedia.org/wiki/Control_theory" target="_blank" rel="noopener">
-          <span class="card__idx">Reference ↗</span><h3 style="margin-top:14px">Control Systems</h3>
-          <p>The maths of keeping a system stable and making it do precisely what you ask — steering, balance, flight.</p></a>
+        <div class="card reveal" data-d="1"><span class="card__idx">01</span><h3 style="margin-top:14px">Navigation</h3><p>Knowing where the system is and finding its way — including when satellite signals are unreliable.</p></div>
+        <div class="card reveal" data-d="2"><span class="card__idx">02</span><h3 style="margin-top:14px">Perception</h3><p>Turning camera and sensor data into a clear, trustworthy view of what's around the system.</p></div>
+        <div class="card reveal" data-d="3"><span class="card__idx">03</span><h3 style="margin-top:14px">Sensor Fusion</h3><p>Combining several sensors into one picture that's more reliable than any single one alone.</p></div>
+        <div class="card reveal" data-d="4"><span class="card__idx">04</span><h3 style="margin-top:14px">Planning</h3><p>Working out a sensible course of action, and re-planning as the situation changes.</p></div>
+        <div class="card reveal" data-d="1"><span class="card__idx">05</span><h3 style="margin-top:14px">Control</h3><p>Keeping the platform stable and making it do precisely what's asked — steering, flight, balance.</p></div>
+        <div class="card reveal" data-d="2"><span class="card__idx">06</span><h3 style="margin-top:14px">Edge AI</h3><p>Running the intelligence on the platform itself, so it stays effective without a constant link.</p></div>
       </div>
     </div>
   </section>
 
   <div class="divider container" aria-hidden="true"></div>
 
-  <!-- HOW WE APPROACH IT -->
+  <!-- SIMULATION FIRST -->
   <section class="section">
     <div class="container">
       <div class="split split--rev">
         <div class="split__body">
-          <p class="eyebrow reveal">How We Work</p>
-          <h2 class="h2 reveal" data-d="1">Test in software first.</h2>
-          <p class="lead reveal" data-d="2" style="margin:18px 0 20px">A lot of progress happens in simulation —
-            testing ideas in software before committing to hardware. It's faster, safer and cheaper to catch
-            problems on screen than in the field.</p>
+          <p class="eyebrow reveal">How We Develop</p>
+          <h2 class="h2 reveal" data-d="1">Prove it in software first.</h2>
+          <p class="lead reveal" data-d="2" style="margin:18px 0 20px">Much of our progress happens in simulation.
+            Testing ideas in software is faster, safer and cheaper than testing them in the field — so we catch
+            problems on screen, then move to hardware once the software is sound.</p>
           <ul class="klist">
-            <li class="reveal"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Simulate</b>Try things in software and repeat them as many times as needed.</div></li>
-            <li class="reveal" data-d="1"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Test on hardware</b>Move to real devices once the software is solid.</div></li>
-            <li class="reveal" data-d="2"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Record &amp; review</b>Keep records of every run so we can learn and improve — the idea behind our name.</div></li>
+            <li class="reveal"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Simulate</b>Try things in software and repeat them as often as needed.</div></li>
+            <li class="reveal" data-d="1"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Test on hardware</b>Move to real devices once the software holds up.</div></li>
+            <li class="reveal" data-d="2"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Record &amp; review</b>Keep records of every run, review them, and improve — the idea behind our name.</div></li>
           </ul>
         </div>
         <div class="split__media reveal-x">
           <div class="panel radar" style="padding:26px">
-            <span class="panel__label">Test · Record · Review</span><span class="panel__corner">Approach</span>
+            <span class="panel__label">Test · Record · Review</span><span class="panel__corner">Method</span>
             <svg viewBox="0 0 400 360" role="img" aria-label="Test and review illustration">
-              <g stroke="rgba(255,255,255,.08)" stroke-width="1">
-                <line x1="20" y1="60" x2="380" y2="60"/><line x1="20" y1="120" x2="380" y2="120"/>
-                <line x1="20" y1="180" x2="380" y2="180"/><line x1="20" y1="240" x2="380" y2="240"/>
-                <line x1="20" y1="300" x2="380" y2="300"/>
-              </g>
+              <g stroke="rgba(255,255,255,.08)" stroke-width="1"><line x1="20" y1="60" x2="380" y2="60"/><line x1="20" y1="120" x2="380" y2="120"/><line x1="20" y1="180" x2="380" y2="180"/><line x1="20" y1="240" x2="380" y2="240"/><line x1="20" y1="300" x2="380" y2="300"/></g>
               <polyline points="20,220 60,140 100,180 140,90 180,200 220,70 260,150 300,110 340,190 380,120" fill="none" stroke="#2F7BFF" stroke-width="2" opacity=".85"/>
               <polyline points="20,250 60,230 100,255 140,210 180,245 220,215 260,250 300,225 340,248 380,230" fill="none" stroke="rgba(127,180,255,.55)" stroke-width="1.5"/>
               <circle class="rd-blip rd-blip--pulse" cx="220" cy="70" r="4"/>
@@ -165,44 +172,24 @@
     </div>
   </section>
 
-  <!-- SAFETY -->
+  <!-- RESPONSIBILITY -->
   <section class="section--tight">
     <div class="container">
       <div class="shead">
         <div class="shead__l">
           <p class="eyebrow reveal">Responsibility</p>
-          <h2 class="h1 reveal" data-d="1">People stay in charge.</h2>
+          <h2 class="h1 reveal" data-d="1">People stay in command.</h2>
           <p class="lead reveal" data-d="2" style="margin-top:16px">Autonomy should be dependable and accountable.
-            Our view is straightforward: machines can carry out tasks, but people set the rules and stay
-            responsible for how a system is used.</p>
+            Machines carry out tasks; people set the rules and stay responsible. We build for supervision,
+            safety and review from the very first line of code.</p>
         </div>
-        <span class="shead__index reveal" data-d="3">§ 03 / RESPONSIBILITY</span>
+        <span class="shead__index reveal" data-d="3">§ 03 / TRUST</span>
       </div>
       <div class="grid values">
-        <div class="value reveal" data-d="1"><span class="value__n">01</span><h3>Human Oversight</h3><p>Systems are designed so a person can supervise and step in.</p></div>
-        <div class="value reveal" data-d="2"><span class="value__n">02</span><h3>Safety First</h3><p>Sensible limits and safe behaviour built in from the start.</p></div>
-        <div class="value reveal" data-d="3"><span class="value__n">03</span><h3>Security</h3><p>Good engineering and security practices as a default, not an afterthought.</p></div>
-        <div class="value reveal" data-d="4"><span class="value__n">04</span><h3>Reviewable</h3><p>Keeping records so decisions can be understood after the fact.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FURTHER READING (journals) -->
-  <section class="section">
-    <div class="container">
-      <div class="shead">
-        <div class="shead__l">
-          <p class="eyebrow reveal">Further Reading</p>
-          <h2 class="h1 reveal" data-d="1">Go deeper.</h2>
-          <p class="lead reveal" data-d="2" style="margin-top:16px">If you want the research-level detail, these are
-            reputable places to explore robotics and autonomy.</p>
-        </div>
-      </div>
-      <div class="jobs reveal">
-        <a class="job" href="https://arxiv.org/list/cs.RO/recent" target="_blank" rel="noopener"><div><div class="job__t">arXiv — Robotics (cs.RO)</div><div class="job__meta"><span><span class="d"></span> Open research papers</span><span><span class="d"></span> arxiv.org</span></div></div><span class="link-arrow">Visit <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-        <a class="job" href="https://arxiv.org/list/cs.CV/recent" target="_blank" rel="noopener"><div><div class="job__t">arXiv — Computer Vision (cs.CV)</div><div class="job__meta"><span><span class="d"></span> Open research papers</span><span><span class="d"></span> arxiv.org</span></div></div><span class="link-arrow">Visit <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-        <a class="job" href="https://www.ieee-ras.org/" target="_blank" rel="noopener"><div><div class="job__t">IEEE Robotics &amp; Automation Society</div><div class="job__meta"><span><span class="d"></span> Professional body</span><span><span class="d"></span> ieee-ras.org</span></div></div><span class="link-arrow">Visit <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-        <a class="job" href="https://spectrum.ieee.org/topic/robotics/" target="_blank" rel="noopener"><div><div class="job__t">IEEE Spectrum — Robotics</div><div class="job__meta"><span><span class="d"></span> News &amp; analysis</span><span><span class="d"></span> spectrum.ieee.org</span></div></div><span class="link-arrow">Visit <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <div class="value reveal" data-d="1"><span class="value__n">01</span><h3>Human Oversight</h3><p>Designed so a person can supervise and step in at any time.</p></div>
+        <div class="value reveal" data-d="2"><span class="value__n">02</span><h3>Safety First</h3><p>Clear limits and safe behaviour built in, not bolted on.</p></div>
+        <div class="value reveal" data-d="3"><span class="value__n">03</span><h3>Security</h3><p>Sound security engineering as a default across the stack.</p></div>
+        <div class="value reveal" data-d="4"><span class="value__n">04</span><h3>Reviewable</h3><p>Records kept so decisions can be understood after the fact.</p></div>
       </div>
     </div>
   </section>
@@ -211,13 +198,13 @@
     <div class="container">
       <div class="cta reveal">
         <div class="cta__grid" aria-hidden="true"></div>
-        <p class="eyebrow eyebrow--center" style="justify-content:center">Questions?</p>
-        <h2 class="h1">Want to talk<br>technology with us?</h2>
-        <p class="lead" style="max-width:50ch;margin:0 auto">We're always happy to compare notes with serious people.</p>
+        <p class="eyebrow eyebrow--center" style="justify-content:center">Go Deeper</p>
+        <h2 class="h1">Want the technical<br>detail?</h2>
+        <p class="lead" style="max-width:50ch;margin:0 auto">We share more with partners and evaluators under appropriate terms. Reach out.</p>
         <div class="cta__actions">
-          <a class="btn btn--primary btn--lg" href="contact.html" data-magnetic><span class="btn__txt">Get in Touch</span>
+          <a class="btn btn--primary btn--lg" href="contact.html" data-magnetic><span class="btn__txt">Start a Conversation</span>
             <svg class="arw" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <a class="btn btn--ghost btn--lg" href="systems.html" data-magnetic><span class="btn__txt">Our Systems</span></a>
+          <a class="btn btn--ghost btn--lg" href="capabilities.html" data-magnetic><span class="btn__txt">Capabilities</span></a>
         </div>
       </div>
     </div>
@@ -233,7 +220,7 @@
           <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
           <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
         </a>
-        <p>Rewind Dynamics is an India-based defence technology company developing autonomous systems for defence applications — including unmanned aerial, humanoid and tactical platforms.</p>
+        <p>An Indian defence-technology company headquartered in New Delhi, developing indigenous autonomous systems — unmanned aerial, humanoid and tactical platforms — for defence and homeland security.</p>
         <div class="footer__social">
           <a href="https://www.linkedin.com/company/rewind-dynamics" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 22 10.6 22 14v7h-4v-6.2c0-1.5-.03-3.4-2.08-3.4-2.08 0-2.4 1.62-2.4 3.3V21H9V9Z"/></svg></a>
           <a href="https://x.com/rewinddynamics" target="_blank" rel="noopener" aria-label="X" title="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-6.6L5.5 22H2.4l7.5-8.6L2 2h6.6l4.5 6L18.9 2Zm-1.1 18h1.7L7.3 3.8H5.4L17.8 20Z"/></svg></a>
