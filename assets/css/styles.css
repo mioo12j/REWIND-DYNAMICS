@@ -120,6 +120,16 @@ p{ color:var(--ink-soft); }
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
 .vignette{ position:fixed; inset:0; z-index:1; pointer-events:none;
   background:radial-gradient(130% 90% at 50% 24%, transparent 52%, rgba(0,0,0,.28) 78%, rgba(0,0,0,.6) 100%); }
+
+/* ---------- Brand watermark (decorative) ---------- */
+.wm{ position:absolute; z-index:0; pointer-events:none; user-select:none; }
+.wm img{ display:block; width:100%; height:auto; filter:grayscale(1) brightness(1.7); }
+.wm--phero{ top:50%; right:-6%; transform:translateY(-50%); width:min(50%,640px); opacity:.05; }
+.wm--cta{ right:-5%; bottom:-24%; width:min(48%,540px); opacity:.06; }
+.wm--sec{ left:-8%; bottom:-14%; width:min(40%,460px); opacity:.035; }
+.wm--hero{ left:-6%; bottom:-16%; width:min(46%,560px); opacity:.05; z-index:2; }
+.cta .wm{ z-index:0; }
+@media (max-width:820px){ .wm--phero{ opacity:.035; width:70%; right:-14%; } .wm--hero{ opacity:.035; } .wm--sec{ display:none; } }
 .page-wrap{ position:relative; z-index:2; }
 .footer__loc{ margin-top:20px; font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted-2); }
 
@@ -189,9 +199,10 @@ p{ color:var(--ink-soft); }
 
 /* mobile drawer */
 .drawer{ position:fixed; inset:0; z-index:999; background:rgba(4,6,10,.96); backdrop-filter:blur(10px);
-  transform:translateY(-100%); transition:transform .55s var(--ease-snap); display:flex; flex-direction:column;
+  transform:translateY(-100%); visibility:hidden; pointer-events:none;
+  transition:transform .55s var(--ease-snap), visibility .55s var(--ease-snap); display:flex; flex-direction:column;
   padding:calc(var(--nav-h) + 30px) var(--gutter) 40px; }
-.drawer.open{ transform:translateY(0); }
+.drawer.open{ transform:translateY(0); visibility:visible; pointer-events:auto; }
 .drawer a{ font-family:var(--font-display); font-weight:600; text-transform:uppercase; font-size:2rem; letter-spacing:-.01em;
   padding:14px 0; border-bottom:1px solid var(--line); color:var(--ink-soft); display:flex; justify-content:space-between; align-items:center; }
 .drawer a span{ font-family:var(--font-mono); font-size:.7rem; color:var(--muted-2); letter-spacing:.1em; }
