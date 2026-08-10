@@ -21,10 +21,6 @@ User-agent: OAI-SearchBot
 Allow: /
 User-agent: ChatGPT-User
 Allow: /
-User-agent: ClaudeBot
-Allow: /
-User-agent: Claude-Web
-Allow: /
 User-agent: PerplexityBot
 Allow: /
 User-agent: Google-Extended

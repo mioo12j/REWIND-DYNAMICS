@@ -52,7 +52,7 @@ domain — form *delivery* goes to `sid@siddhantkumar.in`.
   and `NewsArticle` (each newsroom article, with real publish dates).
 - **`sitemap.xml`** — all pages with `lastmod` + priorities (image sitemap on home).
 - **`robots.txt`** — allows Google/Bing/DuckDuckGo and AI crawlers
-  (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, …); points to the sitemap.
+  (GPTBot, PerplexityBot, Google-Extended, …); points to the sitemap.
 - **`llms.txt`** — a concise, LLM-readable summary of the company and pages.
 
 After deploying to the real domain, submit the site to **Google Search Console**
