@@ -10,7 +10,10 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<link rel="preload" as="style" href="assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 <!-- seo:rd -->
 <link rel="canonical" href="https://rewinddynamics.com/about.html">
@@ -46,7 +49,7 @@
 <header class="nav" id="nav">
   <div class="nav__inner">
     <a class="brand" href="index.html" aria-label="Rewind Dynamics — home">
-      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
+      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="" width="120" height="100" decoding="async">
       <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
     </a>
     <nav class="nav__links" aria-label="Primary">
@@ -84,7 +87,7 @@
 
   <!-- PAGE HERO -->
   <section class="phero">
-    <div class="wm wm--phero" aria-hidden="true"><img src="assets/img/watermark.svg" alt=""></div>
+    <div class="wm wm--phero" aria-hidden="true"><img src="assets/img/watermark.svg" alt="" width="120" height="100" loading="lazy" decoding="async"></div>
     <div class="phero__bg" aria-hidden="true"></div>
     <div class="phero__grid" aria-hidden="true"></div>
     <div class="container phero__in">
@@ -194,7 +197,7 @@
   <section class="section">
     <div class="container">
       <div class="cta reveal">
-        <div class="wm wm--cta" aria-hidden="true"><img src="assets/img/watermark.svg" alt=""></div>
+        <div class="wm wm--cta" aria-hidden="true"><img src="assets/img/watermark.svg" alt="" width="120" height="100" loading="lazy" decoding="async"></div>
         <div class="cta__grid" aria-hidden="true"></div>
         <p class="eyebrow eyebrow--center" style="justify-content:center">Join Us</p>
         <h2 class="h1">Help build the company<br>the mission demands.</h2>
@@ -208,14 +211,7 @@
     </div>
   </section>
 
-  <section class="section--tight">
-    <div class="container">
-      <div class="shead"><div class="shead__l"><p class="eyebrow reveal">Explore Further</p>
-        <h2 class="h2 reveal" data-d="1">More about the company.</h2></div></div>
-      <div class="grid cards"><a class="card reveal" data-d="1" href="timeline.html"><span class="card__idx">01</span><h3 style="margin-top:14px">Company timeline</h3><p>Every milestone from our founding in 2020 to the mission test planned for December 2026.</p></a><a class="card reveal" data-d="2" href="responsibility.html"><span class="card__idx">02</span><h3 style="margin-top:14px">Responsible autonomy</h3><p>Human command, safety limits, lawful use and accountability.</p></a><a class="card reveal" data-d="3" href="security-compliance.html"><span class="card__idx">03</span><h3 style="margin-top:14px">Security &amp; compliance</h3><p>How we handle information security, export control and conduct.</p></a><a class="card reveal" data-d="4" href="faq.html"><span class="card__idx">04</span><h3 style="margin-top:14px">Frequently asked questions</h3><p>Direct answers on our stage, systems, partnerships and hiring.</p></a>
-      </div>
-    </div>
-  </section>
+
 
   <section class="section">
     <div class="container">
@@ -250,6 +246,21 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <p class="eyebrow reveal">Company &amp; Governance</p>
+          <h2 class="h1 reveal" data-d="1">How we're run,<br>and what we stand for.</h2>
+          <p class="lead reveal" data-d="2" style="margin-top:16px">A defence company should be legible. These pages set out how decisions are made, what we will and won't build, and how we expect to behave.</p>
+        </div>
+        <span class="shead__index reveal" data-d="3">§ 91 / COMPANY</span>
+      </div>
+      <div class="grid cards"><article class="card reveal" data-d="1"><span class="card__idx">01</span><h3 style="margin-top:14px"><a href="timeline.html" style="color:inherit">Company timeline</a></h3><p>Every milestone from founding in 2020 to the mission test planned for December 2026. <a href="timeline.html" style="color:var(--accent-2)">View →</a></p></article><article class="card reveal" data-d="2"><span class="card__idx">02</span><h3 style="margin-top:14px"><a href="locations.html" style="color:inherit">Locations</a></h3><p>Our New Delhi headquarters and engineering facility, and how we work with users worldwide. <a href="locations.html" style="color:var(--accent-2)">View →</a></p></article><article class="card reveal" data-d="3"><span class="card__idx">03</span><h3 style="margin-top:14px"><a href="governance.html" style="color:inherit">Governance</a></h3><p>The decisions that require more than one person, and how they are recorded. <a href="governance.html" style="color:var(--accent-2)">Read →</a></p></article><article class="card reveal" data-d="4"><span class="card__idx">04</span><h3 style="margin-top:14px"><a href="responsibility.html" style="color:inherit">Responsible autonomy</a></h3><p>Human command, safety limits, lawful use and honest assessment. <a href="responsibility.html" style="color:var(--accent-2)">Read →</a></p></article><article class="card reveal" data-d="1"><span class="card__idx">05</span><h3 style="margin-top:14px"><a href="ethics.html" style="color:inherit">Ethics &amp; business conduct</a></h3><p>The standards we hold ourselves to, and how to raise a concern. <a href="ethics.html" style="color:var(--accent-2)">Read →</a></p></article><article class="card reveal" data-d="2"><span class="card__idx">06</span><h3 style="margin-top:14px"><a href="human-rights.html" style="color:inherit">Human rights</a></h3><p>End-use assessment, the limits we hold, and supply-chain expectations. <a href="human-rights.html" style="color:var(--accent-2)">Read →</a></p></article><article class="card reveal" data-d="3"><span class="card__idx">07</span><h3 style="margin-top:14px"><a href="sustainability.html" style="color:inherit">Corporate responsibility</a></h3><p>What we do today, reported in proportion to our size. <a href="sustainability.html" style="color:var(--accent-2)">Read →</a></p></article><article class="card reveal" data-d="4"><span class="card__idx">08</span><h3 style="margin-top:14px"><a href="security-compliance.html" style="color:inherit">Security &amp; compliance</a></h3><p>Information security, export control and responsible disclosure. <a href="security-compliance.html" style="color:var(--accent-2)">Read →</a></p></article><article class="card reveal" data-d="1"><span class="card__idx">09</span><h3 style="margin-top:14px"><a href="quality.html" style="color:inherit">Quality &amp; assurance</a></h3><p>Evidence over assertion — how a claim becomes demonstrable. <a href="quality.html" style="color:var(--accent-2)">Read →</a></p></article><article class="card reveal" data-d="2"><span class="card__idx">10</span><h3 style="margin-top:14px"><a href="faq.html" style="color:inherit">Frequently asked questions</a></h3><p>Direct answers on our stage, systems, partnerships and hiring. <a href="faq.html" style="color:var(--accent-2)">Read →</a></p></article><article class="card reveal" data-d="3"><span class="card__idx">11</span><h3 style="margin-top:14px"><a href="accessibility.html" style="color:inherit">Accessibility</a></h3><p>How this site is built for keyboard, screen reader and reduced motion. <a href="accessibility.html" style="color:var(--accent-2)">Read →</a></p></article><article class="card reveal" data-d="4"><span class="card__idx">12</span><h3 style="margin-top:14px"><a href="press.html" style="color:inherit">Press &amp; media</a></h3><p>Boilerplate, fast facts and brand assets for journalists. <a href="press.html" style="color:var(--accent-2)">Read →</a></p></article>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="footer">
@@ -257,7 +268,7 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <a class="brand" href="index.html" aria-label="Rewind Dynamics — home">
-          <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
+          <img class="brand__mark" src="assets/img/logo-mark.svg" alt="" width="120" height="100" decoding="async">
           <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
         </a>
         <p>A global defence-technology company, headquartered in New Delhi, developing autonomous systems — unmanned aerial, humanoid and tactical platforms — for defence and military applications.</p>
@@ -267,22 +278,23 @@
         <p class="footer__loc mono">New Delhi, India</p>
       </div>
       <div class="footer__col"><h4>Systems</h4><a href="systems.html">All Systems</a><a href="uav.html">Unmanned Aerial</a><a href="humanoid.html">Humanoid</a><a href="tactical.html">Tactical Miniature</a><a href="swarming.html">Swarm Autonomy</a></div>
-      <div class="footer__col"><h4>Capabilities</h4><a href="capabilities.html">Overview</a><a href="autonomy.html">Autonomy</a><a href="perception.html">Perception</a><a href="edge-ai.html">Edge AI</a><a href="navigation.html">Navigation</a><a href="systems-engineering.html">Systems Engineering</a></div>
-      <div class="footer__col"><h4>Applications</h4><a href="applications.html">Overview</a><a href="isr.html">ISR</a><a href="force-protection.html">Force Protection</a><a href="counter-uas.html">Counter-UAS</a></div>
-      <div class="footer__col"><h4>Company</h4><a href="about.html">About</a><a href="timeline.html">Timeline</a><a href="technology.html">Technology</a><a href="research.html">Research</a><a href="responsibility.html">Responsible Autonomy</a><a href="security-compliance.html">Security &amp; Compliance</a><a href="investors.html">Investors</a></div>
-      <div class="footer__col"><h4>Connect</h4><a href="contact.html">Contact</a><a href="partners.html">Partners</a><a href="careers.html">Careers</a><a href="newsroom.html">Newsroom</a><a href="insights.html">Insights</a><a href="glossary.html">Glossary</a><a href="press.html">Press</a><a href="faq.html">FAQ</a><a href="privacy.html">Privacy</a></div>
+      <div class="footer__col"><h4>Capabilities</h4><a href="capabilities.html">Overview</a><a href="autonomy.html">Autonomy</a><a href="perception.html">Perception</a><a href="edge-ai.html">Edge AI</a><a href="navigation.html">Navigation</a><a href="systems-engineering.html">Systems Engineering</a><a href="simulation.html">Simulation &amp; Test</a></div>
+      <div class="footer__col"><h4>Applications</h4><a href="applications.html">Overview</a><a href="isr.html">ISR</a><a href="force-protection.html">Force Protection</a><a href="counter-uas.html">Counter-UAS</a><a href="technology.html">Technology</a><a href="research.html">Research</a></div>
+      <div class="footer__col"><h4>Company</h4><a href="about.html">About</a><a href="timeline.html">Timeline</a><a href="locations.html">Locations</a><a href="governance.html">Governance</a><a href="investors.html">Investors</a><a href="careers.html">Careers</a></div>
+      <div class="footer__col"><h4>Responsibility</h4><a href="responsibility.html">Responsible Autonomy</a><a href="ethics.html">Ethics &amp; Conduct</a><a href="human-rights.html">Human Rights</a><a href="sustainability.html">Sustainability</a><a href="security-compliance.html">Security &amp; Compliance</a><a href="quality.html">Quality &amp; Assurance</a></div>
+      <div class="footer__col"><h4>Connect</h4><a href="contact.html">Contact</a><a href="partners.html">Partners</a><a href="suppliers.html">Suppliers</a><a href="newsroom.html">Newsroom</a><a href="insights.html">Insights</a><a href="glossary.html">Glossary</a><a href="press.html">Press</a><a href="faq.html">FAQ</a></div>
     </div>
   </div>
   <div class="footer__watermark" aria-hidden="true">REWIND</div>
   <div class="container">
     <div class="footer__bar">
       <span>© 2020–<span data-year>2026</span> Rewind Dynamics. All rights reserved.</span>
-      <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><a href="sitemap.html">Site Map</a><span>New Delhi, India</span></div>
+      <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><span>New Delhi, India</span></div>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/app.js"></script>
-<script src="assets/js/form.js"></script>
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/form.js" defer></script>
 </body>
 </html>

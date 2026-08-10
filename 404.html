@@ -11,7 +11,10 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<link rel="preload" as="style" href="assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -23,7 +26,7 @@
 <header class="nav scrolled" id="nav" style="background:rgba(6,8,12,.72)">
   <div class="nav__inner">
     <a class="brand" href="index.html" aria-label="Rewind Dynamics — home">
-      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
+      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="" width="120" height="100" decoding="async">
       <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
     </a>
     <div class="nav__cta">
@@ -48,6 +51,6 @@
   </div>
 </main>
 
-<script src="assets/js/app.js"></script>
+<script src="assets/js/app.js" defer></script>
 </body>
 </html>

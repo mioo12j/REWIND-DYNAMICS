@@ -246,8 +246,95 @@
   function year() { $$("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); }); }
 
   /* ---------- Init ---------- */
+
+  /* ---------- Scroll progress rail ----------
+     A hairline at the top of the viewport showing read position. */
+  function scrollProgress() {
+    if (reduceMotion) return;
+    var bar = document.createElement("div");
+    bar.className = "scroll-rail";
+    bar.setAttribute("aria-hidden", "true");
+    bar.innerHTML = "<span></span>";
+    document.body.appendChild(bar);
+    var fill = bar.firstChild, ticking = false;
+    function update() {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      var pct = h > 0 ? (window.pageYOffset / h) : 0;
+      fill.style.transform = "scaleX(" + Math.min(1, Math.max(0, pct)) + ")";
+      ticking = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
+  }
+
+  /* ---------- Watermark parallax ----------
+     Decorative monograms drift slightly against the scroll. */
+  function parallax() {
+    if (reduceMotion) return;
+    var els = $$(".wm");
+    if (!els.length) return;
+    var ticking = false;
+    function update() {
+      var vh = window.innerHeight;
+      els.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.bottom < -200 || r.top > vh + 200) return;
+        var progress = (r.top + r.height / 2 - vh / 2) / vh;   // -1 .. 1
+        el.style.setProperty("--wm-shift", (progress * -26).toFixed(1) + "px");
+      });
+      ticking = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    window.addEventListener("resize", update, { passive: true });
+    update();
+  }
+
+  /* ---------- SVG line draw ----------
+     Schematic strokes draw themselves in when scrolled into view. */
+  function drawSVG() {
+    if (reduceMotion || !("IntersectionObserver" in window)) return;
+    var targets = $$(".panel svg, .article__cover svg");
+    if (!targets.length) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var strokes = e.target.querySelectorAll("path, line, polyline, circle, rect");
+        Array.prototype.forEach.call(strokes, function (el, i) {
+          var len;
+          try { len = el.getTotalLength ? el.getTotalLength() : 0; } catch (err) { len = 0; }
+          if (!len || len > 6000) return;
+          el.style.strokeDasharray = len;
+          el.style.strokeDashoffset = len;
+          el.style.transition = "stroke-dashoffset 1.1s cubic-bezier(.16,1,.3,1) " + (i * 55) + "ms";
+          requestAnimationFrame(function () { el.style.strokeDashoffset = "0"; });
+        });
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.25 });
+    targets.forEach(function (t) { io.observe(t); });
+  }
+
+  /* ---------- Section index ----------
+     The § markers tick up as their section becomes active. */
+  function sectionMarkers() {
+    if (reduceMotion || !("IntersectionObserver" in window)) return;
+    var marks = $$(".shead__index");
+    if (!marks.length) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        e.target.classList.toggle("is-active", e.isIntersecting);
+      });
+    }, { threshold: 0.4, rootMargin: "0px 0px -30% 0px" });
+    marks.forEach(function (m) { io.observe(m); });
+  }
+
   function init() {
     preloader(); nav(); reveals(); counters(); scramble(); accordion(); heroCanvas(); magnetic(); year();
+    scrollProgress(); parallax(); drawSVG(); sectionMarkers();
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();

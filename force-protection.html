@@ -10,7 +10,10 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<link rel="preload" as="style" href="assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 <!-- seo:rd -->
 <link rel="canonical" href="https://rewinddynamics.com/force-protection.html">
@@ -45,7 +48,7 @@
 <header class="nav" id="nav">
   <div class="nav__inner">
     <a class="brand" href="index.html" aria-label="Rewind Dynamics — home">
-      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
+      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="" width="120" height="100" decoding="async">
       <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
     </a>
     <nav class="nav__links" aria-label="Primary">
@@ -82,7 +85,7 @@
 <main class="page-wrap" id="main">
 
   <section class="phero">
-    <div class="wm wm--phero" aria-hidden="true"><img src="assets/img/watermark.svg" alt=""></div>
+    <div class="wm wm--phero" aria-hidden="true"><img src="assets/img/watermark.svg" alt="" width="120" height="100" loading="lazy" decoding="async"></div>
     <div class="phero__bg" aria-hidden="true"></div>
     <div class="phero__grid" aria-hidden="true"></div>
     <div class="container phero__in">
@@ -175,7 +178,7 @@
   <section class="section">
     <div class="container">
       <div class="cta reveal">
-        <div class="wm wm--cta" aria-hidden="true"><img src="assets/img/watermark.svg" alt=""></div>
+        <div class="wm wm--cta" aria-hidden="true"><img src="assets/img/watermark.svg" alt="" width="120" height="100" loading="lazy" decoding="async"></div>
         <div class="cta__grid" aria-hidden="true"></div>
         <p class="eyebrow eyebrow--center" style="justify-content:center">Talk To Us</p>
         <h2 class="h1">Protecting people<br>and sites?</h2>
@@ -195,7 +198,7 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <a class="brand" href="index.html" aria-label="Rewind Dynamics — home">
-          <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
+          <img class="brand__mark" src="assets/img/logo-mark.svg" alt="" width="120" height="100" decoding="async">
           <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
         </a>
         <p>A global defence-technology company, headquartered in New Delhi, developing autonomous systems — unmanned aerial, humanoid and tactical platforms — for defence and military applications.</p>
@@ -205,22 +208,23 @@
         <p class="footer__loc mono">New Delhi, India</p>
       </div>
       <div class="footer__col"><h4>Systems</h4><a href="systems.html">All Systems</a><a href="uav.html">Unmanned Aerial</a><a href="humanoid.html">Humanoid</a><a href="tactical.html">Tactical Miniature</a><a href="swarming.html">Swarm Autonomy</a></div>
-      <div class="footer__col"><h4>Capabilities</h4><a href="capabilities.html">Overview</a><a href="autonomy.html">Autonomy</a><a href="perception.html">Perception</a><a href="edge-ai.html">Edge AI</a><a href="navigation.html">Navigation</a><a href="systems-engineering.html">Systems Engineering</a></div>
-      <div class="footer__col"><h4>Applications</h4><a href="applications.html">Overview</a><a href="isr.html">ISR</a><a href="force-protection.html">Force Protection</a><a href="counter-uas.html">Counter-UAS</a></div>
-      <div class="footer__col"><h4>Company</h4><a href="about.html">About</a><a href="timeline.html">Timeline</a><a href="technology.html">Technology</a><a href="research.html">Research</a><a href="responsibility.html">Responsible Autonomy</a><a href="security-compliance.html">Security &amp; Compliance</a><a href="investors.html">Investors</a></div>
-      <div class="footer__col"><h4>Connect</h4><a href="contact.html">Contact</a><a href="partners.html">Partners</a><a href="careers.html">Careers</a><a href="newsroom.html">Newsroom</a><a href="insights.html">Insights</a><a href="glossary.html">Glossary</a><a href="press.html">Press</a><a href="faq.html">FAQ</a><a href="privacy.html">Privacy</a></div>
+      <div class="footer__col"><h4>Capabilities</h4><a href="capabilities.html">Overview</a><a href="autonomy.html">Autonomy</a><a href="perception.html">Perception</a><a href="edge-ai.html">Edge AI</a><a href="navigation.html">Navigation</a><a href="systems-engineering.html">Systems Engineering</a><a href="simulation.html">Simulation &amp; Test</a></div>
+      <div class="footer__col"><h4>Applications</h4><a href="applications.html">Overview</a><a href="isr.html">ISR</a><a href="force-protection.html">Force Protection</a><a href="counter-uas.html">Counter-UAS</a><a href="technology.html">Technology</a><a href="research.html">Research</a></div>
+      <div class="footer__col"><h4>Company</h4><a href="about.html">About</a><a href="timeline.html">Timeline</a><a href="locations.html">Locations</a><a href="governance.html">Governance</a><a href="investors.html">Investors</a><a href="careers.html">Careers</a></div>
+      <div class="footer__col"><h4>Responsibility</h4><a href="responsibility.html">Responsible Autonomy</a><a href="ethics.html">Ethics &amp; Conduct</a><a href="human-rights.html">Human Rights</a><a href="sustainability.html">Sustainability</a><a href="security-compliance.html">Security &amp; Compliance</a><a href="quality.html">Quality &amp; Assurance</a></div>
+      <div class="footer__col"><h4>Connect</h4><a href="contact.html">Contact</a><a href="partners.html">Partners</a><a href="suppliers.html">Suppliers</a><a href="newsroom.html">Newsroom</a><a href="insights.html">Insights</a><a href="glossary.html">Glossary</a><a href="press.html">Press</a><a href="faq.html">FAQ</a></div>
     </div>
   </div>
   <div class="footer__watermark" aria-hidden="true">REWIND</div>
   <div class="container">
     <div class="footer__bar">
       <span>© 2020–<span data-year>2026</span> Rewind Dynamics. All rights reserved.</span>
-      <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><a href="sitemap.html">Site Map</a><span>New Delhi, India</span></div>
+      <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><span>New Delhi, India</span></div>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/app.js"></script>
-<script src="assets/js/form.js"></script>
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/form.js" defer></script>
 </body>
 </html>

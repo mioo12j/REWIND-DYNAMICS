@@ -741,3 +741,47 @@ p, li, .lead, blockquote, .card p, .value p, .klist li div,
 
 /* Spec rows: stack earlier so a 180px label column never squeezes the value. */
 @media (max-width:640px){ .spec{ padding:16px 2px; } }
+
+
+/* ============================================================
+   MOTION LAYER
+   Every effect here is disabled under prefers-reduced-motion.
+   ============================================================ */
+
+/* Scroll progress rail */
+.scroll-rail{ position:fixed; top:0; left:0; right:0; height:2px; z-index:1000; pointer-events:none; background:transparent; }
+.scroll-rail span{ display:block; height:100%; width:100%; transform:scaleX(0); transform-origin:0 50%;
+  background:linear-gradient(90deg,var(--accent),var(--accent-bright));
+  box-shadow:0 0 12px var(--accent-glow); will-change:transform; }
+
+/* Watermark parallax — driven by --wm-shift from app.js */
+.wm{ will-change:transform; }
+.wm--phero{ transform:translateY(calc(-50% + var(--wm-shift,0px))); }
+.wm--cta, .wm--sec, .wm--hero{ transform:translateY(var(--wm-shift,0px)); }
+
+/* Section markers light up as their section takes the viewport */
+.shead__index{ transition:color .5s var(--ease), letter-spacing .5s var(--ease); }
+.shead__index.is-active{ color:var(--accent-2); letter-spacing:.22em; }
+
+/* Card lift with an accent edge on hover */
+.card{ transition:transform .45s var(--ease-snap), border-color .45s var(--ease), background .45s var(--ease); }
+@media (hover:hover){
+  .card:hover{ transform:translateY(-5px); border-color:var(--line-2); }
+  .card:hover .card__idx{ color:var(--accent-2); }
+}
+
+/* Keyboard focus must always be obvious */
+a:focus-visible, button:focus-visible, input:focus-visible,
+textarea:focus-visible, select:focus-visible{
+  outline:2px solid var(--accent-2); outline-offset:3px; border-radius:2px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .scroll-rail{ display:none; }
+  .wm--phero{ transform:translateY(-50%); }
+  .wm--cta, .wm--sec, .wm--hero{ transform:none; }
+  .card{ transition:none; }
+  .card:hover{ transform:none; }
+  *, *::before, *::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important;
+    transition-duration:.001ms !important; scroll-behavior:auto !important; }
+}
