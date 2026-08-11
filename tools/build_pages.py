@@ -22,12 +22,12 @@ ORG = ('{"@context": "https://schema.org", "@type": "Organization", "@id": "http
  '"logo": {"@type": "ImageObject", "url": "https://rewinddynamics.com/assets/img/logo-mark.svg"}, '
  '"image": "https://rewinddynamics.com/assets/img/og.png", "foundingDate": "2020-01-26", '
  '"description": "Rewind Dynamics is a global defence-technology company, headquartered in New Delhi, developing '
- 'autonomous systems \\u2014 unmanned aerial, humanoid and tactical platforms \\u2014 for defence and military applications.", '
+ 'autonomous systems \\u2014 unmanned aerial, precision-guided and tactical platforms \\u2014 for defence and military applications.", '
  '"email": "info@rewinddynamics.com", "slogan": "Autonomous systems for defence.", '
  '"foundingLocation": {"@type": "Place", "name": "New Delhi, India"}, '
  '"address": {"@type": "PostalAddress", "addressLocality": "New Delhi", "addressRegion": "Delhi", "addressCountry": "IN"}, '
  '"areaServed": {"@type": "Place", "name": "Worldwide"}, '
- '"knowsAbout": ["Autonomous systems", "Unmanned aerial vehicles", "Humanoid robotics", "Tactical systems", '
+ '"knowsAbout": ["Autonomous systems", "Unmanned aerial vehicles", "Precision guidance", "Tactical systems", '
  '"Defence technology", "Edge AI", "Perception", "Autonomy", "Drone swarms", "ISR", "GPS-denied navigation"]}')
 
 TICK = ('<span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" '
@@ -189,13 +189,13 @@ FOOTER = '''<footer class="footer">
           <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
           <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
         </a>
-        <p>A global defence-technology company, headquartered in New Delhi, developing autonomous systems — unmanned aerial, humanoid and tactical platforms — for defence and military applications.</p>
+        <p>A global defence-technology company, headquartered in New Delhi, developing autonomous systems — unmanned aerial, precision-guided and tactical platforms — for defence and military applications.</p>
         <div class="footer__social">
           <a href="mailto:info@rewinddynamics.com" aria-label="Email" title="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7.5l8 5.5 8-5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
         </div>
         <p class="footer__loc mono">New Delhi, India</p>
       </div>
-      <div class="footer__col"><h4>Systems</h4><a href="systems.html">All Systems</a><a href="uav.html">Unmanned Aerial</a><a href="humanoid.html">Humanoid</a><a href="tactical.html">Tactical Miniature</a><a href="swarming.html">Swarm Autonomy</a></div>
+      <div class="footer__col"><h4>Systems</h4><a href="systems.html">All Systems</a><a href="uav.html">Unmanned Aerial</a><a href="precision-guidance.html">Precision Guidance</a><a href="tactical.html">Tactical Miniature</a><a href="swarming.html">Swarm Autonomy</a></div>
       <div class="footer__col"><h4>Capabilities</h4><a href="capabilities.html">Overview</a><a href="autonomy.html">Autonomy</a><a href="perception.html">Perception</a><a href="edge-ai.html">Edge AI</a><a href="navigation.html">Navigation</a><a href="systems-engineering.html">Systems Engineering</a><a href="simulation.html">Simulation &amp; Test</a></div>
       <div class="footer__col"><h4>Applications</h4><a href="applications.html">Overview</a><a href="isr.html">ISR</a><a href="force-protection.html">Force Protection</a><a href="counter-uas.html">Counter-UAS</a><a href="technology.html">Technology</a><a href="research.html">Research</a></div>
       <div class="footer__col"><h4>Company</h4><a href="about.html">About</a><a href="timeline.html">Timeline</a><a href="locations.html">Locations</a><a href="governance.html">Governance</a><a href="investors.html">Investors</a><a href="careers.html">Careers</a></div>

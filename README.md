@@ -2,8 +2,8 @@
 
 A fast, dark, animated marketing website for **Rewind Dynamics** — a global
 defence-technology company (established **26 January 2020**, headquartered in New
-Delhi) developing autonomous systems: unmanned aerial (UAV), humanoid and tactical
-miniature platforms for defence and military users worldwide. Everything is
+Delhi) developing autonomous systems: unmanned aerial (UAV), precision-guided and tactical
+platforms for governments and armed forces worldwide. Everything is
 currently under **active research & development**; the first real-world mission
 test is planned for **December 2026**.
 
@@ -19,7 +19,7 @@ keyword-targeted page and a clear path from the hub above it.
 
 | Hub | Spokes |
 |---|---|
-| `systems.html` | Unmanned Aerial · Humanoid · Tactical Miniature |
+| `systems.html` | Unmanned Aerial · Guided · Tactical Miniature |
 | `capabilities.html` | Autonomy · Perception · Edge AI · Navigation · Systems Engineering |
 | `applications.html` | ISR · Force Protection · Counter-UAS |
 | `technology.html` | Simulation & Test |
