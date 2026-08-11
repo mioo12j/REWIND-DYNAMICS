@@ -219,7 +219,18 @@ def build(fn, title, desc, crumbs, hero, sections, extra_ld=None, active=None):
                      "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n,
                                           **({"item": u} if u else {})}
                                          for i, (n, u) in enumerate(crumbs)]}, ensure_ascii=False)
-    lds = '<script type="application/ld+json">%s</script>\n<script type="application/ld+json">%s</script>' % (ORG, bc)
+    wp = json.dumps({"@context": "https://schema.org", "@type": "WebPage", "@id": url + "#webpage",
+        "url": url, "name": title, "description": desc, "inLanguage": "en",
+        "isPartOf": {"@id": BASE + "#website"}, "about": {"@id": BASE + "#organization"},
+        "publisher": {"@id": BASE + "#organization"},
+        "primaryImageOfPage": {"@type": "ImageObject", "url": BASE + "assets/img/og.png"}},
+        ensure_ascii=False)
+    ws = json.dumps({"@context": "https://schema.org", "@type": "WebSite", "@id": BASE + "#website",
+        "name": "Rewind Dynamics", "url": BASE, "inLanguage": "en",
+        "publisher": {"@id": BASE + "#organization"}}, ensure_ascii=False)
+    lds = ('<script type="application/ld+json">%s</script>\n<script type="application/ld+json">%s</script>\n'
+           '<script type="application/ld+json">%s</script>\n<script type="application/ld+json">%s</script>'
+           % (ORG, bc, wp, ws))
     if extra_ld:
         lds += '\n<script type="application/ld+json">%s</script>' % extra_ld
     crumb_html = ""
