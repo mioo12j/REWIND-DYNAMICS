@@ -39,6 +39,10 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+# Full-text corpus for AI systems: https://rewinddynamics.com/llms-full.txt
+# Structured summary:          https://rewinddynamics.com/llms.txt
+# RSS feed:                    https://rewinddynamics.com/feed.xml
+
 Sitemap: https://rewinddynamics.com/sitemap.xml
 Sitemap: https://rewinddynamics.com/sitemap-news.xml
 Sitemap: https://rewinddynamics.com/sitemap-index.xml

@@ -2,6 +2,12 @@
 
 > Rewind Dynamics is a global defence-technology company headquartered in New Delhi, established on 26 January 2020. We build autonomous systems and precision guidance for governments and armed forces — unmanned aerial systems (UAV), precision-guided systems and tactical platforms — united by one autonomy core. All systems are under active research and development; our first real-world mission test is planned for December 2026. We are actively raising investment.
 
+## Machine-readable resources
+
+- Full site text: https://rewinddynamics.com/llms-full.txt
+- RSS feed: https://rewinddynamics.com/feed.xml
+- XML sitemap: https://rewinddynamics.com/sitemap.xml
+
 ## About
 
 - Founded: 26 January 2020, New Delhi, India

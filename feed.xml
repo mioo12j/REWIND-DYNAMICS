@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rewind Dynamics — Newsroom &amp; Insights</title>
+    <link>https://rewinddynamics.com/</link>
+    <atom:link href="https://rewinddynamics.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Milestones and long-form perspectives on defence autonomy from Rewind Dynamics — autonomous unmanned aerial systems, precision guidance and tactical platforms.</description>
+    <language>en</language>
+    <copyright>Rewind Dynamics</copyright>
+    <lastBuildDate>Wed, 05 Aug 2026 09:00:00 +0530</lastBuildDate>
+    <item>
+      <title>Preparing for our first mission test this December</title>
+      <link>https://rewinddynamics.com/news-first-mission.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/news-first-mission.html</guid>
+      <description>Everything Rewind Dynamics has built so far has lived in development and simulation. This December we plan to put it to its first real-world mission test — a major milestone for the team. Here's what it means.</description>
+      <category>Programme</category>
+      <pubDate>Wed, 05 Aug 2026 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>The autonomy decade</title>
+      <link>https://rewinddynamics.com/insight-autonomy-decade.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/insight-autonomy-decade.html</guid>
+      <description>Defence advantage has historically been measured in hardware. That logic is breaking down: between two similar platforms, the decisive difference is increasingly what the platform can do on its own — and that lives in software. Rewind Dynamics on why the next decade of capability is a software question.</description>
+      <category>Perspective</category>
+      <pubDate>Tue, 14 Jul 2026 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>Why the tactical edge belongs to autonomy</title>
+      <link>https://rewinddynamics.com/news-tactical-edge.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/news-tactical-edge.html</guid>
+      <description>Small, autonomous systems change what a dismounted team can see and do. Rewind Dynamics' view on why the tactical edge — close, cluttered and contested — is where autonomy earns its keep.</description>
+      <category>Perspective</category>
+      <pubDate>Thu, 18 Jun 2026 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>Mass, reimagined</title>
+      <link>https://rewinddynamics.com/insight-mass-reimagined.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/insight-mass-reimagined.html</guid>
+      <description>Small, numerous autonomous systems reopen one of the oldest questions in warfare: what mass is worth. Rewind Dynamics on the exchange-rate problem, why more drones is not a swarm, the two-tier mother–child architecture, and what human command means at scale.</description>
+      <category>Perspective</category>
+      <pubDate>Thu, 21 May 2026 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>Navigating without the sky</title>
+      <link>https://rewinddynamics.com/insight-gps-denied.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/insight-gps-denied.html</guid>
+      <description>Satellite positioning is the first capability an adversary removes, and spoofing is more dangerous than jamming because the system does not know it is wrong. Rewind Dynamics on visual odometry, relocalisation, inertial dead reckoning, and why honest uncertainty matters more than accuracy.</description>
+      <category>Perspective</category>
+      <pubDate>Wed, 11 Mar 2026 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>The case for thinking at the edge</title>
+      <link>https://rewinddynamics.com/insight-edge-intelligence.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/insight-edge-intelligence.html</guid>
+      <description>Modern AI assumes a data centre; defence autonomy cannot. Rewind Dynamics on why intelligence must run on the platform — availability, latency, bandwidth and exposure — and the size, weight, power and determinism engineering that makes it possible.</description>
+      <category>Perspective</category>
+      <pubDate>Tue, 27 Jan 2026 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>Command, not control</title>
+      <link>https://rewinddynamics.com/insight-human-command.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/insight-human-command.html</guid>
+      <description>Everyone says a human stays in the loop, but the phrase has stopped carrying information. Rewind Dynamics on the difference between in-the-loop, on-the-loop and in-command — and the specific engineering that meaningful human command actually requires, including at scale.</description>
+      <category>Perspective</category>
+      <pubDate>Tue, 18 Nov 2025 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>The cost curve problem</title>
+      <link>https://rewinddynamics.com/insight-counter-uas-economics.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/insight-counter-uas-economics.html</guid>
+      <description>Counter-UAS is an arithmetic problem before it is a technical one: you can win every engagement and still lose if each win costs more than the thing destroyed. Rewind Dynamics on detection of small, low, slow aircraft in clutter, discrimination, false alarms, and where autonomy helps.</description>
+      <category>Perspective</category>
+      <pubDate>Tue, 09 Sep 2025 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>The attention problem</title>
+      <link>https://rewinddynamics.com/insight-attention-isr.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/insight-attention-isr.html</guid>
+      <description>Surveillance rarely fails for lack of sensors — it fails for lack of attention. Rewind Dynamics on the vigilance problem, why autonomy inverts the ISR workflow, learning what normal looks like, and why false-alarm rate matters more than raw detection performance.</description>
+      <category>Perspective</category>
+      <pubDate>Tue, 24 Jun 2025 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>Expanding our engineering facility in New Delhi</title>
+      <link>https://rewinddynamics.com/news-facility.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/news-facility.html</guid>
+      <description>More space, better test infrastructure and room to grow the team — an update on Rewind Dynamics' expanded New Delhi engineering facility and why keeping the understanding in-house matters.</description>
+      <category>Company</category>
+      <pubDate>Wed, 14 Feb 2024 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>Autonomy, with a human always in command</title>
+      <link>https://rewinddynamics.com/news-human-in-command.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/news-human-in-command.html</guid>
+      <description>Autonomy is powerful precisely because it acts on its own — which is exactly why a person must stay in command. How Rewind Dynamics designs for human oversight, safety and accountability in responsible autonomy.</description>
+      <category>Perspective</category>
+      <pubDate>Thu, 24 Nov 2022 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>Commencing development of our first unmanned aerial system</title>
+      <link>https://rewinddynamics.com/news-uav-development.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/news-uav-development.html</guid>
+      <description>A milestone for the team: Rewind Dynamics has begun focused development on its first autonomous unmanned aerial system (UAV) — part of our simulation-first, human-in-command approach to defence autonomy.</description>
+      <category>Programme</category>
+      <pubDate>Mon, 16 May 2022 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>Edge AI: why the intelligence has to live on the platform</title>
+      <link>https://rewinddynamics.com/news-edge-ai.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/news-edge-ai.html</guid>
+      <description>For defence autonomy, running AI on the device rather than in the cloud isn't an optimisation — it's a requirement. How Rewind Dynamics thinks about edge intelligence, resilience and staying effective without a constant link.</description>
+      <category>Perspective</category>
+      <pubDate>Thu, 30 Sep 2021 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>Building the founding engineering team</title>
+      <link>https://rewinddynamics.com/news-building-team.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/news-building-team.html</guid>
+      <description>Great autonomy comes from great engineers. An update on the founding team we're assembling at Rewind Dynamics and the disciplines — autonomy, perception, robotics, embedded systems — we're hiring for.</description>
+      <category>Company</category>
+      <pubDate>Mon, 22 Mar 2021 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>The case for trustworthy autonomy in defence</title>
+      <link>https://rewinddynamics.com/news-indigenous-autonomy.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/news-indigenous-autonomy.html</guid>
+      <description>Trustworthy autonomy is not a luxury — it is fast becoming a requirement. Our view on why defence forces should be able to inspect, adapt and own the autonomous systems they depend on, rather than treat them as sealed black boxes.</description>
+      <category>Perspective</category>
+      <pubDate>Tue, 18 Aug 2020 09:00:00 +0530</pubDate>
+    </item>
+    <item>
+      <title>Rewind Dynamics is founded in New Delhi</title>
+      <link>https://rewinddynamics.com/news-founding.html</link>
+      <guid isPermaLink="true">https://rewinddynamics.com/news-founding.html</guid>
+      <description>On Republic Day 2020, Rewind Dynamics was founded in New Delhi to design and build autonomous systems — unmanned aerial, precision-guided and tactical — for defence and military needs. Why we started, and what we set out to build.</description>
+      <category>Company</category>
+      <pubDate>Sun, 26 Jan 2020 09:00:00 +0530</pubDate>
+    </item>
+  </channel>
+</rss>

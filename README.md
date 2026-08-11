@@ -138,6 +138,25 @@ How it stays fast: no framework and no build step; one 48 KB stylesheet and
 without blocking first paint; every `<img>` carries intrinsic dimensions so
 nothing shifts while loading, with lazy loading below the fold.
 
+## Machine-readable surface
+
+| File | Purpose |
+|---|---|
+| `sitemap.xml` | Every indexable page, tiered priorities, generated from disk |
+| `sitemap-news.xml` | Articles in Google News format, with publication dates |
+| `sitemap-index.xml` | Points at both sitemaps |
+| `feed.xml` | RSS 2.0 of newsroom + insights, autodiscovered from every page |
+| `llms.txt` | Structured summary of the company and every page |
+| `llms-full.txt` | Full readable text of the whole site (~219 KB) for AI systems |
+| `.well-known/security.txt` | Responsible-disclosure contact |
+| `robots.txt` | Welcomes search and answer-engine crawlers; points at all of the above |
+
+Structured data: `Organization`, `WebSite` and `WebPage` linked by `@id` into
+one entity graph on every page, plus `BreadcrumbList` sitewide, `Article` /
+`NewsArticle` on all 16 articles, `FAQPage` on FAQ, UAV, precision-guidance
+and applications, `DefinedTermSet` on the glossary, `CollectionPage` and
+`ItemList` on hubs.
+
 ## Verification
 
 Both auditors must pass before any change ships:
