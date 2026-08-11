@@ -178,6 +178,57 @@
     </div>
   </section>
 
+  <div class="divider container" aria-hidden="true"></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <p class="eyebrow reveal">Anatomy</p>
+          <h2 class="h1 reveal" data-d="1">What is actually<br>on board.</h2>
+          <p class="lead reveal" data-d="2" style="margin-top:16px">An unmanned aircraft is six subsystems that have to agree with each other several hundred times a second. Understanding what each one does is the fastest way to understand why autonomy is hard.</p>
+        </div>
+        <span class="shead__index reveal" data-d="3">§ 03 / ANATOMY</span>
+      </div>
+      <div class="grid cards"><article class="card reveal" data-d="1"><span class="card__idx">01</span><h3 style="margin-top:14px">Airframe &amp; propulsion</h3><p>The physical aircraft — fixed-wing for endurance and range, rotary or hybrid for hovering and confined launch. This choice sets the mission envelope before a line of software is written: you cannot give an airframe endurance it does not have.</p></article><article class="card reveal" data-d="2"><span class="card__idx">02</span><h3 style="margin-top:14px">Flight control system</h3><p>The autopilot. It runs the inner control loop that keeps the aircraft stable — attitude, airspeed, altitude — hundreds of times a second, and executes the outer loop that follows a route. A person supervising a mission is talking to this, not flying the aircraft.</p></article><article class="card reveal" data-d="3"><span class="card__idx">03</span><h3 style="margin-top:14px">Inertial measurement unit</h3><p>Accelerometers and gyroscopes sensing linear acceleration and rotation rate. Integrated over time they yield attitude and position without any outside reference — unjammable, but drifting steadily, which is why they are always paired with something that corrects them.</p></article><article class="card reveal" data-d="4"><span class="card__idx">04</span><h3 style="margin-top:14px">Navigation solution</h3><p>An attitude and heading reference fusing the IMU with satellite navigation, barometric altitude, magnetometer and airspeed. This fused estimate — not any single sensor — is what the aircraft actually believes about where it is, and it carries a confidence value with it.</p></article><article class="card reveal" data-d="1"><span class="card__idx">05</span><h3 style="margin-top:14px">Payload &amp; gimbal</h3><p>The reason the aircraft exists. Typically a stabilised gimbal carrying electro-optical and infrared cameras. The gimbal isolates the sensor from airframe motion so the picture stays steady while the aircraft manoeuvres.</p></article><article class="card reveal" data-d="2"><span class="card__idx">06</span><h3 style="margin-top:14px">Datalink &amp; ground control</h3><p>The radio link to the ground control station, where an operator sets tasking, watches the picture and intervenes. The link is assumed to be intermittent, contested and sometimes absent — which is exactly why the intelligence lives on the aircraft.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider container" aria-hidden="true"></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="split split--rev">
+        <div class="split__body">
+          <p class="eyebrow reveal">A Mission, Start To Finish</p>
+          <h2 class="h2 reveal" data-d="1">What actually<br>happens.</h2>
+          <p class="lead reveal" data-d="2" style="margin:18px 0 22px">Stripped of jargon, an autonomous sortie runs through the same sequence every time. Most of it involves no human input at all — which is the entire point.</p>
+          <ul class="klist">
+            <li class="reveal" data-d="0"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Plan and upload</b>An operator defines the objective — an area to cover, a route to follow, a point to observe — plus the limits the aircraft must not cross. This is the moment human command is exercised most concretely.</div></li>
+            <li class="reveal" data-d="1"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Launch and climb</b>The flight control system takes the aircraft off and climbs to its transit altitude on its own, holding attitude and airspeed against wind it has never seen before.</div></li>
+            <li class="reveal" data-d="2"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Transit and execute</b>The aircraft navigates to the area and executes the task, adjusting its route as wind, weather or the picture changes. Perception runs continuously on board, reporting what matters rather than streaming raw video.</div></li>
+            <li class="reveal" data-d="3"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Lost link</b>If the datalink degrades or drops, the aircraft does not stop thinking. A defined lost-link routine takes over — continue, orbit, or return to a known point where contact can be re-established — chosen in advance, never improvised.</div></li>
+            <li class="reveal" data-d="4"><span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Recover and review</b>The aircraft returns and lands autonomously. Every second of the sortie is recorded, replayed and assessed honestly afterwards — the discipline our name refers to.</div></li>
+          </ul>
+        </div>
+        <div class="split__media reveal-x">
+          <div class="panel panel--pad">
+            <span class="panel__label">Sortie</span><span class="panel__corner">Sequence</span>
+            <div class="specs" style="margin-top:26px">
+              <div class="spec"><span class="spec__k">Planning</span><span class="spec__v">Operator sets task and limits</span></div>
+              <div class="spec"><span class="spec__k">Launch</span><span class="spec__v">Autonomous takeoff and climb</span></div>
+              <div class="spec"><span class="spec__k">Transit</span><span class="spec__v">Coupled INS/GNSS navigation</span></div>
+              <div class="spec"><span class="spec__k">On task</span><span class="spec__v">Onboard perception and reporting</span></div>
+              <div class="spec"><span class="spec__k">Link loss</span><span class="spec__v">Pre-defined lost-link routine</span></div>
+              <div class="spec"><span class="spec__k">Recovery</span><span class="spec__v">Autonomous return and landing</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section--tight">
     <div class="container">
       <p class="muted reveal" style="font-size:.92rem;max-width:78ch">This system is under <strong style="color:var(--ink-soft)">active research and development</strong>. Nothing described here has been fielded, and we do not publish specifications or performance figures. Our first end-to-end mission test is planned for <a href="news-first-mission.html" style="color:var(--accent-2)">December 2026</a>. Detail is shared directly with partners, evaluators and the armed forces under appropriate terms — <a href="contact.html" style="color:var(--accent-2)">get in touch</a>.</p>
