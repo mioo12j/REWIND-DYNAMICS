@@ -1510,7 +1510,13 @@ Capabilities — Autonomy, Perception & Edge AI | Rewind Dynamics
  Turning software into machines that survive the real world. Read more → 
  06 
 ### Autonomy glossary 
- The vocabulary behind all of it, defined in plain English. Read more →
+ The vocabulary behind all of it, defined in plain English. Read more → 
+ 07 
+### Multi-sensor fusion 
+ Why no single sensor sees everything, and how four disagreeing sensors become one track picture. Read more → 
+ 08 
+### Levels of autonomy 
+ Why "fully autonomous" means nothing, and the three axes that actually describe a system. Read more →
 
 ======================================================================
 URL: https://rewinddynamics.com/autonomy.html
@@ -1621,6 +1627,141 @@ Autonomy — Onboard Decision-Making | Rewind Dynamics
 ## Want the detail behind the autonomy?
 
  We share architecture and approach with partners and evaluators under appropriate terms.
+
+ Start a Conversation 
+ All Capabilities 
+
+ Asked how autonomous a system is? The honest answer needs three numbers, not one — see levels of autonomy for how mission complexity, environmental difficulty and human independence combine.
+
+======================================================================
+URL: https://rewinddynamics.com/autonomy-levels.html
+======================================================================
+Levels of Autonomy Explained | Rewind Dynamics 
+
+ Skip to content 
+
+ 01 Home 
+ 02 Company 
+ 03 Systems 
+ 04 Capabilities 
+ 05 Applications 
+ 06 Technology 
+ 07 Research 
+ 08 Investors 
+ 09 Careers 
+ 10 Newsroom 
+ 11 Contact 
+
+ Reference  ·  Levels of Autonomy
+
+## How autonomous is autonomous?
+
+ "Fully autonomous" is the least useful phrase in this field. Autonomy is not a single number that a system either reaches or does not — it is a description of what a system can handle, in what conditions, with how much help. Getting that description right is the difference between a specification and a slogan.
+
+ The Problem With Levels
+
+## One number hides the whole question.
+
+ § 01 / PROBLEM 
+
+ Ask how autonomous a system is and you will usually get a level between one and ten. The trouble is that a platform which can fly a pre-planned route over open ground in clear weather with no opposition, and a platform which can pursue an objective through cluttered terrain with its satellite navigation jammed, might be assigned the same number — because the number is answering different questions in each case.
+
+ A useful answer has to say autonomous at what, and under what conditions . That is precisely the gap the NIST ALFUS framework — Autonomy Levels for Unmanned Systems — was created to close, by giving requirements and evaluation a shared vocabulary instead of a marketing adjective.
+
+ The Three Axes
+
+## Autonomy has three dimensions.
+
+ ALFUS describes autonomy as a point in a three-axis space rather than a rung on a ladder. Move along any axis and the difficulty changes, even if the platform does not.
+
+ § 02 / AXES 
+
+ 01 
+### Mission complexity
+ How hard the task itself is. Holding a fixed orbit is not the same problem as searching an area, adapting to what is found, and re-planning against a changing objective. The same aircraft can be highly autonomous at one and useless at the other.
+ 02 
+### Environmental difficulty
+ What the world is doing to the system. Open sky in daylight with a strong satellite fix is the easy end. Cluttered terrain, degraded weather, jammed or spoofed navigation and an intermittent datalink is the other, and it is where real operations live.
+ 03 
+### Human independence
+ How much operator involvement is required, and of what kind. Continuous manual control sits at one extreme; a person setting an objective and boundaries and then supervising sits near the other. This axis is a design choice, not only a capability.
+ 04 
+### Why all three matter
+ A claim on any single axis is close to meaningless without the other two. High human independence in a trivially easy environment on a trivially simple mission is not an achievement — and it is exactly what a demonstration video usually shows.
+
+ How We Specify It
+
+## What we state, and what we won't.
+
+ We describe our systems along these axes rather than claiming a level, because a level invites the reader to assume the other two axes were hard. Ours are still in research and development, and we would rather be precise than impressive.
+
+ Task, stated explicitly We name the mission the autonomy handles rather than implying it generalises to every mission.
+
+ Conditions, stated explicitly Including the degraded cases: poor light and weather, denied satellite navigation, a thinning datalink.
+
+ Operator role, stated explicitly What the person sets, what they see, when they are asked, and how they intervene.
+
+ Where it stops The point at which the system should hand back rather than continue — the most important number in the specification and the one least often published.
+
+ Specifying Autonomy Three Axes 
+ 
+ Axis 1 Mission complexity 
+
+ Axis 2 Environmental difficulty 
+
+ Axis 3 Human independence 
+
+ We publish The description, not a level 
+
+ Command Human, in all cases 
+
+ Stage Research & development 
+
+ Our Position
+
+## Where we sit deliberately.
+
+ We do not build toward maximum human independence. We build toward the point where autonomy removes workload without removing judgement.
+
+ § 03 / POSITION 
+
+ 01 
+### Attention, not authority
+ Autonomy should absorb the parts of a job that consume attention without needing judgement — holding a pattern, watching a feed — and hand the rest to a person.
+
+ 02 
+### Bounded discretion
+ Freedom inside limits a person has set, and a stop at the edge of them rather than an improvisation past it.
+
+ 03 
+### Knowing when to stop
+ Recognising that a situation has left the envelope the system should handle alone is itself a capability, and we treat it as a requirement.
+
+ 04 
+### Never the last word
+ No system we build selects and engages on its own authority, at any point on any axis.
+
+ The ALFUS framework is published by the US National Institute of Standards and Technology; this page summarises its structure to explain how we describe our own systems and does not imply any NIST endorsement, assessment or certification. All Rewind Dynamics systems remain under active research and development .
+
+ Explore Further
+
+## Related reading.
+
+ 01 
+### Autonomy
+ The capability itself — planning, decisions and bounded discretion.
+ 02 
+### Responsible autonomy
+ Human command as a limit on what we will build.
+ 03 
+### Glossary
+ Human-in-the-loop, on-the-loop and in-command, defined plainly.
+
+ Go Deeper
+
+## Specifying autonomy for a programme?
+
+ If you are writing requirements for an autonomous system, we would genuinely enjoy the conversation.
 
  Start a Conversation 
  All Capabilities
@@ -1736,6 +1877,149 @@ Perception & Sensor Fusion | Rewind Dynamics
  We're hiring, and we talk with research partners attacking the same problems.
 
  Open Roles 
+ All Capabilities 
+
+ Perception on one platform is half the problem. Combining several sensors whose failure modes differ is the other half — see multi-sensor fusion .
+
+======================================================================
+URL: https://rewinddynamics.com/sensor-fusion.html
+======================================================================
+Multi-Sensor Fusion Explained | Rewind Dynamics 
+
+ Skip to content 
+
+ 01 Home 
+ 02 Company 
+ 03 Systems 
+ 04 Capabilities 
+ 05 Applications 
+ 06 Technology 
+ 07 Research 
+ 08 Investors 
+ 09 Careers 
+ 10 Newsroom 
+ 11 Contact 
+
+ Capability  ·  Sensor Fusion
+
+## No single sensor sees everything.
+
+ Every sensing method has a condition that defeats it. Fusion is not about adding sensors until the problem goes away — it is about combining methods whose failure modes do not overlap, and being honest about what the combination still cannot see.
+
+ The Principle
+
+## Complementary failure, not redundancy.
+
+ § 01 / PRINCIPLE 
+
+ Adding a second sensor of the same kind gives you a little more confidence and the same blind spots. Adding a sensor that fails differently gives you coverage. That distinction is the whole discipline: you are not buying redundancy, you are buying complementary failure modes.
+
+ The small uncrewed aircraft problem illustrates it well, because it defeats each modality in a different way. Understanding why is the fastest route to understanding why fusion is necessary rather than merely nice.
+
+ The Modalities
+
+## What each sensor is good and bad at.
+
+ Four sensing methods, each with a genuine advantage and a genuine defeat condition. The trade-offs below are well documented in the open literature.
+
+ § 02 / MODALITIES 
+
+ 01 
+### Radar
+ The only modality that yields range, bearing, altitude and radial speed simultaneously, and it works in weather and darkness. Against small aircraft it struggles: a low radar cross-section, and ground clutter at low grazing angles that a slow, low target hides inside.
+ 02 
+### Radio frequency
+ Passive interception of the command-and-control link, which can identify and often locate the operator as well as the aircraft. Its defeat condition is decisive and increasingly common: an autonomous platform that radiates little or nothing gives an RF sensor nothing to hear .
+ 03 
+### Electro-optical / infrared
+ Produces imagery a human can immediately interpret and confirm, which matters when a decision follows. It requires unobstructed line of sight and adequate illumination or thermal contrast, so cloud, dust, smoke and obscuration degrade it sharply.
+ 04 
+### Acoustic
+ Fully passive, transmitting nothing, and propeller harmonics are distinctive enough to separate an aircraft from a bird. The range is short, ambient noise interferes, and individual aircraft within a group are hard to separate.
+ 05 
+### Micro-Doppler
+ Rotating blades modulate a radar return in a way the airframe alone does not, producing a signature that helps classify what has been detected rather than merely noticing it. The signature weakens with distance and with smaller rotors, exactly where you most want it.
+ 06 
+### The gap that remains
+ A small, autonomous, radio-silent aircraft flying low against clutter in poor visibility is difficult for every modality at once. Any vendor claiming otherwise is describing a demonstration, not a capability.
+
+ Making One Picture
+
+## From four opinions to one track.
+
+ Fusion happens after detection, and it is where most of the engineering difficulty actually sits. Four sensors will disagree — about how many objects exist, where they are, and what they are — and something has to resolve that into a single picture a person can act on.
+
+ Association Deciding which detections from different sensors belong to the same object. Get this wrong and one aircraft becomes three tracks, or three become one.
+
+ Cross-cueing Letting one sensor point another. A radar contact can slew a camera onto a bearing far faster than a human could, turning a detection into a visual confirmation.
+
+ Weighting by trust Each sensor's contribution weighted by how much it can be trusted in the present conditions, not by a fixed constant. A camera at night and a camera at noon are different sensors.
+
+ Track continuity Holding an object's identity as it manoeuvres, is briefly occluded, or passes between sensors' coverage — so the operator sees one continuous thing, not a series of unrelated blips.
+
+ Honest uncertainty Every fused output carries a confidence. A system that reports certainty it has not earned is more dangerous than one that reports doubt.
+
+ Fusion Pipeline 
+ 
+ Input Independent sensor detections 
+
+ Associate Which detections are one object 
+
+ Cross-cue One sensor points another 
+
+ Weight By present, not nominal, reliability 
+
+ Output One track picture with confidence 
+
+ Decision Made by a person 
+
+ Why This Is Our Problem
+
+## Fusion is software.
+
+ The sensors are largely commodity. What separates a useful system from a pile of hardware is the layer that reconciles them — and that is where we work.
+
+ § 03 / OUR WORK 
+
+ 01 
+### It travels across programmes
+ The same fusion core serves ISR, force protection and counter-UAS. An improvement made for one reaches all three.
+
+ 02 
+### It runs on the platform
+ Fusion has to complete inside the same power and thermal budget as everything else on board. See edge AI .
+
+ 03 
+### It decides what to send
+ There is rarely enough bandwidth for raw feeds, so fusion also decides what is worth transmitting.
+
+ 04 
+### It is where trust is won or lost
+ False alarms come from bad fusion more often than from bad sensors, and a system that cries wolf is switched off.
+
+ This page summarises publicly documented sensing principles to explain our approach. It describes no product, and we publish no specifications, detection ranges or performance figures. All work is under active research and development .
+
+ Explore Further
+
+## Related reading.
+
+ 01 
+### Perception
+ Detection, tracking and honest confidence on a single platform.
+ 02 
+### Counter-UAS
+ Where these trade-offs bite hardest, and the economics behind them.
+ 03 
+### Navigation
+ Fusing inertial and satellite navigation on the same principle.
+
+ Go Deeper
+
+## Working on the same problem?
+
+ If you build sensors, fusion or tracking, we would like to compare notes.
+
+ Start a Conversation 
  All Capabilities
 
 ======================================================================
@@ -2767,7 +3051,7 @@ Counter-UAS — Detecting & Tracking Small Drones | Rewind Dynamics
 ### Force protection
  The broader early-warning task counter-UAS sits within.
  02 
-### Perception
+### Sensor fusion
  Detection and tracking of small, distant objects.
  03 
 ### Swarm autonomy
@@ -3251,7 +3535,9 @@ Defence Autonomy Glossary — Key Terms | Rewind Dynamics
  These ideas are what we actually build with. See how they come together in our technology and the systems we're developing.
 
  Our Technology 
- Our Systems
+ Our Systems 
+
+ Two terms deserve more than a definition: levels of autonomy and multi-sensor fusion each have their own page.
 
 ======================================================================
 URL: https://rewinddynamics.com/responsibility.html
