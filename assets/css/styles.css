@@ -741,7 +741,8 @@ p, li, .lead, blockquote, .card p, .value p, .klist li div,
 .nav__inner{ gap:18px; }
 .nav__cta{ flex:0 0 auto; }
 .nav__cta .btn{ flex:0 0 auto; }
-.nav__links{ min-width:0; flex-wrap:nowrap; }
+.nav__links{ flex:0 0 auto; min-width:max-content; flex-wrap:nowrap; }
+/* the primary nav is sized to its content; the burger takes over below 1280px */
 
 /* Buttons carrying long labels (e.g. an email address) wrap and grow
    instead of overflowing, and go full-width on small phones. */

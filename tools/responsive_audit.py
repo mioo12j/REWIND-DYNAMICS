@@ -69,6 +69,18 @@ PROBE = """(allow) => {
     }
   });
 
+  // sibling controls that visually collide (nav links running under the CTA)
+  const collide = [];
+  const navLinks = [...document.querySelectorAll('.nav__links a')];
+  const navBtn = document.querySelector('.nav__cta .btn');
+  if (navLinks.length && navBtn) {
+    const last = navLinks[navLinks.length - 1].getBoundingClientRect();
+    const btn = navBtn.getBoundingClientRect();
+    if (btn.left < last.right - 1) {
+      collide.push('nav links overlap the Contact button by ' + Math.round(last.right - btn.left) + 'px');
+    }
+  }
+
   // text that would be unreadably small
   const tiny = [];
   document.querySelectorAll('p, li, a, span, h1, h2, h3, h4, div').forEach(el => {
@@ -85,6 +97,7 @@ PROBE = """(allow) => {
     nEscapes: bad.length,
     tiny: tiny.slice(0, 3),
     squeezed: squeezed.slice(0, 4),
+    collide: collide,
   };
 }"""
 
@@ -116,6 +129,8 @@ def main():
                     faults.append((f, width, label, f"{r['nEscapes']} element(s) escape viewport: {detail}"))
                 if r.get("squeezed"):
                     faults.append((f, width, label, "label wrapped badly: " + ", ".join(r["squeezed"])))
+                if r.get("collide"):
+                    faults.append((f, width, label, "; ".join(r["collide"])))
                 if r["tiny"]:
                     faults.append((f, width, label, "text under 10px: " + ", ".join(r["tiny"])))
             page.close()
