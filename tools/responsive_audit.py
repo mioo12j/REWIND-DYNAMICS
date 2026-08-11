@@ -49,6 +49,26 @@ PROBE = """(allow) => {
                  right: Math.round(r.right), left: Math.round(r.left) });
     }
   });
+  // controls whose label has wrapped into a ragged stack
+  // (a squeezed flex row once broke "Contact" one letter per line)
+  const squeezed = [];
+  document.querySelectorAll('.btn .btn__txt, .nav__links a, .tag, .crumbs a, .crumbs span').forEach(el => {
+    const txt = (el.textContent || '').trim();
+    if (!txt || txt.length > 40 || txt.split(/\s+/).length > 5) return;
+    // count real line boxes via the Range API rather than inferring from height
+    let lines = 0;
+    try {
+      const rg = document.createRange();
+      rg.selectNodeContents(el);
+      lines = rg.getClientRects().length;
+    } catch (e) { return; }
+    const words = txt.split(/\s+/).length;
+    // a label should never occupy more line boxes than it has words
+    if (lines > Math.max(2, words)) {
+      squeezed.push(txt.slice(0, 22) + ' -> ' + lines + ' lines / ' + words + ' words');
+    }
+  });
+
   // text that would be unreadably small
   const tiny = [];
   document.querySelectorAll('p, li, a, span, h1, h2, h3, h4, div').forEach(el => {
@@ -64,6 +84,7 @@ PROBE = """(allow) => {
     escapes: bad.slice(0, 6),
     nEscapes: bad.length,
     tiny: tiny.slice(0, 3),
+    squeezed: squeezed.slice(0, 4),
   };
 }"""
 
@@ -93,6 +114,8 @@ def main():
                 if r["nEscapes"]:
                     detail = "; ".join(f"{e['t']}.{e['c']}(right={e['right']})" for e in r["escapes"])
                     faults.append((f, width, label, f"{r['nEscapes']} element(s) escape viewport: {detail}"))
+                if r.get("squeezed"):
+                    faults.append((f, width, label, "label wrapped badly: " + ", ".join(r["squeezed"])))
                 if r["tiny"]:
                     faults.append((f, width, label, "text under 10px: " + ", ".join(r["tiny"])))
             page.close()

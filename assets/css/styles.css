@@ -727,14 +727,27 @@ p{ color:var(--ink-soft); }
    reduces the element's min-content width.
    ============================================================ */
 p, li, .lead, blockquote, .card p, .value p, .klist li div,
-.spec__v, .info__v, .btn__txt, .newsrow__t, dd, td{
+.spec__v, .info__v, .newsrow__t, dd, td{
   overflow-wrap:anywhere;
 }
+
+/* Buttons never wrap their label. `overflow-wrap:anywhere` collapses an
+   element's min-content width to one character, so a flex row would shrink
+   the button and stack its label — that is what broke "Contact" into
+   "C/O/N/T..." and CTA labels into three lines. Wrapping is therefore
+   enabled only on small phones, where buttons go full-width and a long
+   email address genuinely needs to break. */
+.btn{ white-space:nowrap; }
+.nav__inner{ gap:18px; }
+.nav__cta{ flex:0 0 auto; }
+.nav__cta .btn{ flex:0 0 auto; }
+.nav__links{ min-width:0; flex-wrap:nowrap; }
 
 /* Buttons carrying long labels (e.g. an email address) wrap and grow
    instead of overflowing, and go full-width on small phones. */
 @media (max-width:560px){
-  .btn{ height:auto; min-height:var(--bh); padding:14px 20px; line-height:1.35; text-align:center; }
+  .btn{ height:auto; min-height:var(--bh); padding:14px 20px; line-height:1.35; text-align:center;
+        white-space:normal; overflow-wrap:anywhere; }
   .hero__actions, .cta__actions{ flex-direction:column; align-items:stretch; }
   .hero__actions .btn, .cta__actions .btn{ width:100%; }
 }
