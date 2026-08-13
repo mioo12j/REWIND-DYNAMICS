@@ -41,6 +41,7 @@ Allow: /
 
 # Full-text corpus for AI systems: https://rewinddynamics.com/llms-full.txt
 # Structured summary:          https://rewinddynamics.com/llms.txt
+# IndexNow key:               https://rewinddynamics.com/806b5b14b2b143ec83e5326b8970c382.txt
 # RSS feed:                    https://rewinddynamics.com/feed.xml
 
 Sitemap: https://rewinddynamics.com/sitemap.xml
