@@ -4,6 +4,31 @@
 [build]
   publish = "."
 
+# The human-readable site map used to live at /sitemap.html, which Search
+# Console mistook for the XML sitemap. Permanently redirect the old URL.
+[[redirects]]
+  from = "/sitemap.html"
+  to = "/site-map.html"
+  status = 301
+  force = true
+
+# Serve XML and text assets with explicit content types so no crawler has to
+# guess — a sitemap served as text/html is rejected outright.
+[[headers]]
+  for = "/*.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+  for = "/feed.xml"
+  [headers.values]
+    Content-Type = "application/rss+xml; charset=utf-8"
+
+[[headers]]
+  for = "/*.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
 # Custom 404 page
 [[redirects]]
   from = "/*"
