@@ -207,7 +207,7 @@ FOOTER = '''<footer class="footer">
   <div class="container">
     <div class="footer__bar">
       <span>© 2020–<span data-year>2026</span> Rewind Dynamics. All rights reserved.</span>
-      <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><span>New Delhi, India</span></div>
+      <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><a href="accessibility.html">Accessibility</a><a href="search.html">Search</a><a href="site-map.html">Site Map</a><span>New Delhi, India</span></div>
     </div>
   </div>
 </footer>'''

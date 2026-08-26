@@ -799,3 +799,14 @@ textarea:focus-visible, select:focus-visible{
   *, *::before, *::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important;
     transition-duration:.001ms !important; scroll-behavior:auto !important; }
 }
+
+/* ---------- Site search ---------- */
+.searchbar{ display:flex; align-items:center; gap:12px; border:1px solid var(--line-2);
+  border-radius:var(--radius); background:var(--bg-1); padding:0 16px;
+  transition:border-color .3s var(--ease), box-shadow .3s var(--ease); }
+.searchbar:focus-within{ border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-glow); }
+.searchbar svg{ color:var(--muted); flex:none; }
+.searchbar input{ flex:1; background:none; border:0; outline:0; color:var(--ink);
+  font-size:1.05rem; padding:16px 0; font-family:var(--font-body); }
+.searchbar input::placeholder{ color:var(--muted-2); }
+.searchbar input::-webkit-search-cancel-button{ filter:invert(.6); }
