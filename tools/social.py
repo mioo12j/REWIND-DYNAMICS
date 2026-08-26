@@ -33,7 +33,7 @@ PROFILES = [
     ("x",            "",  "X"),
     ("youtube",      "",  "YouTube"),
     ("github",       "",  "GitHub"),
-    ("instagram",    "",  "Instagram"),
+    ("instagram",    "https://www.instagram.com/rewinddynamics/",  "Instagram"),
 ]
 
 ICONS = {

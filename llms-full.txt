@@ -1,5 +1,5 @@
 # Rewind Dynamics — full site text
-# Autonomous unmanned aerial systems, precision guidance and tactical platforms for governments and armed forces. New Delhi, 2020. First mission test December 2026.
+# Autonomous unmanned aerial systems, precision guidance and tactical platforms for governments and armed forces. Founded 2020. First mission test December 2026.
 # Source: https://rewinddynamics.com/
 
 
@@ -12,7 +12,7 @@ Rewind Dynamics — Autonomous Defence Systems & Precision Guidance
 
  Rewind Dynamics
 
- Autonomous Systems · New Delhi
+ Autonomous Systems · Worldwide
 
  LOADING · 000%
 
@@ -45,7 +45,7 @@ Rewind Dynamics — Autonomous Defence Systems & Precision Guidance
 
  Rewind Dynamics 
  Est. 2020 
- New Delhi · India 
+ Autonomy · Worldwide 
  Autonomy 
 
  Focus Aerial · Guided · Tactical 
@@ -54,7 +54,7 @@ Rewind Dynamics — Autonomous Defence Systems & Precision Guidance
 
  Origin Global 
 
- Headquarters New Delhi, India 
+ Operations Global 
 
  Autonomy Unmanned Aerial Precision Guidance Tactical Systems Perception Edge AI 
  Autonomy Unmanned Aerial Precision Guidance Tactical Systems Perception Edge AI 
@@ -71,7 +71,7 @@ Rewind Dynamics — Autonomous Defence Systems & Precision Guidance
  § 01 / OVERVIEW 
 
  Rewind Dynamics is a defence-technology company headquartered in
- New Delhi. We design and develop autonomous systems that can sense their surroundings, make decisions
+ We design and develop autonomous systems that can sense their surroundings, make decisions
  and act — reducing risk to personnel and extending what a single operator can achieve.
 
  Our work spans three families of autonomous platforms — unmanned aerial,
@@ -260,7 +260,7 @@ Rewind Dynamics — Autonomous Defence Systems & Precision Guidance
 ======================================================================
 URL: https://rewinddynamics.com/about.html
 ======================================================================
-About Rewind Dynamics — Defence Autonomy Company in New Delhi 
+About Rewind Dynamics — Global Defence Autonomy Company 
 
  Skip to content 
 
@@ -276,11 +276,11 @@ About Rewind Dynamics — Defence Autonomy Company in New Delhi
  10 Newsroom 
  11 Contact 
 
- Who We Are  ·  Est. 2020  ·  New Delhi
+ Who We Are  ·  Est. 2020 · Global
 
 ## A close-knit team with a long horizon.
 
- We started in 2020 with a small room in New Delhi and one conviction: that the
+ We started in 2020 with a small room and one conviction: that the
  forces who depend on autonomous systems should be able to understand them. Six years later
  we are still small, still stubborn about that, and building for governments and armed forces
  worldwide — with a first real-world mission test coming this December.
@@ -352,7 +352,7 @@ About Rewind Dynamics — Defence Autonomy Company in New Delhi
  2020
  
 ### Founded
- Rewind Dynamics established in New Delhi on 26 January 2020, to build autonomous systems for defence.
+ Rewind Dynamics established on 26 January 2020, to build autonomous systems for defence.
  Milestone
 
  2021
@@ -376,7 +376,7 @@ About Rewind Dynamics — Defence Autonomy Company in New Delhi
  2024
  
 ### Growing
- Expanded the team and our engineering facility in New Delhi.
+ Expanded the team and our engineering facility.
  Milestone
 
  2025
@@ -415,9 +415,9 @@ About Rewind Dynamics — Defence Autonomy Company in New Delhi
 
  Legal name Rewind Dynamics — a defence-technology company developing autonomous systems.
 
- Founded 26 January 2020, in New Delhi, India.
+ Founded 26 January 2020.
 
- Headquarters New Delhi, India. We work with defence and military users worldwide.
+ Operations Global. We work with defence and military users worldwide.
 
  What we build Autonomous unmanned aerial (UAV), precision-guided and tactical platforms, on one shared autonomy core.
 
@@ -427,7 +427,7 @@ About Rewind Dynamics — Defence Autonomy Company in New Delhi
 
  Founded 26 January 2020 
 
- Headquarters New Delhi, India 
+ Operations Global 
 
  Sector Defence autonomy & robotics 
 
@@ -455,7 +455,7 @@ About Rewind Dynamics — Defence Autonomy Company in New Delhi
  Every milestone from founding in 2020 to the mission test planned for December 2026. View → 
  02 
 ### Locations 
- Our New Delhi headquarters and engineering facility, and how we work with users worldwide. View → 
+ Our engineering facility, and how we work with users worldwide. View → 
  03 
 ### Governance 
  The decisions that require more than one person, and how they are recorded. Read → 
@@ -520,9 +520,9 @@ Capability Statement | Rewind Dynamics
 
  Legal name Rewind Dynamics — a privately held defence-technology company.
 
- Established 26 January 2020, New Delhi, India.
+ Established 26 January 2020.
 
- Headquarters New Delhi, India. One engineering facility; customers and suppliers worldwide.
+ Operations Global. One engineering facility; customers and suppliers worldwide.
 
  Business Autonomy software and guidance engineering for unmanned aerial, precision-guided and tactical systems.
 
@@ -532,7 +532,7 @@ Capability Statement | Rewind Dynamics
 
  Established 26 January 2020 
 
- Headquarters New Delhi, India 
+ Operations Global 
 
  Ownership Private, actively raising 
 
@@ -4554,7 +4554,7 @@ Corporate Responsibility & Sustainability | Rewind Dynamics
  
  Company size Small, growing engineering team 
 
- Facilities One engineering facility, New Delhi 
+ Facilities One engineering facility 
 
  Primary method Simulation-first development 
 
@@ -4630,7 +4630,7 @@ Company Timeline — 2020 to 2026 | Rewind Dynamics
 
  26 Jan 2020 
  
-### Founded in New Delhi
+### Founded
  Rewind Dynamics is established with a single objective: build autonomous systems that defence and military users can genuinely trust.
  
  Aug 2020 
@@ -4661,7 +4661,7 @@ Company Timeline — 2020 to 2026 | Rewind Dynamics
  Feb 2024 
  
 ### Engineering facility expanded
- More space, better test infrastructure and room to grow the team in New Delhi.
+ More space, better test infrastructure and room to grow the team.
  
  Apr 2025 
  
@@ -4734,13 +4734,13 @@ Locations & Global Presence | Rewind Dynamics
 
  § 01 / FOOTPRINT 
 
- Rewind Dynamics is headquartered in New Delhi, India, where our engineering facility, laboratory and test infrastructure sit together. At our stage that concentration is an advantage rather than a limitation: autonomy is developed by tight iteration between software, hardware and test, and that goes faster when the people doing it share a room.
+ Rewind Dynamics runs from a single engineering facility, where software engineering, laboratory and test infrastructure sit together. At our stage that concentration is an advantage rather than a limitation: autonomy is developed by tight iteration between software, hardware and test, and that goes faster when the people doing it share a room.
 
  Being headquartered in one country says nothing about who we build for. Our systems are designed for defence and military users internationally, and we engage with programmes, primes and evaluators wherever they are — subject to the export-control and end-user assessment set out in our security & compliance and human rights pages.
 
  Headquarters
 
-## New Delhi, India.
+## One facility, one team.
 
  Our headquarters and sole engineering facility. It houses software and hardware engineering, our simulation environment and our test infrastructure.
 
@@ -4752,9 +4752,9 @@ Locations & Global Presence | Rewind Dynamics
 
  Correspondence General enquiries reach us at info@rewinddynamics.com; we arrange secure channels where needed.
 
- Headquarters New Delhi 
+ Facility Engineering 
  
- City New Delhi, India 
+ Reach Global operations 
 
  Function Headquarters & engineering 
 
@@ -4802,7 +4802,7 @@ Locations & Global Presence | Rewind Dynamics
  How defence programmes and integrators engage with us.
  03 
 ### Facility expansion
- When and why we expanded our New Delhi facility.
+ When and why we expanded our engineering facility.
 
  Come And See
 
@@ -4905,7 +4905,7 @@ Partners & Programmes — Work With Rewind Dynamics
 
  Press press@rewinddynamics.com 
 
- Based New Delhi · working worldwide 
+ Based Working worldwide 
 
  Please do not send sensitive, classified or
  export-controlled material through this website or by unsecured email. Tell us that you have something to
@@ -5025,7 +5025,7 @@ Suppliers & Supply Chain | Rewind Dynamics
 
  Contact partnerships@rewinddynamics.com 
 
- Based New Delhi · sourcing worldwide 
+ Based Sourcing worldwide 
 
  To introduce your company, email partnerships@rewinddynamics.com with a short description of what you make and where you think it fits. Please do not send sensitive, proprietary or export-controlled material in a first email — tell us it exists and we will arrange an appropriate channel. All engagements are subject to screening and applicable export-control obligations; see security & compliance .
 
@@ -5132,7 +5132,7 @@ Investors — Backing Defence Autonomy | Rewind Dynamics
  
  Company Rewind Dynamics · Est. 2020 
 
- Based New Delhi, India 
+ Based Global operations 
 
  Sector Defence autonomy & robotics 
 
@@ -5368,7 +5368,7 @@ Careers — Defence Autonomy Engineering Jobs | Rewind Dynamics
 ======================================================================
 URL: https://rewinddynamics.com/contact.html
 ======================================================================
-Contact Rewind Dynamics — New Delhi, India 
+Contact Rewind Dynamics 
 
  Skip to content 
 
@@ -5389,7 +5389,7 @@ Contact Rewind Dynamics — New Delhi, India
 ## Let's talk.
 
  Partners, suppliers, press or the simply curious — send us a message and we'll
- get back to you. We're based in New Delhi, India.
+ get back to you.
 
  Send A Message
 
@@ -5443,10 +5443,10 @@ Contact Rewind Dynamics — New Delhi, India
  investors@rewinddynamics.com 
  We're actively raising — investor info . 
 
- Location India 
+ Reach Worldwide 
 
  Head Office
- New Delhi, India
+ Global operations
  Full address available on request. 
 
  Before You Write
@@ -5501,15 +5501,15 @@ FAQ — Common Questions About Rewind Dynamics
 
  Straight answers about who we are, what we're building, where we are in the journey, and how to work with us.
 
- What does Rewind Dynamics do? Rewind Dynamics is a defence-technology company, based in New Delhi, that designs and develops autonomous systems — unmanned aerial (UAV), precision-guided and tactical platforms — for defence and military applications.
+ What does Rewind Dynamics do? Rewind Dynamics is a defence-technology company that designs and develops autonomous systems — unmanned aerial (UAV), precision-guided and tactical platforms — for defence and military applications.
 
- When was the company founded? Rewind Dynamics was founded on 26 January 2020 in New Delhi, India.
+ When was the company founded? Rewind Dynamics was founded on 26 January 2020.
 
  What stage are you at? Have your systems been tested or fielded? We are a research-and-development company. Our systems are under active development and have not been fielded or tested in the real world yet. Our first end-to-end mission test is planned for December 2026.
 
  What systems are you building? Three families that share a common autonomy core: unmanned aerial systems (UAVs) for surveillance and force protection; precision guidance for accurate, accountable effects; and tactical miniature systems for close-range, dismounted use.
 
- Do you only work with India, or globally? We're headquartered in New Delhi, but we're a global company: we build autonomous systems for defence and military users worldwide. Our focus is autonomy you can trust, adapt and maintain on your own terms — capability that's owned end to end rather than treated as a sealed black box.
+ Do you work internationally? We're a global company: we build autonomous systems for defence and military users worldwide. Our focus is autonomy you can trust, adapt and maintain on your own terms — capability that's owned end to end rather than treated as a sealed black box.
 
  How do you think about safety and ethics? A person is always in command. Machines carry out tasks; people set the rules and stay responsible. We design for human oversight, safety limits, lawful use, accountability and honest after-action assessment. See our Responsible Autonomy page.
 
@@ -5521,7 +5521,7 @@ FAQ — Common Questions About Rewind Dynamics
 
  Are you hiring? Yes. We're building the founding engineering team across autonomy, perception, robotics and embedded systems. See our Careers page or write to careers@rewinddynamics.com.
 
- Where are you based, and how do we reach you? We're headquartered in New Delhi, India. For general enquiries, email info@rewinddynamics.com or use the contact form.
+ Where are you based, and how do we reach you? We operate globally. For general enquiries, email info@rewinddynamics.com or use the contact form.
 
  Didn't find it?
 
@@ -5562,7 +5562,7 @@ Press & Media Kit — Rewind Dynamics
  Founded 
 
 ## 26 Jan 2020
- New Delhi, India.
+ Global operations.
 
  Sector 
 
@@ -5582,7 +5582,7 @@ Press & Media Kit — Rewind Dynamics
  defence-technology company developing autonomous systems for defence.
 
  Long: Rewind Dynamics is a defence-technology company
- headquartered in New Delhi, founded in 2020. It designs and develops autonomous systems —
+ founded in 2020. It designs and develops autonomous systems —
  unmanned aerial, precision-guided and tactical platforms — for defence and military
  applications, built on a common core of autonomy, perception and dependable systems engineering. Its
  systems are under active research and development, with a first real-world mission test planned for
@@ -5611,7 +5611,7 @@ Press & Media Kit — Rewind Dynamics
 
  Founded 26 January 2020 
 
- Headquarters New Delhi, India 
+ Operations Global 
 
  Focus Autonomous systems for defence 
 
@@ -5651,7 +5651,7 @@ The Attention Problem in ISR | Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Perspective 24 June 2025 New Delhi 
+ Perspective 24 June 2025
 
 ## The attention problem
 
@@ -5740,7 +5740,7 @@ The Autonomy Decade — Software as Capability | Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Perspective 14 July 2026 New Delhi 
+ Perspective 14 July 2026
 
 ## The autonomy decade
 
@@ -5831,7 +5831,7 @@ The Cost Curve Problem — Counter-UAS | Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Perspective 9 September 2025 New Delhi 
+ Perspective 9 September 2025
 
 ## The cost curve problem
 
@@ -5924,7 +5924,7 @@ The Case for Thinking at the Edge | Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Perspective 27 January 2026 New Delhi 
+ Perspective 27 January 2026
 
 ## The case for thinking at the edge
 
@@ -6011,7 +6011,7 @@ Navigating Without the Sky — GPS-Denied | Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Perspective 11 March 2026 New Delhi 
+ Perspective 11 March 2026
 
 ## Navigating without the sky
 
@@ -6104,7 +6104,7 @@ Command, Not Control — Human Authority | Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Perspective 18 November 2025 New Delhi 
+ Perspective 18 November 2025
 
 ## Command, not control
 
@@ -6200,7 +6200,7 @@ Mass, Reimagined — The Economics of Swarms | Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Perspective 21 May 2026 New Delhi 
+ Perspective 21 May 2026
 
 ## Mass, reimagined
 
@@ -6295,7 +6295,7 @@ Building the founding engineering team — Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Company 22 March 2021 New Delhi 
+ Company 22 March 2021
 
 ## Building the founding engineering team
 
@@ -6357,7 +6357,7 @@ Edge AI: intelligence on the platform | Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Perspective 30 September 2021 New Delhi 
+ Perspective 30 September 2021
 
 ## Edge AI: why the intelligence has to live on the platform
 
@@ -6397,7 +6397,7 @@ Edge AI: intelligence on the platform | Rewind Dynamics
 ======================================================================
 URL: https://rewinddynamics.com/news-facility.html
 ======================================================================
-Expanding our engineering facility in New Delhi — Rewind Dynamics 
+Expanding our engineering facility — Rewind Dynamics 
 
  Skip to content 
 
@@ -6413,21 +6413,21 @@ Expanding our engineering facility in New Delhi — Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Company 14 February 2024 New Delhi 
+ Company 14 February 2024
 
-## Expanding our engineering facility in New Delhi
+## Expanding our engineering facility
 
- More space, better test infrastructure and room to grow the team — an update on our expanded New Delhi facility.
+ More space, better test infrastructure and room to grow the team — an update on our expanded facility.
 
- Building autonomous systems takes benches, test space and room for a growing team. We're pleased to share that we've expanded our engineering facility in New Delhi .
+ Building autonomous systems takes benches, test space and room for a growing team. We're pleased to share that we've expanded our engineering facility.
 
 ## Built for building
 
  The expanded space gives us more integration and test area, better infrastructure for hardware work, and the room to bring on the engineers we need as our programmes grow. It's a practical milestone rather than a flashy one — but practical milestones are what real capability is made of.
 
-## Why New Delhi
+## Why keep it in one place
 
- New Delhi keeps us close to the talent and ecosystem we work within, and it's a base from which we build for defence and military users worldwide. Real capability isn't only about where a product is assembled; it's about where the understanding lives.
+ Keeping engineering, laboratory and test under one roof keeps us close to the work and the ecosystem we build within, and it is a base from which we serve defence and military users worldwide. Real capability isn't only about where a product is assembled; it's about where the understanding lives.
 
  Real capability is built by people who stay close to the systems, and keep improving them. 
 
@@ -6467,7 +6467,7 @@ Preparing for our first mission test this December — Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Programme 5 August 2026 New Delhi 
+ Programme 5 August 2026
 
 ## Preparing for our first mission test this December
 
@@ -6511,7 +6511,7 @@ Preparing for our first mission test this December — Rewind Dynamics
 ======================================================================
 URL: https://rewinddynamics.com/news-founding.html
 ======================================================================
-Rewind Dynamics is founded in New Delhi — Rewind Dynamics 
+Rewind Dynamics is founded — Rewind Dynamics 
 
  Skip to content 
 
@@ -6527,13 +6527,13 @@ Rewind Dynamics is founded in New Delhi — Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Company 26 January 2020 New Delhi 
+ Company 26 January 2020
 
-## Rewind Dynamics is founded in New Delhi
+## Rewind Dynamics is founded
 
  We are starting Rewind Dynamics to design and build autonomous systems for defence and military needs.
 
- Today — on Republic Day — we are formally launching Rewind Dynamics , a defence-technology company based in New Delhi. Our purpose is simple to state and hard to do well: to design and build autonomous systems that are genuinely useful to the people who defend and protect.
+ Today we are formally launching Rewind Dynamics , a defence-technology company. Our purpose is simple to state and hard to do well: to design and build autonomous systems that are genuinely useful to the people who defend and protect.
 
 ## Why we're doing this
 
@@ -6592,7 +6592,7 @@ Autonomy, with a human always in command — Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Perspective 24 November 2022 New Delhi 
+ Perspective 24 November 2022
 
 ## Autonomy, with a human always in command
 
@@ -6648,7 +6648,7 @@ The case for trustworthy autonomy in defence — Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Perspective 18 August 2020 New Delhi 
+ Perspective 18 August 2020
 
 ## The case for trustworthy autonomy in defence
 
@@ -6706,7 +6706,7 @@ Why the tactical edge belongs to autonomy — Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Perspective 18 June 2026 New Delhi 
+ Perspective 18 June 2026
 
 ## Why the tactical edge belongs to autonomy
 
@@ -6762,7 +6762,7 @@ Developing our first UAV | Rewind Dynamics
  10 Newsroom 
  11 Contact 
 
- Programme 16 May 2022 New Delhi 
+ Programme 16 May 2022
 
 ## Commencing development of our first unmanned aerial system
 

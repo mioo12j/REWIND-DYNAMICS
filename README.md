@@ -1,8 +1,7 @@
 # Rewind Dynamics — Website
 
 A fast, dark, animated marketing website for **Rewind Dynamics** — a global
-defence-technology company (established **26 January 2020**, headquartered in New
-Delhi) developing autonomous systems: unmanned aerial (UAV), precision-guided and tactical
+defence-technology company (established **26 January 2020**, a global company) developing autonomous systems: unmanned aerial (UAV), precision-guided and tactical
 platforms for governments and armed forces worldwide. Everything is
 currently under **active research & development**; the first real-world mission
 test is planned for **December 2026**.
@@ -117,7 +116,7 @@ Static site — pick whichever is easiest:
 
 ---
 
-*Autonomous systems for defence. Headquartered in New Delhi — since 2020.*
+*Autonomous systems for defence. Global — since 2020.*
 
 ---
 

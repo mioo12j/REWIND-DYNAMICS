@@ -13,7 +13,7 @@ four identical everywhere.
 | Company name | Rewind Dynamics |
 | Website | https://rewinddynamics.com |
 | Founded | 26 January 2020 |
-| Headquarters | New Delhi, India |
+| Reach | Global (operations worldwide) |
 | Industry | Defence & Space / Aviation & Aerospace |
 | Company size | 2–10 employees |
 | Type | Privately held |
@@ -28,13 +28,13 @@ Autonomous systems and precision guidance for defence.
 
 Rewind Dynamics is a defence-technology company building autonomy that
 governments and armed forces can trust — unmanned aerial systems, precision
-guidance and tactical platforms on one shared core. Founded 2020, New Delhi.
+guidance and tactical platforms on one shared core. Founded 2020.
 All systems in active R&D; first mission test December 2026.
 
 ## Long description (Crunchbase / directories, ~900 chars)
 
 Rewind Dynamics is a defence-technology company founded on 26 January 2020 and
-headquartered in New Delhi, India. We develop the autonomy core behind three
+a global company. We develop the autonomy core behind three
 families of systems: unmanned aerial systems (UAV) for intelligence,
 surveillance and reconnaissance; precision guidance for accurate, accountable
 effects; and tactical miniature platforms for close-range, dismounted use.
@@ -65,7 +65,7 @@ Robotics, Autonomy software
 2. **Crunchbase** — crunchbase.com/register (free "Add a company")
    Feeds many aggregators; strong entity corroboration.
 3. **Google Business Profile** — only if you will accept a postcard at the
-   New Delhi address. Skip if the address is not a staffed office.
+   Skip street address unless it is a staffed, publishable office.
 4. **GitHub organisation** — github.com/organizations/new
    Credible for a software-first company even with one public repo.
 5. **X / YouTube** — lower priority; create to protect the handle.

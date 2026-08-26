@@ -19,16 +19,17 @@ DRAWER = [("index.html", "Home")] + NAV + [("contact.html", "Contact")]
 
 ORG = ('{"@context": "https://schema.org", "@type": "Organization", "@id": "https://rewinddynamics.com/#organization", '
  '"name": "Rewind Dynamics", "legalName": "Rewind Dynamics", "url": "https://rewinddynamics.com/", '
+ '"sameAs": ["https://www.instagram.com/rewinddynamics/"], '
  '"logo": {"@type": "ImageObject", "url": "https://rewinddynamics.com/assets/img/logo-mark.svg"}, '
  '"image": "https://rewinddynamics.com/assets/img/og.png", "foundingDate": "2020-01-26", '
- '"description": "Rewind Dynamics is a global defence-technology company, headquartered in New Delhi, developing '
- 'autonomous systems \\u2014 unmanned aerial, precision-guided and tactical platforms \\u2014 for defence and military applications.", '
+ '"description": "Rewind Dynamics is a global defence-technology company developing '
+ 'autonomous systems \\u2014 autonomous drones (UAV), precision-guided and tactical platforms \\u2014 for defence and military applications.", '
  '"email": "info@rewinddynamics.com", "slogan": "Autonomous systems for defence.", '
- '"foundingLocation": {"@type": "Place", "name": "New Delhi, India"}, '
- '"address": {"@type": "PostalAddress", "addressLocality": "New Delhi", "addressRegion": "Delhi", "addressCountry": "IN"}, '
  '"areaServed": {"@type": "Place", "name": "Worldwide"}, '
- '"knowsAbout": ["Autonomous systems", "Unmanned aerial vehicles", "Precision guidance", "Tactical systems", '
- '"Defence technology", "Edge AI", "Perception", "Autonomy", "Drone swarms", "ISR", "GPS-denied navigation"]}')
+ '"knowsAbout": ["Autonomous systems", "Autonomous drones", "Military drones", "Automated drones", '
+ '"Unmanned aerial vehicles", "UAV", "Precision guidance", "Loitering munitions", "Tactical systems", '
+ '"Defence technology", "Edge AI", "Perception", "Autonomy", "Drone swarms", "Counter-drone systems", '
+ '"Counter-UAS", "ISR", "GPS-denied navigation"]}')
 
 TICK = ('<span class="mk"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" '
         'stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>')
@@ -189,11 +190,11 @@ FOOTER = '''<footer class="footer">
           <img class="brand__mark" src="assets/img/logo-mark.svg" alt="">
           <span class="brand__word"><b>Rewind</b><span>Dynamics</span></span>
         </a>
-        <p>A global defence-technology company, headquartered in New Delhi, developing autonomous systems — unmanned aerial, precision-guided and tactical platforms — for defence and military applications.</p>
+        <p>A global defence-technology company developing autonomous systems — unmanned aerial, precision-guided and tactical platforms — for defence and military applications.</p>
         <div class="footer__social">
           <a href="mailto:info@rewinddynamics.com" aria-label="Email" title="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7.5l8 5.5 8-5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
         </div>
-        <p class="footer__loc mono">New Delhi, India</p>
+        <p class="footer__loc mono">Global operations</p>
       </div>
       <div class="footer__col"><h4>Systems</h4><a href="systems.html">All Systems</a><a href="uav.html">Unmanned Aerial</a><a href="precision-guidance.html">Precision Guidance</a><a href="tactical.html">Tactical Miniature</a><a href="swarming.html">Swarm Autonomy</a></div>
       <div class="footer__col"><h4>Capabilities</h4><a href="capabilities.html">Overview</a><a href="autonomy.html">Autonomy</a><a href="perception.html">Perception</a><a href="edge-ai.html">Edge AI</a><a href="navigation.html">Navigation</a><a href="systems-engineering.html">Systems Engineering</a><a href="simulation.html">Simulation &amp; Test</a></div>
@@ -207,7 +208,7 @@ FOOTER = '''<footer class="footer">
   <div class="container">
     <div class="footer__bar">
       <span>© 2020–<span data-year>2026</span> Rewind Dynamics. All rights reserved.</span>
-      <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><a href="accessibility.html">Accessibility</a><a href="search.html">Search</a><a href="site-map.html">Site Map</a><span>New Delhi, India</span></div>
+      <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><a href="accessibility.html">Accessibility</a><a href="search.html">Search</a><a href="site-map.html">Site Map</a></div>
     </div>
   </div>
 </footer>'''
@@ -258,9 +259,8 @@ def build(fn, title, desc, crumbs, hero, sections, extra_ld=None, active=None):
 <link rel="canonical" href="{url}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="Rewind Dynamics">
-<meta name="geo.region" content="IN-DL"><meta name="geo.placename" content="New Delhi">
 <meta property="og:site_name" content="Rewind Dynamics">
-<meta property="og:locale" content="en_IN">
+<meta property="og:locale" content="en">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{et}">
 <meta property="og:description" content="{ed}">
@@ -372,9 +372,8 @@ def build_article(fn, title, desc, category, date_iso, date_human, h1, lead,
 <link rel="canonical" href="{url}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="Rewind Dynamics">
-<meta name="geo.region" content="IN-DL"><meta name="geo.placename" content="New Delhi">
 <meta property="og:site_name" content="Rewind Dynamics">
-<meta property="og:locale" content="en_IN">
+<meta property="og:locale" content="en">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="{date_iso}">
 <meta property="article:modified_time" content="2026-08-10">
@@ -425,7 +424,7 @@ def build_article(fn, title, desc, category, date_iso, date_human, h1, lead,
     <div class="container phero__in">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="{parent_file}">{parent_name}</a><span class="sep">/</span><span>Feature</span></nav>
       <div class="article article__head" data-enter="2" style="margin-bottom:0">
-        <div class="article__meta"><span class="cat">{category}</span><span>{date_human}</span><span>New Delhi</span></div>
+        <div class="article__meta"><span class="cat">{category}</span><span>{date_human}</span></div>
         <h1 class="article__title">{h1}</h1>
         <p class="article__lead">{lead}</p>
       </div>
