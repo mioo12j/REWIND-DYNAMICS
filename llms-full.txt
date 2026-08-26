@@ -1,7 +1,6 @@
 # Rewind Dynamics — full site text
-# Global defence-technology company. Autonomous unmanned aerial systems, precision guidance and tactical platforms for governments and armed forces.
-# Founded 26 January 2020, New Delhi, India. All systems in active R&D; first mission test planned December 2026.
-# Source: https://rewinddynamics.com/  |  Generated 2026-08-11
+# Autonomous unmanned aerial systems, precision guidance and tactical platforms for governments and armed forces. New Delhi, 2020. First mission test December 2026.
+# Source: https://rewinddynamics.com/
 
 
 ======================================================================
@@ -830,6 +829,20 @@ Systems — UAV, Guided & Tactical | Rewind Dynamics
 ### Autonomy glossary
  UAV, ISR, SWaP and the rest, defined plainly.
 
+ Common Questions
+
+## Questions about our systems.
+
+ § 98 / FAQ 
+
+ What systems does Rewind Dynamics build? Three families that share one autonomy core: unmanned aerial systems (UAVs) for intelligence, surveillance and reconnaissance and force protection; precision guidance for accurate, accountable effects; and tactical miniature systems for close-range, dismounted use.
+
+ Why one autonomy core across three families? Because the hard part — autonomy, perception, edge intelligence and dependable engineering — is common to all three. Building one core rather than three bespoke stacks means an improvement made for one platform benefits every platform, which compounds over time in a way separate systems never would.
+
+ Are any of these systems in service? No. All three families are under active research and development. Nothing has been fielded, we publish no specifications or performance figures, and our first end-to-end real-world mission test is planned for December 2026.
+
+ Do your systems replace existing platforms? No — they are designed to integrate. The autonomy core is modular by intent, built to sit alongside existing platforms, sensors and command arrangements rather than forcing everything to be replaced around it.
+
 ======================================================================
 URL: https://rewinddynamics.com/uav.html
 ======================================================================
@@ -1330,7 +1343,21 @@ Tactical Miniature Systems — Man-Portable Autonomy | Rewind Dynamics
  If you evaluate, procure or field small autonomous systems, we'd value the conversation.
 
  Start a Conversation 
- All Systems
+ All Systems 
+
+ Common Questions
+
+## Questions about tactical systems.
+
+ § 98 / FAQ 
+
+ What is a tactical miniature system? A small, man-portable autonomous system for close-range and dismounted use — carried and deployed by one person alongside their existing equipment. When size, weight and power are tightly limited, simplicity and ruggedness matter more than anything else.
+
+ What does SWaP mean? SWaP stands for size, weight and power — the three linked constraints that dominate the design of any small autonomous system. Every capability added costs something in at least one of them, which is a brutal constraint and a clarifying one: what survives the cut tends to be the capability that genuinely matters.
+
+ What does 'dismounted' mean? Operating on foot, away from a vehicle. Dismounted teams have the tightest constraints on what they can carry, which is why a tactical system has to be small, quick to deploy, light on logistics, and able to work without a constant communications link.
+
+ Why is compute so hard on a small platform? A tactical system has to run capable perception and autonomy on hardware with a fraction of the power a larger platform can spare, drawing from the same small battery that also powers endurance and sensing. Every choice costs another, which is why edge-efficient intelligence is central to the problem.
 
 ======================================================================
 URL: https://rewinddynamics.com/capabilities.html
@@ -1516,7 +1543,21 @@ Capabilities — Autonomy, Perception & Edge AI | Rewind Dynamics
  Why no single sensor sees everything, and how four disagreeing sensors become one track picture. Read more → 
  08 
 ### Levels of autonomy 
- Why "fully autonomous" means nothing, and the three axes that actually describe a system. Read more →
+ Why "fully autonomous" means nothing, and the three axes that actually describe a system. Read more → 
+
+ Common Questions
+
+## Questions about our capabilities.
+
+ § 98 / FAQ 
+
+ What are Rewind Dynamics' core capabilities? Six, all sharing one core: autonomy (onboard decision-making), perception and sensor fusion, edge AI, GPS-denied navigation, precision guidance, and systems engineering and assurance. Each has its own detailed page.
+
+ What is sensor fusion? Combining several different sensors into a single, coherent picture that is more reliable than any one of them alone — including resolving disagreements between them. The value comes from combining sensors whose failure modes do not overlap, so a condition that defeats one is covered by another.
+
+ What is perception in an autonomous system? Turning raw camera and sensor data into a usable understanding of the environment — what is there, where it is, whether it matters, and how confident the system should be about all of that. It is where most autonomy projects quietly fail, because a stack that works on clean daytime footage but not in rain, dust or low light is a demonstration, not a capability.
+
+ What is systems engineering, and why does it matter? The discipline that turns autonomy software into a dependable machine: integration, reliability, environmental ruggedness, repeatable verification and configuration control. Most of the distance between a promising prototype and a fielded system is not algorithmic — it is this unglamorous work, which is why we treat it as a first-class capability.
 
 ======================================================================
 URL: https://rewinddynamics.com/autonomy.html
@@ -1632,6 +1673,20 @@ Autonomy — Onboard Decision-Making | Rewind Dynamics
  All Capabilities 
 
  Asked how autonomous a system is? The honest answer needs three numbers, not one — see levels of autonomy for how mission complexity, environmental difficulty and human independence combine.
+
+ Common Questions
+
+## Questions about autonomy.
+
+ § 98 / FAQ 
+
+ What is autonomy in an unmanned system? Autonomy is the part that decides. Given a goal and a picture of the world, it works out what to do next and keeps working it out as the situation changes. It is the difference between a remote-controlled machine and a system that genuinely reduces operator workload.
+
+ Is 'fully autonomous' a meaningful description? Not on its own. Autonomy is not a single number a system reaches or doesn't; it is better described along three axes — how complex the mission is, how difficult the environment is, and how much human involvement is required. A claim on any one axis is close to meaningless without the other two.
+
+ What is bounded discretion? Operating freely inside limits a person has set, and stopping at the edge of them rather than improvising past them. It is how we reconcile useful autonomy with human command: the system has real freedom to pursue an objective, but only within a boundary a person defined and can change.
+
+ Does the system ever act without a person? No consequential action is taken on the system's own authority. Autonomy absorbs the parts of a job that consume attention without needing judgement; a person sets the rules, defines the limits, and remains accountable for the outcome.
 
 ======================================================================
 URL: https://rewinddynamics.com/autonomy-levels.html
@@ -1764,7 +1819,19 @@ Levels of Autonomy Explained | Rewind Dynamics
  If you are writing requirements for an autonomous system, we would genuinely enjoy the conversation.
 
  Start a Conversation 
- All Capabilities
+ All Capabilities 
+
+ Common Questions
+
+## Questions about autonomy levels.
+
+ § 98 / FAQ 
+
+ What is the ALFUS framework? Autonomy Levels for Unmanned Systems, a framework published by the US National Institute of Standards and Technology (NIST) that describes autonomy through metrics rather than a single label — chiefly mission complexity, environmental difficulty and the degree of human independence.
+
+ What are the levels of autonomy? Rather than a single ladder, autonomy is better described as a point in a three-axis space: how complex the mission is, how difficult the operating environment is, and how much human involvement is required. Two systems can be assigned the same 'level' and mean completely different things if those axes differ.
+
+ What is the difference between human-in-the-loop and on-the-loop? Human-in-the-loop means the system cannot take a significant action until a person approves it — maximum control, but it does not scale. Human-on-the-loop means the system acts within set limits while a person supervises continuously and can intervene at any moment. Our own framing is 'human in command': people set the rules and remain accountable.
 
 ======================================================================
 URL: https://rewinddynamics.com/perception.html
@@ -2020,7 +2087,21 @@ Multi-Sensor Fusion Explained | Rewind Dynamics
  If you build sensors, fusion or tracking, we would like to compare notes.
 
  Start a Conversation 
- All Capabilities
+ All Capabilities 
+
+ Common Questions
+
+## Questions about sensor fusion.
+
+ § 98 / FAQ 
+
+ Why can't one sensor do everything? Because every sensing method has a condition that defeats it — radar struggles with small radar cross-sections and ground clutter, radio-frequency hears nothing from a silent platform, electro-optical needs line of sight and light, acoustic is short-ranged. Adding a second sensor of the same kind gives more confidence and the same blind spots; adding one that fails differently gives coverage.
+
+ What is micro-Doppler? The way a rotating drone rotor modulates a radar return in a manner the airframe alone does not, producing a signature that helps classify what has been detected rather than merely noticing it. The signature weakens with distance and with smaller rotors — exactly where it is most needed.
+
+ What is cross-cueing? Letting one sensor point another. A radar contact can slew a camera onto a bearing far faster than a human could, turning a raw detection into a visual confirmation. It is one of the ways fusion produces a usable picture rather than four disagreeing opinions.
+
+ What does 'track picture' mean? A single, de-conflicted view in which each real object has one identity and one track, carrying a confidence value — as opposed to the raw output of several sensors that may disagree about how many objects exist, where they are and what they are.
 
 ======================================================================
 URL: https://rewinddynamics.com/edge-ai.html
@@ -2128,7 +2209,21 @@ Edge AI — Intelligence On the Platform | Rewind Dynamics
  If you work on efficient models, embedded compute or real-time systems, we'd like to talk.
 
  Open Roles 
- All Capabilities
+ All Capabilities 
+
+ Common Questions
+
+## Questions about edge AI.
+
+ § 98 / FAQ 
+
+ What is edge AI? Edge AI means running artificial intelligence on the platform itself — the aircraft or device — rather than sending data to a remote server for processing. For defence autonomy it is a structural requirement, not an optimisation, because the communications link a cloud service depends on is exactly what an adversary tries to remove.
+
+ Why can't defence autonomy rely on the cloud? Four reasons, in order of severity: availability, because links are jammed, saturated or out of range; latency, because a control loop that waits for a network round trip is too slow to react; bandwidth, because raw sensor data is enormous and often impossible to send; and exposure, because every byte leaving the platform is a byte an adversary can intercept.
+
+ What is the hard part of running AI at the edge? Making capable intelligence fit. Onboard compute is bounded by weight, heat and power, and those are linked — more capable compute is heavier, draws more current and reduces endurance, and produces heat that must be removed. Every watt spent thinking is a watt not spent moving, and on a small platform that trade is brutal and constant.
+
+ Why does determinism matter more than peak speed? In a real system, perception, navigation, control and communications all compete for the same processor at once. What matters is not the best-case speed when nothing else is running, but whether the control loop still completes on schedule when everything runs together and the hardware is hot. A system that is usually fast and occasionally late is, for control purposes, unreliable.
 
 ======================================================================
 URL: https://rewinddynamics.com/navigation.html
@@ -2241,7 +2336,23 @@ GPS-Denied Navigation & Guidance | Rewind Dynamics
  If you work on state estimation, SLAM or resilient positioning, we should talk.
 
  Open Roles 
- All Capabilities
+ All Capabilities 
+
+ Common Questions
+
+## Questions about GPS-denied navigation.
+
+ § 98 / FAQ 
+
+ What is GPS-denied navigation? It is the ability of a system to know where it is and find its way when satellite navigation is jammed, spoofed or simply unavailable. Because satellite positioning is usually the first capability an adversary removes, a defence system that assumes it will always be present has a design flaw.
+
+ Why is spoofing worse than jamming? Jamming denies the signal, and a well-designed system notices immediately and falls back to other methods. Spoofing feeds the receiver a plausible but false position, so the system reports a confident, precise, wrong location and does not know anything is amiss. Every decision downstream is then made on a false premise.
+
+ What replaces GPS when it is unavailable? There is no single replacement. What works is fusing several independent methods with different failure modes — visual odometry that tracks how the scene shifts across the camera, mapping and relocalisation, and inertial dead reckoning that carries the estimate forward through gaps — so the loss of any one degrades the estimate rather than destroying it.
+
+ What is inertial dead reckoning? Using motion sensors — accelerometers and gyroscopes — to carry a position estimate forward without any outside reference. It is accurate over short intervals and completely immune to jamming, but it drifts steadily over time, which is why it is always paired with something that periodically corrects it.
+
+ Why does honest uncertainty matter more than accuracy? A system that reports 'my estimate has degraded and I no longer trust it' gives the operator something actionable. A system that keeps reporting a confident figure as its error grows gives them a trap. We treat honest confidence as a first-class output, not an afterthought.
 
 ======================================================================
 URL: https://rewinddynamics.com/systems-engineering.html
@@ -2532,6 +2643,20 @@ Technology — Our Autonomy Architecture | Rewind Dynamics
  04 
 ### Autonomy glossary
  The terms used across this page, defined plainly.
+
+ Common Questions
+
+## Questions about how we build.
+
+ § 98 / FAQ 
+
+ What is the sense–decide–act loop? The core loop every autonomous system runs, many times a second: take in the world through sensors, fuse it into an understanding, decide what to do within set limits, and act — then repeat. Making that loop fast, reliable and safe is the central engineering problem of autonomy.
+
+ What does simulation-first development mean? Proving behaviour in software before it touches hardware. A single field test can take a day to set up and produce one noisy result; the same scenario can run thousands of times overnight in simulation with every variable controlled. Simulation is the filter, so that by the time something reaches hardware the obvious failures are already gone.
+
+ What does the name Rewind Dynamics refer to? Our method. We test, we rewind the recording of what happened, assess it honestly — what went right, what went wrong and why — and use that to make the next version better. Progress in autonomy comes from disciplined iteration, not a single flashy demonstration.
+
+ Why build a layered, modular architecture? So each layer — compute, platform, perception, autonomy, mission — can be tested and improved on its own, and because the layers are shared across platform families, an improvement made for one benefits the others. Modularity also lets the autonomy integrate with existing platforms rather than replacing them.
 
 ======================================================================
 URL: https://rewinddynamics.com/simulation.html
@@ -2870,7 +2995,23 @@ ISR — Autonomous Surveillance & Reconnaissance | Rewind Dynamics
  We share technical detail with programmes and evaluators under appropriate terms.
 
  Start a Conversation 
- All Applications
+ All Applications 
+
+ Common Questions
+
+## Questions about autonomous ISR.
+
+ § 98 / FAQ 
+
+ What does ISR stand for in defence? ISR stands for intelligence, surveillance and reconnaissance — the work of gathering information about an area or situation so that commanders can decide on fact rather than assumption. Surveillance is watching an area persistently over time; reconnaissance is going to answer a specific question about a specific place.
+
+ How does autonomy change ISR? An autonomous system does not lose attention over long, uneventful periods the way a human operator does — and vigilance research shows human attention on a low-event task degrades within tens of minutes. Autonomy lets a platform hold a pattern for as long as its endurance allows, learn what the area's normal state looks like, and escalate only what merits a person's attention. The operator spends their judgement on exceptions rather than on watching a feed.
+
+ Why is false-alarm rate more important than raw detection? A surveillance system that raises the alarm without cause trains its operators to ignore it, and an ignored system provides no coverage regardless of how good its detection looks on paper. So precision — how much of what it reports is worth reporting — matters more than sensitivity, which is not the conventional emphasis but is the behaviourally correct one.
+
+ What is persistent surveillance? Persistent surveillance is sustained observation of an area over long periods, at a cost that makes continuous coverage realistic. It is fundamentally an endurance and attention problem before it is a sensing problem: the limiting factor was rarely how long something could stay aloft, but how much human attention its output consumed.
+
+ Does Rewind Dynamics field ISR systems today? No. All our work is at research-and-development stage, framed conceptually, with no specifications or performance figures published. Our first end-to-end real-world mission test is planned for December 2026.
 
 ======================================================================
 URL: https://rewinddynamics.com/force-protection.html
@@ -2978,7 +3119,19 @@ Force Protection — Autonomous Early Warning | Rewind Dynamics
  We're interested in the operational detail — tell us what the job actually demands.
 
  Start a Conversation 
- All Applications
+ All Applications 
+
+ Common Questions
+
+## Questions about force protection.
+
+ § 98 / FAQ 
+
+ What is force protection? The work of keeping people, vehicles and sites safe — largely by seeing a developing problem before it arrives. It is continuous, and it consumes an enormous share of the very people it is meant to protect, because the guard force is drawn from the guarded.
+
+ How does autonomy help with force protection? An autonomous system can maintain watch on approaches and perimeters indefinitely within its endurance, provide earlier warning, extend awareness beyond line of sight, and involve a person only when something merits attention — returning people to their primary task instead of tying them up on watch.
+
+ Why is it a good fit for autonomy? Because it is the classic vigilance task: long stretches of nothing punctuated by moments that matter enormously. Humans are poorly suited to that pattern and machines are well suited to it, which makes force protection one of the clearest cases for autonomy in the whole field.
 
 ======================================================================
 URL: https://rewinddynamics.com/counter-uas.html
@@ -3064,7 +3217,23 @@ Counter-UAS — Detecting & Tracking Small Drones | Rewind Dynamics
  If you're responsible for this problem, we'd value understanding how it actually presents in your environment.
 
  Start a Conversation 
- All Applications
+ All Applications 
+
+ Common Questions
+
+## Questions about counter-UAS.
+
+ § 98 / FAQ 
+
+ What is counter-UAS (C-UAS)? Counter-UAS, or C-UAS, is the detection, tracking, identification and — separately — defeat of small uncrewed aircraft. Rewind Dynamics' work concerns the sensing and understanding half: reliably noticing a small drone, holding a track on it, and working out what it is, fast enough for a person to decide what to do.
+
+ Why is counter-UAS considered an economics problem? Because a small uncrewed aircraft can be produced very cheaply, while the established means of countering one can cost orders of magnitude more. A defender can succeed at every individual engagement and still lose the exchange overall. That exchange rate, more than any single technical difficulty, is why counter-UAS has become urgent.
+
+ Why are small drones so hard to detect? They sit in the gap between existing categories: too small and slow for systems designed against fast aircraft, too numerous for methods that assume a handful of targets, and physically tiny with a low radar cross-section. They fly low against cluttered backgrounds of terrain and buildings, and are often made of materials that return little to conventional sensing.
+
+ Can you detect an autonomous drone that isn't transmitting? Radio-frequency methods intercept the command link and can locate the operator, but they hear nothing from a platform that flies autonomously and radiates little or nothing. Detecting a radio-silent drone therefore falls to radar, electro-optical/infrared and acoustic sensing — each of which has its own defeat condition, which is why multi-sensor fusion is necessary rather than optional.
+
+ What is the difference between detecting and defeating a drone? Detection, tracking and identification build the picture; defeat is the decision and action taken against a threat. We build the picture. What happens after identification is a decision for the human commanders responsible for it, in line with our position that a person is always in command.
 
 ======================================================================
 URL: https://rewinddynamics.com/research.html
@@ -3279,6 +3448,20 @@ Research — Nano-Drone Swarms, ISR & Autonomy | Rewind Dynamics
 ### Applications
  Where these research directions would actually be used.
 
+ Common Questions
+
+## Questions about our research.
+
+ § 98 / FAQ 
+
+ What is the mother–child nano-drone concept? A two-tier architecture in which a larger carrier platform — the 'mother' — travels to an area and releases a group of very small, expendable 'child' drones to do the close-in work. The mother carries range, endurance, compute and communications; the children carry almost nothing but their sensors and autonomy, which is why they can go low, close and quiet where a larger aircraft cannot.
+
+ What is a drone swarm? Not simply a lot of drones, but a group of autonomous systems that coordinate as one team — sharing what each sees, dividing a task between them, and continuing to function when individual members are lost. That last property, graceful attrition, is what makes the idea powerful: losing one member degrades the group slightly rather than ending the task.
+
+ Is this research fielded or theoretical? These are concept-level research directions, described publicly at a high level by design. They are not products. We share the shape of each idea and why it matters, and keep the engineering for the people who need it.
+
+ Why describe research publicly at all? Because defence technology tends to be discussed either in marketing language or not at all, and we think there is room for a third register: writing plainly about hard problems, including the parts we have not solved. It also lets partners and researchers working on the same questions find us.
+
 ======================================================================
 URL: https://rewinddynamics.com/swarming.html
 ======================================================================
@@ -3390,7 +3573,19 @@ Swarm Autonomy — Many Systems, One Team | Rewind Dynamics
  If you work on decentralised coordination or multi-agent systems, we'd like to talk.
 
  Open Roles 
- Our Research
+ Our Research 
+
+ Common Questions
+
+## Questions about swarm autonomy.
+
+ § 98 / FAQ 
+
+ What makes a group of drones a swarm? Coordination, not quantity. A hundred platforms each needing an operator is a staffing crisis, not a swarm. A genuine swarm divides a task between members, shares what each observes, reaches sensible collective behaviour without a central controller, and continues to function — with proportionate loss of capability — as members drop out.
+
+ Why is decentralised control important for a swarm? Because a central controller telling every member what to do becomes the single point of failure the swarm was meant to eliminate. Local decisions that add up to sensible group behaviour, surviving very limited and unreliable communication between members, are what make the idea robust.
+
+ Is swarm autonomy fielded? No. It is a concept-level research direction at Rewind Dynamics, described here at a high level by design. The open engineering questions — tasking many as one, coordinating on almost no bandwidth, avoiding collisions in tight volumes, and keeping human command meaningful at scale — are exactly what decide whether it becomes real.
 
 ======================================================================
 URL: https://rewinddynamics.com/glossary.html
@@ -3523,6 +3718,51 @@ Defence Autonomy Glossary — Key Terms | Rewind Dynamics
  
 ### Teleoperation
  Direct remote control of a machine by a person. Distinct from autonomy, where the machine decides for itself within set limits.
+ 
+### Loitering
+ Holding a position or orbit over an area of interest, staying on station rather than transiting through — the behaviour that makes persistent surveillance possible within a platform's endurance.
+ 
+### Waypoint
+ A defined point on a planned route. A system flying waypoints follows a sequence of them autonomously; the interesting engineering is everything that happens when the world does not match the plan between them.
+ 
+### Endurance
+ How long a platform can operate before it must return, recharge or refuel. Endurance competes directly with payload and compute for the same limited energy, so every added capability costs time on station.
+ 
+### Payload
+ Whatever a platform carries to do its job — usually sensors such as electro-optical or infrared cameras. Payload always trades against endurance, because both draw from the same energy budget.
+ 
+### Gimbal
+ A stabilised mount that isolates a sensor from the platform's own motion, so the picture stays steady while the aircraft manoeuvres. Without it, onboard perception would be fighting the airframe's every movement.
+ 
+### Circular error probable (CEP)
+ The standard measure of delivery accuracy: the radius within which half of all deliveries fall. Every element of a guidance chain contributes error, and CEP expresses the total.
+ 
+### Terminal guidance
+ The final phase of guidance, where a seeker senses the actual scene — by laser, infrared image or radar — and refines aim onto the specific designated point rather than trusting coordinates alone.
+ 
+### Semi-active laser
+ A guidance method that homes on laser energy reflected from a point an operator or aircraft actively designates. Precise, and it keeps a human explicitly in the loop, because someone must designate the point.
+ 
+### Datalink
+ The radio link between an unmanned platform and its ground control station. In defence it is assumed to be intermittent, contested and sometimes absent, which is why the intelligence has to live on the platform.
+ 
+### Ground control station
+ The command position from which an operator sets a mission, watches the reported picture, and intervenes. In an autonomous system the operator talks to this, supervising rather than flying.
+ 
+### Lost-link routine
+ The pre-defined behaviour a platform follows when its datalink degrades or drops — continue, orbit, or return to a known point where contact can be re-established. Chosen in advance, never improvised.
+ 
+### Electro-optical / infrared (EO/IR)
+ A pairing of a visible-light camera and a thermal camera. EO gives imagery a human can confirm; IR works at night and in low light. Both need line of sight and are degraded by cloud, dust and smoke.
+ 
+### Low, slow, small (LSS)
+ The class of aerial target — flying low, moving slowly, physically small — that conventional air-defence sensing was never designed for, and that makes small drones so difficult to detect.
+ 
+### Vigilance decrement
+ The measured decline in human attention on a low-event monitoring task over time. It is why sustained surveillance is a poor fit for people and a good fit for autonomy.
+ 
+### Attrition
+ The loss of individual systems during operation. A design that degrades gracefully under attrition — losing capability in proportion rather than failing outright — is what makes cheap, numerous platforms viable.
 
  These are working definitions written for
  clarity, not formal doctrine — usage varies between organisations and countries. If you think one of them
