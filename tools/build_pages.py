@@ -19,7 +19,7 @@ DRAWER = [("index.html", "Home")] + NAV + [("contact.html", "Contact")]
 
 ORG = ('{"@context": "https://schema.org", "@type": "Organization", "@id": "https://rewinddynamics.com/#organization", '
  '"name": "Rewind Dynamics", "legalName": "Rewind Dynamics", "url": "https://rewinddynamics.com/", '
- '"sameAs": ["https://www.instagram.com/rewinddynamics/"], '
+ '"sameAs": ["https://x.com/RewindDynamics", "https://www.instagram.com/rewinddynamics/"], '
  '"logo": {"@type": "ImageObject", "url": "https://rewinddynamics.com/assets/img/logo-mark.svg"}, '
  '"image": "https://rewinddynamics.com/assets/img/og.png", "foundingDate": "2020-01-26", '
  '"description": "Rewind Dynamics is a global defence-technology company developing '

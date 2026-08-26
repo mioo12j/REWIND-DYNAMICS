@@ -30,7 +30,7 @@ PROFILES = [
     # key            url                                                    label
     ("linkedin",     "",  "LinkedIn"),
     ("crunchbase",   "",  "Crunchbase"),
-    ("x",            "",  "X"),
+    ("x",            "https://x.com/RewindDynamics",  "X"),
     ("youtube",      "",  "YouTube"),
     ("github",       "",  "GitHub"),
     ("instagram",    "https://www.instagram.com/rewinddynamics/",  "Instagram"),
