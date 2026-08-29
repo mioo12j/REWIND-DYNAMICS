@@ -1,4 +1,4 @@
-# Rewind Dynamics — responsible disclosure
+# Rewind Dynamics LLC — responsible disclosure
 Contact: mailto:security@rewinddynamics.com
 Expires: 2027-12-31T23:59:59.000Z
 Preferred-Languages: en

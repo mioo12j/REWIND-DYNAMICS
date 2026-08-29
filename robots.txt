@@ -1,10 +1,9 @@
-# robots.txt — Rewind Dynamics
+# robots.txt — Rewind Dynamics LLC
 # https://rewinddynamics.com
 # A global defence-technology company developing autonomous systems.
 
 User-agent: *
 Allow: /
-Disallow: /privacy.html
 Disallow: /404.html
 
 # Major search crawlers explicitly welcome

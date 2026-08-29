@@ -10,6 +10,7 @@
 
 ## About
 
+- Legal entity: Rewind Dynamics LLC (registered in New Mexico, USA)
 - Founded: 26 January 2020
 - Customers: governments, armed forces, defence programmes and primes, worldwide
 - Systems (in R&D): unmanned aerial systems, precision guidance, tactical platforms
