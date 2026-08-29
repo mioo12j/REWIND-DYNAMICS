@@ -68,9 +68,15 @@
     }
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
-        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+        if (!en.isIntersecting) return;
+        // Elements taller than the viewport can never reach a 0.14 ratio,
+        // so reveal them as soon as they enter; normal blocks wait for 14%.
+        var tall = en.boundingClientRect.height > window.innerHeight * 0.85;
+        if (tall || en.intersectionRatio >= 0.14) {
+          en.target.classList.add("in"); io.unobserve(en.target);
+        }
       });
-    }, { threshold: 0.14, rootMargin: "0px 0px -8% 0px" });
+    }, { threshold: [0, 0.14], rootMargin: "0px 0px -8% 0px" });
     els.forEach(function (el) { io.observe(el); });
   }
 
