@@ -11,12 +11,14 @@ four identical everywhere.
 | Field | Value |
 |---|---|
 | Company name | Rewind Dynamics |
+| Legal entity | Rewind Dynamics LLC |
 | Website | https://rewinddynamics.com |
 | Founded | 26 January 2020 |
+| Registered | New Mexico, USA (do not publish full street address) |
 | Reach | Global (operations worldwide) |
 | Industry | Defence & Space / Aviation & Aerospace |
 | Company size | 2–10 employees |
-| Type | Privately held |
+| Type | LLC — privately held |
 
 ---
 

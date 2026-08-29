@@ -18,14 +18,14 @@ NAV = [("about.html", "Company"), ("systems.html", "Systems"),
 DRAWER = [("index.html", "Home")] + NAV + [("contact.html", "Contact")]
 
 ORG = ('{"@context": "https://schema.org", "@type": "Organization", "@id": "https://rewinddynamics.com/#organization", '
- '"name": "Rewind Dynamics", "legalName": "Rewind Dynamics", "url": "https://rewinddynamics.com/", '
+ '"name": "Rewind Dynamics", "legalName": "Rewind Dynamics LLC", "url": "https://rewinddynamics.com/", '
  '"sameAs": ["https://x.com/RewindDynamics", "https://www.instagram.com/rewinddynamics/"], '
  '"logo": {"@type": "ImageObject", "url": "https://rewinddynamics.com/assets/img/logo-mark.svg"}, '
  '"image": "https://rewinddynamics.com/assets/img/og.png", "foundingDate": "2020-01-26", '
  '"description": "Rewind Dynamics is a global defence-technology company developing '
  'autonomous systems \\u2014 autonomous drones (UAV), precision-guided and tactical platforms \\u2014 for defence and military applications.", '
  '"email": "info@rewinddynamics.com", "slogan": "Autonomous systems for defence.", '
- '"areaServed": {"@type": "Place", "name": "Worldwide"}, '
+ '"address": {"@type": "PostalAddress", "addressRegion": "New Mexico", "addressCountry": "US"}, "areaServed": {"@type": "Place", "name": "Worldwide"}, '
  '"knowsAbout": ["Autonomous systems", "Autonomous drones", "Military drones", "Automated drones", '
  '"Unmanned aerial vehicles", "UAV", "Precision guidance", "Loitering munitions", "Tactical systems", '
  '"Defence technology", "Edge AI", "Perception", "Autonomy", "Drone swarms", "Counter-drone systems", '
@@ -207,7 +207,7 @@ FOOTER = '''<footer class="footer">
   <div class="footer__watermark" aria-hidden="true">REWIND</div>
   <div class="container">
     <div class="footer__bar">
-      <span>© 2020–<span data-year>2026</span> Rewind Dynamics. All rights reserved.</span>
+      <span>© 2020–<span data-year>2026</span> Rewind Dynamics LLC. All rights reserved. · New Mexico, USA</span>
       <div class="footer__legal"><a href="privacy.html">Privacy</a><a href="privacy.html#terms">Terms</a><a href="accessibility.html">Accessibility</a><a href="search.html">Search</a><a href="site-map.html">Site Map</a></div>
     </div>
   </div>
