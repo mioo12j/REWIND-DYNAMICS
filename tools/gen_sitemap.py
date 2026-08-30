@@ -2,7 +2,7 @@
 """Generate sitemap.xml from the indexable pages on disk."""
 import glob, os, re
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT)
-BASE="https://rewinddynamics.com/"; LASTMOD="2026-08-10"
+BASE="https://rewinddynamics.com/"; LASTMOD="2026-08-30"
 
 PRIORITY=[
  (r'^index\.html$', 1.0, 'weekly'),
