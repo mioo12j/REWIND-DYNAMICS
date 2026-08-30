@@ -249,7 +249,7 @@ def build(fn, title, desc, crumbs, hero, sections, extra_ld=None, active=None):
 <title>{et}</title>
 <meta name="description" content="{ed}">
 <meta name="theme-color" content="#06080C">
-<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
@@ -366,7 +366,7 @@ def build_article(fn, title, desc, category, date_iso, date_human, h1, lead,
 <title>{et}</title>
 <meta name="description" content="{ed}">
 <meta name="theme-color" content="#06080C">
-<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
